@@ -63,7 +63,7 @@ _radioOperatorAction = [Loadouts_PARA, "<t size='1.5' color='#00ccff'>Operador d
 /* -------------------------- IMAGENES OPCIONALES -------------------------- */
 
 Loadouts_PARA setUserActionText [_riflemanAction , "<t size='1.5' color='#ffff00'>Fusilero</t>", "<t size='1.5' color='#ffff00'>Fusilero</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CBI.paa'/>"];
-Loadouts_PARA setUserActionText [_sergeantAction , "<t size='1.5' color='#fbd40b'>Sargento</t>", "<t size='1.5' color='#fbd40b'>Sargento</t><br/><br/><img size='3' image='\FCLA_Interactions\Insignias\data\CDM.paa'/>"];
+Loadouts_PARA setUserActionText [_sergeantAction , "<t size='1.5' color='#fbd40b'>Sargento</t>", "<t size='1.5' color='#fbd40b'>Sargento</t><br/><img size='3' image='\FCLA_Interactions\Insignias\data\CDM.paa'/>"];
 Loadouts_PARA setUserActionText [_ATRiflemanAction , "<t size='1.5' color='#00ff00'>Fusilero AT</t>", "<t size='1.5' color='#00ff00'>Fusilero AT</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CFA.paa'/>"];
 Loadouts_PARA setUserActionText [_MachineGunnerAction , "<t size='1.5' color='#00ff00'>Ametrallador</t>", "<t size='1.5' color='#00ff00'>Ametrallador</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CAL.paa'/>"];
 Loadouts_PARA setUserActionText [_SelectiveShooter , "<t size='1.5' color='#00ccff'>Tirador Selecto</t>", "<t size='1.5' color='#00ccff'>Tirador Selecto</t><br/><br/><img size='3' image='\FCLA_Interactions\Insignias\data\CTS.paa'/>"];
