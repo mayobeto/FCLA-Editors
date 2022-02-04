@@ -1,0 +1,19 @@
+
+/********************************************************************************|
+|                             CONFIGURACIÓN GENERAL                              |
+|********************************************************************************/
+
+
+
+/* ------------------------------ OPCIONALES ------------------------------- */
+
+#define RESPAWN_DELAY 120 //Tiempo, en segundos, para que los jugadores reaparezcan.
+#define RESPAWN_VEHICLE_DELAY 300 //Tiempo, en segundos, para que los vehículos reaparezcan.
+#define ALLOW_PROFILE_GLASSES FALSE //Aparecer con los anteojos de la identidad (perfil).
+#define FORCE_ADVANCED_FLIGHT BASED_ON_PLAYER_OPTIONS //Forzar modo de vuelo avanzado.
+
+
+
+/* -------------------------------- NÚCLEO --------------------------------- */
+
+#include "\FCLA_Missions\Official\Description.hpp"
