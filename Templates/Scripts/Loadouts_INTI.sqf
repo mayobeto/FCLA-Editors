@@ -8,6 +8,11 @@ _sergeantAction = [Loadouts_INTI, "<t size='1.5' color='#fbd40b'>Sargento</t>", 
 }, [true, true, true], true, "true"] call FCLA_Common_fnc_createLoadout;
 
 
+_secondAction = [Loadouts_INTI, "<t size='1.5' color='#fbd40b'>Segundo</t>", {
+  // === EQUIPAMIENTO DEL SEGUNDO === //
+}, [true, true, true], true, "true"] call FCLA_Common_fnc_createLoadout;
+
+
 _riflemanAction = [Loadouts_INTI, "<t size='1.5' color='#ffff00'>Fusilero</t>", {
   // === EQUIPAMIENTO DEL FUSILERO === //
 }, [false, false, false], true, "true"] call FCLA_Common_fnc_createLoadout;
@@ -26,6 +31,11 @@ _MachineGunnerAction = [Loadouts_INTI, "<t size='1.5' color='#00ff00'>Ametrallad
 _grenadierRiflemanAction = [Loadouts_INTI, "<t size='1.5' color='#ffff00'>Fusilero Granadero</t>", {
   // === EQUIPAMIENTO DEL FUSILERO GRANADERO === //
 }, [false, false, false], true, "true"] call FCLA_Common_fnc_createLoadout;
+
+
+_paramedicAction = [Loadouts_INTI, "<t size='1.5' color='#ff0000'>Paramédico</t>", {
+  // === EQUIPAMIENTO DEL PARAMÉDICO === //
+}, [true, false, false], true, "true"] call FCLA_Common_fnc_createLoadout;
 
 
 _combatMedicAction = [Loadouts_INTI, "<t size='1.5' color='#ff0000'>Médico de Combate</t>", {
@@ -51,12 +61,14 @@ _radioOperatorAction = [Loadouts_INTI, "<t size='1.5' color='#00ccff'>Operador d
 
 /* -------------------------- IMAGENES OPCIONALES -------------------------- */
 
-Loadouts_INTI setUserActionText [_riflemanAction , "<t size='1.5' color='#ffff00'>Fusilero</t>", "<t size='1.5' color='#ffff00'>Fusilero</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CBI.paa'/>"];
-Loadouts_INTI setUserActionText [_sergeantAction , "<t size='1.5' color='#fbd40b'>Sargento</t>", "<t size='1.5' color='#fbd40b'>Sargento</t><br/><img size='3' image='\FCLA_Interactions\Insignias\data\CDM.paa'/>"];
-Loadouts_INTI setUserActionText [_ATRiflemanAction , "<t size='1.5' color='#00ff00'>Fusilero AT</t>", "<t size='1.5' color='#00ff00'>Fusilero AT</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CFA.paa'/>"];
-Loadouts_INTI setUserActionText [_MachineGunnerAction , "<t size='1.5' color='#00ff00'>Ametrallador</t>", "<t size='1.5' color='#00ff00'>Ametrallador</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CAL.paa'/>"];
-Loadouts_INTI setUserActionText [_SelectiveShooter , "<t size='1.5' color='#00ccff'>Tirador Selecto</t>", "<t size='1.5' color='#00ccff'>Tirador Selecto</t><br/><br/><img size='3' image='\FCLA_Interactions\Insignias\data\CTS.paa'/>"];
-Loadouts_INTI setUserActionText [_VANTOperatorAction , "<t size='1.5' color='#00ccff'>Operador VANT</t>", "<t size='1.5' color='#00ccff'>Operador VANT</t><br/><br/><img size='3' image='\FCLA_Interactions\Insignias\data\OPVNT.paa'/>"];
-Loadouts_INTI setUserActionText [_combatMedicAction , "<t size='1.5' color='#ff0000'>Médico de Combate</t>", "<t size='1.5' color='#ff0000'>Médico de Combate</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CMC.paa'/>"];
-Loadouts_INTI setUserActionText [_radioOperatorAction , "<t size='1.5' color='#00ccff'>Operador de Radio</t>", "<t size='1.5' color='#00ccff'>Operador de Radio</t><br/><br/><img size='3' image='\FCLA_Interactions\Insignias\data\COR.paa'/>"];
-Loadouts_INTI setUserActionText [_grenadierRiflemanAction , "<t size='1.5' color='#ffff00'>Fusilero Granadero</t>", "<t size='1.5' color='#ffff00'>Fusilero Granadero</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CFG.paa'/>"];
+Loadouts_INTI setUserActionText [_secondAction, "<t size='1.5' color='#fbd40b'>Segundo</t>", "<t size='1.5' color='#fbd40b'>Segundo</t><br/><img size='3' image='\FCLA_Interactions\Insignias\data\CDM.paa'/>"];
+Loadouts_INTI setUserActionText [_riflemanAction, "<t size='1.5' color='#ffff00'>Fusilero</t>", "<t size='1.5' color='#ffff00'>Fusilero</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CBI.paa'/>"];
+Loadouts_INTI setUserActionText [_sergeantAction, "<t size='1.5' color='#fbd40b'>Sargento</t>", "<t size='1.5' color='#fbd40b'>Sargento</t><br/><img size='3' image='\FCLA_Interactions\Insignias\data\CDM.paa'/>"];
+Loadouts_INTI setUserActionText [_paramedicAction, "<t size='1.5' color='#ff0000'>Paramédico</t>", "<t size='1.5' color='#ff0000'>Paramédico</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CPM.paa'/>"];
+Loadouts_INTI setUserActionText [_ATRiflemanAction, "<t size='1.5' color='#00ff00'>Fusilero AT</t>", "<t size='1.5' color='#00ff00'>Fusilero AT</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CFA.paa'/>"];
+Loadouts_INTI setUserActionText [_MachineGunnerAction, "<t size='1.5' color='#00ff00'>Ametrallador</t>", "<t size='1.5' color='#00ff00'>Ametrallador</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CAL.paa'/>"];
+Loadouts_INTI setUserActionText [_SelectiveShooter, "<t size='1.5' color='#00ccff'>Tirador Selecto</t>", "<t size='1.5' color='#00ccff'>Tirador Selecto</t><br/><br/><img size='3' image='\FCLA_Interactions\Insignias\data\CTS.paa'/>"];
+Loadouts_INTI setUserActionText [_VANTOperatorAction, "<t size='1.5' color='#00ccff'>Operador VANT</t>", "<t size='1.5' color='#00ccff'>Operador VANT</t><br/><br/><img size='3' image='\FCLA_Interactions\Insignias\data\OPVNT.paa'/>"];
+Loadouts_INTI setUserActionText [_combatMedicAction, "<t size='1.5' color='#ff0000'>Médico de Combate</t>", "<t size='1.5' color='#ff0000'>Médico de Combate</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CMC.paa'/>"];
+Loadouts_INTI setUserActionText [_radioOperatorAction, "<t size='1.5' color='#00ccff'>Operador de Radio</t>", "<t size='1.5' color='#00ccff'>Operador de Radio</t><br/><br/><img size='3' image='\FCLA_Interactions\Insignias\data\COR.paa'/>"];
+Loadouts_INTI setUserActionText [_grenadierRiflemanAction, "<t size='1.5' color='#ffff00'>Fusilero Granadero</t>", "<t size='1.5' color='#ffff00'>Fusilero Granadero</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CFG.paa'/>"];
