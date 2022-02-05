@@ -5,7 +5,7 @@
 
 
 
-/* ------------------------------ OPCIONALES ------------------------------- */
+/* -------------------------------- NÚCLEO --------------------------------- */
 
 #define TRUE true
 #define FALSE false
@@ -15,9 +15,4 @@
 #define CIVILIAN_LIVES 3 //Número de vidas para cada jugador del bando "Civil".
 #define INDEPENDANT_LIVES 3 //Número de vidas para cada jugador del bando "Independiente".
 #define UNLIMITED_LIVES FALSE //Vidas ilimitadas.
-
-
-
-/* -------------------------------- NÚCLEO --------------------------------- */
-
 #include "\FCLA_Missions\includes\initPlayerLocal.hpp"
