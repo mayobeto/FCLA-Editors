@@ -7,5 +7,5 @@
 
 /* ------------------------------- LOADOUTS -------------------------------- */
 
-[] execVM "Scripts\Loadouts_INTI.sqf";
-[] execVM "Scripts\Loadouts_PARA.sqf";
+[Loadouts_Infantry] execVM "Loadouts\Infantry.sqf";
+[Loadouts_Paratroopers] execVM "Loadouts\Paratroopers.sqf";
