@@ -18,6 +18,5 @@
 
 
 //Falta CQBs.
-//Falta festejar ascensos.
 //Falta teletransportadores.
 //Agregar/Quitar división (campo de tiro).

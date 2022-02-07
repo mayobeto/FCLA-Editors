@@ -412,7 +412,7 @@ force force ace_vehicles_keepEngineRunning = false;
 force force ace_vehicles_speedLimiterStep = 1;
 
 // ACE View Restriction
-force force acex_viewrestriction_mode = 3;
+force force acex_viewrestriction_mode = 0;
 force force acex_viewrestriction_modeSelectiveAir = 1;
 force force acex_viewrestriction_modeSelectiveFoot = 1;
 force force acex_viewrestriction_modeSelectiveLand = 1;
@@ -1380,6 +1380,13 @@ zen_faction_filter_1_BLU_GEN_F = true;
 zen_faction_filter_1_BLU_T_F = true;
 zen_faction_filter_1_BLU_W_F = true;
 zen_faction_filter_1_fza_usaav = true;
+zen_faction_filter_1_rhs_faction_socom = true;
+zen_faction_filter_1_rhs_faction_usaf = true;
+zen_faction_filter_1_rhs_faction_usarmy_d = true;
+zen_faction_filter_1_rhs_faction_usarmy_wd = true;
+zen_faction_filter_1_rhs_faction_usmc_d = true;
+zen_faction_filter_1_rhs_faction_usmc_wd = true;
+zen_faction_filter_1_rhs_faction_usn = true;
 zen_faction_filter_1_USAF = true;
 zen_faction_filter_2_IND_C_F = true;
 zen_faction_filter_2_IND_E_F = true;
