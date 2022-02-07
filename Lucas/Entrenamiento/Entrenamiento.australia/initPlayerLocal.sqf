@@ -21,4 +21,7 @@
 
 /* ---------------------------- UNIFORME FORMAL ---------------------------- */
 
-//Falta el código.
+_isNotPromotionDay = if (isNil "FCLA_isPromotionDay") then {false;} else {FCLA_isPromotionDay;};
+if (!_isNotPromotionDay) exitWith {};
+
+[_this select 0] call FCLA_Common_equipFormalUniform;
