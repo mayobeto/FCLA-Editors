@@ -17,8 +17,9 @@
 class CfgFunctions {
  class FCLA_Training {
    class FCLA_Training_Functions {
+     class cleanUpCQB {file = "functions\CQBs\fn_cleanUp.sqf";};
+     class setUpBasicCQB {file = "functions\CQBs\fn_setUpBasic.sqf";};
      class setBasicActionsCQB {file = "functions\CQBs\fn_setBasicActions.sqf";};
-     class spawnUnitsBasicCQB {file = "functions\CQBs\fn_spawnUnitsBasic.sqf";};
      class setActionsTeleport {file = "functions\Teleports\fn_setActions.sqf";};
      class showMessageTeleport {file = "functions\Teleports\fn_showMessage.sqf";};
      class setDiversActionsLoadouts {file = "functions\Loadouts\fn_setDiversActions.sqf";};
