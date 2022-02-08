@@ -9,3 +9,25 @@
 
 #define MISSION_NAME "| MAPA DE ENTRENAMIENTO |" //Título del escenario.
 #include "\FCLA_Missions\includes\Description.hpp"
+
+
+
+/* ------------------------------- FUNCIONES ------------------------------- */
+
+class CfgFunctions {
+ class FCLA_Training {
+   class FCLA_Training_Functions {
+     class setBasicActionsCQB {file = "functions\CQBs\fn_setBasicActions.sqf";};
+     class spawnUnitsBasicCQB {file = "functions\CQBs\fn_spawnUnitsBasic.sqf";};
+     class setActionsTeleport {file = "functions\Teleports\fn_setActions.sqf";};
+     class showMessageTeleport {file = "functions\Teleports\fn_showMessage.sqf";};
+     class setDiversActionsLoadouts {file = "functions\Loadouts\fn_setDiversActions.sqf";};
+     class setPlanesActionsLoadouts {file = "functions\Loadouts\fn_setPlanesActions.sqf";};
+     class setArmoredActionsLoadouts {file = "functions\Loadouts\fn_setArmoredActions.sqf";};
+     class setInfantryActionsLoadouts {file = "functions\Loadouts\fn_setInfantryActions.sqf";};
+     class setShootersActionsLoadouts {file = "functions\Loadouts\fn_setShootersActions.sqf";};
+     class setHelicoptersActionsLoadouts {file = "functions\Loadouts\fn_setHelicoptersActions.sqf";};
+     class setParatroopersActionsLoadouts {file = "functions\Loadouts\fn_setParatroopersActions.sqf";};
+   };
+ };
+};

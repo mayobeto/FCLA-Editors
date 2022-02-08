@@ -10,11 +10,11 @@
 #define TRUE true
 #define FALSE false
 
-#define OPFOR_LIVES 3 //Número de vidas para cada jugador del bando "Blufor".
-#define BLUFOR_LIVES 3 //Número de vidas para cada jugador del bando "Opfor".
-#define CIVILIAN_LIVES 3 //Número de vidas para cada jugador del bando "Civil".
-#define INDEPENDANT_LIVES 3 //Número de vidas para cada jugador del bando "Independiente".
-#define UNLIMITED_LIVES TRUE //Vidas ilimitadas.
+#define OPFOR_LIVES 3
+#define BLUFOR_LIVES 3
+#define CIVILIAN_LIVES 3
+#define INDEPENDANT_LIVES 3
+#define UNLIMITED_LIVES TRUE
 #include "\FCLA_Missions\includes\initPlayerLocal.hpp"
 
 
