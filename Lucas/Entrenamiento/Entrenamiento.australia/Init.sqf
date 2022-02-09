@@ -7,7 +7,8 @@
 
 /* --------------------------------- CQBS ---------------------------------- */
 
-[FCLA_Basic_CQB] spawn FCLA_Training_fnc_setBasicActionsCQB;
+[FCLA_Controller_Basic_CQB] spawn FCLA_Training_fnc_setBasicActionsCQB;
+[FCLA_Controller_Competitive_CQB] spawn FCLA_Training_fnc_setCompetitiveActionsCQB;
 
 
 
