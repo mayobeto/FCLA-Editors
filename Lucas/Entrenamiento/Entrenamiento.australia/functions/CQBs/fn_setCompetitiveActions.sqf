@@ -41,7 +41,8 @@ _controller addAction ["<t size='1.35' color='#58D68D'>Preparar CQB</t>", {
       _cleanUpCQB = if (_cleanUpCQB == 0) then {true;} else {false;};
 
       if (!_cleanUpCQB) exitWith {};
-      [_target, [], []] spawn FCLA_Training_fnc_cleanUpCQB;
+      {[_x, 1, true] call BIS_fnc_animateFlag;} forEach [FCLA_Competitive_CQB_Flag_A, FCLA_Competitive_CQB_Flag_B];
+      [_target, [[38712.7, 19731.4, 0], 69.170, 15.978, 268.614, true, 10], [FCLA_Competitive_CQB_Door_1, FCLA_Competitive_CQB_Door_2, FCLA_Competitive_CQB_Door_3, FCLA_Competitive_CQB_Door_4, FCLA_Competitive_CQB_Door_5, FCLA_Competitive_CQB_Door_6, FCLA_Competitive_CQB_Door_7, FCLA_Competitive_CQB_Door_8]] spawn FCLA_Training_fnc_cleanUpCQB;
 
       ["PREPARACIÓN CQB",
        [
@@ -82,7 +83,7 @@ _controller addAction ["<t size='1.35' color='#58D68D'>Preparar CQB</t>", {
         _hasNVG = if (_hasNVG == 0) then {true;} else {false;};
         _lockDoors = if (_spawnHostages == 0) then {1;} else {0;};
         _spawnHostages = if (_spawnHostages == 0) then {true;} else {false;};
-        [_target, _hasNVG, _lockDoors, _spawnHostages] spawn FCLA_Training_fnc_setUpCompetitiveCQB;
+        [_target, [FCLA_Competitive_CQB_Door_1, FCLA_Competitive_CQB_Door_2, FCLA_Competitive_CQB_Door_3, FCLA_Competitive_CQB_Door_4, FCLA_Competitive_CQB_Door_5, FCLA_Competitive_CQB_Door_6, FCLA_Competitive_CQB_Door_7, FCLA_Competitive_CQB_Door_8], [FCLA_Competitive_CQB_Flag_A, FCLA_Competitive_CQB_Flag_B], _hasNVG, _lockDoors, _spawnHostages] spawn FCLA_Training_fnc_setUpCompetitiveCQB;
       }, {((_this select 1) select 0) setVariable ["FCLA_Configuring_CQB", nil, true];}, [_target, _caller, _actionId, _arguments]] call ZEN_Dialog_fnc_Create;
     }, {((_this select 1) select 0) setVariable ["FCLA_Configuring_CQB", nil, true];}, [_target, _caller, _actionId, _arguments]] call ZEN_Dialog_fnc_Create;
   };
@@ -127,7 +128,7 @@ _controller addAction ["<t size='1.35' color='#58D68D'>Preparar CQB</t>", {
     _hasNVG = if (_hasNVG == 0) then {true;} else {false;};
     _lockDoors = if (_spawnHostages == 0) then {1;} else {0;};
     _spawnHostages = if (_spawnHostages == 0) then {true;} else {false;};
-    [_target, _hasNVG, _lockDoors, _spawnHostages] spawn FCLA_Training_fnc_setUpCompetitiveCQB;
+    [_target, [FCLA_Competitive_CQB_Door_1, FCLA_Competitive_CQB_Door_2, FCLA_Competitive_CQB_Door_3, FCLA_Competitive_CQB_Door_4, FCLA_Competitive_CQB_Door_5, FCLA_Competitive_CQB_Door_6, FCLA_Competitive_CQB_Door_7, FCLA_Competitive_CQB_Door_8], [FCLA_Competitive_CQB_Flag_A, FCLA_Competitive_CQB_Flag_B], _hasNVG, _lockDoors, _spawnHostages] spawn FCLA_Training_fnc_setUpCompetitiveCQB;
   }, {((_this select 1) select 0) setVariable ["FCLA_Configuring_CQB", nil, true];}, [_target, _caller, _actionId, _arguments]] call ZEN_Dialog_fnc_Create;
 }, [], 1.5, true, true, "", "!(_target getVariable ['FCLA_Configuring_CQB', false])", 2.5, false, "", ""];
 

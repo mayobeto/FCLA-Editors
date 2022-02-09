@@ -82,7 +82,7 @@ _controller addAction ["<t size='1.35' color='#58D68D'>Preparar CQB</t>", {
         _hasNVG = if (_hasNVG == 0) then {true;} else {false;};
         _lockDoors = if (_spawnHostages == 0) then {1;} else {0;};
         _spawnHostages = if (_spawnHostages == 0) then {true;} else {false;};
-        [_target, _hasNVG, _lockDoors, _spawnHostages] spawn FCLA_Training_fnc_setUpBasicCQB;
+        [_target, [FCLA_Basic_CQB_Door_1, FCLA_Basic_CQB_Door_2, FCLA_Basic_CQB_Door_3, FCLA_Basic_CQB_Door_4, FCLA_Basic_CQB_Door_5], _hasNVG, _lockDoors, _spawnHostages] spawn FCLA_Training_fnc_setUpBasicCQB;
       }, {((_this select 1) select 0) setVariable ["FCLA_Configuring_CQB", nil, true];}, [_target, _caller, _actionId, _arguments]] call ZEN_Dialog_fnc_Create;
     }, {((_this select 1) select 0) setVariable ["FCLA_Configuring_CQB", nil, true];}, [_target, _caller, _actionId, _arguments]] call ZEN_Dialog_fnc_Create;
   };
@@ -127,7 +127,7 @@ _controller addAction ["<t size='1.35' color='#58D68D'>Preparar CQB</t>", {
     _hasNVG = if (_hasNVG == 0) then {true;} else {false;};
     _lockDoors = if (_spawnHostages == 0) then {1;} else {0;};
     _spawnHostages = if (_spawnHostages == 0) then {true;} else {false;};
-    [_target, _hasNVG, _lockDoors, _spawnHostages] spawn FCLA_Training_fnc_setUpBasicCQB;
+    [_target, [FCLA_Basic_CQB_Door_1, FCLA_Basic_CQB_Door_2, FCLA_Basic_CQB_Door_3, FCLA_Basic_CQB_Door_4, FCLA_Basic_CQB_Door_5], _hasNVG, _lockDoors, _spawnHostages] spawn FCLA_Training_fnc_setUpBasicCQB;
   }, {((_this select 1) select 0) setVariable ["FCLA_Configuring_CQB", nil, true];}, [_target, _caller, _actionId, _arguments]] call ZEN_Dialog_fnc_Create;
 }, [], 1.5, true, true, "", "!(_target getVariable ['FCLA_Configuring_CQB', false])", 2.5, false, "", ""];
 

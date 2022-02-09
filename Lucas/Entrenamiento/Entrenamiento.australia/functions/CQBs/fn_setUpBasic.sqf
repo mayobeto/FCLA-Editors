@@ -9,7 +9,7 @@
 ---------------------------------------------------------------------------- */
 
 //Variables de referencia.
-params ["_controller", "_hasNVG", "_lockDoors", "_spawnHostages"];
+params ["_controller", "_doors", "_hasNVG", "_lockDoors", "_spawnHostages"];
 _hostilesGroup = createGroup [east, true];
 _hostagesGroup = createGroup [civilian, true];
 _controller setVariable ["FCLA_CQB_Initialized", true, true];
@@ -107,4 +107,4 @@ switch (selectRandom [1, 2, 3]) do {
 {
   [_x, 1, 0] call BIS_fnc_Door;
   [{(_this select 0) setVariable ["BIS_Disabled_Door_1", _this select 1, true];}, [_x, _lockDoors], 1] call CBA_fnc_waitAndExecute;
-} forEach [FCLA_Basic_CQB_Door_1, FCLA_Basic_CQB_Door_2, FCLA_Basic_CQB_Door_3, FCLA_Basic_CQB_Door_4, FCLA_Basic_CQB_Door_5];
+} forEach _doors;
