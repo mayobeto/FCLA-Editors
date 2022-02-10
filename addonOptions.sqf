@@ -377,10 +377,10 @@ force force ace_frag_spallEnabled = true;
 
 // ACE Sobrecalentamiento
 force ace_overheating_cookoffCoef = 1;
-force force ace_overheating_coolingCoef = 1;
+force force ace_overheating_coolingCoef = 2.5;
 force force ace_overheating_displayTextOnJam = false;
 force force ace_overheating_enabled = true;
-force force ace_overheating_heatCoef = 1;
+force force ace_overheating_heatCoef = 0.5;
 force ace_overheating_jamChanceCoef = 1;
 force force ace_overheating_overheatingDispersion = true;
 force force ace_overheating_overheatingRateOfFire = true;
@@ -1043,50 +1043,6 @@ force force FCLA_Plate_Number_Allowed = true;
 force force FCLA_Smoke_Signal_Allowed = true;
 force force FCLA_Smoke_Signal_Time = 15;
 
-// GRAD Animal Transport
-grad_animalTransport_common_loadingRange = 5;
-grad_animalTransport_common_unloadSpeed = 1;
-
-// GRAD Civilians
-force force grad_civs_activities_panicCooldown = "[15, 60, 120]";
-force force grad_civs_cars_animalTransportChance = 1;
-force force grad_civs_cars_animalTransportVehicles = """C_Truck_02_transport_F"",   ""C_Quadbike_01_F""";
-force force grad_civs_cars_automaticVehicleGroupSize = true;
-force force grad_civs_cars_vehicles = "[""C_Van_01_box_F"", ""C_Van_02_vehicle_F"", ""C_Van_02_transport_F"", ""C_Offroad_02_unarmed_F"", ""C_Truck_02_transport_F"", ""C_Truck_02_covered_F"", ""C_Quadbike_01_F"", ""C_Hatchback_01_F"", ""C_SUV_01_F"", ""C_Offroad_01_F"", ""C_Tractor_01_F"", ""C_Truck_02_fuel_F""]";
-force force grad_civs_diagnostics_showFps = false;
-force force grad_civs_diagnostics_showInfoLine = false;
-force force grad_civs_diagnostics_showMisc = false;
-force force grad_civs_diagnostics_showOnMap = false;
-force force grad_civs_diagnostics_showPinkArrows = false;
-force force grad_civs_gta_enabled = false;
-force force grad_civs_lifecycle_civClasses = "[""C_man_hunter_1_F"", ""C_man_1"", ""C_Man_casual_1_F"", ""C_Man_casual_2_F"", ""C_Man_casual_3_F"", ""C_man_sport_1_F"", ""C_man_sport_2_F"", ""C_man_sport_3_F"", ""C_Man_casual_6_v2_F"", ""C_Man_casual_8_F"", ""C_Man_casual_4_F"", ""C_Man_casual_5_F"", ""C_Man_casual_6_F"", ""C_man_polo_1_F"", ""C_man_polo_2_F"", ""C_man_polo_3_F"", ""C_man_polo_4_F"", ""C_man_polo_5_F"", ""C_man_polo_6_F"", ""C_man_shorts_1_F"", ""C_man_p_beggar_F"", ""C_Man_Messenger_01_F"", ""C_Man_Fisherman_01_F"", ""C_man_w_worker_F"", ""C_Man_casual_1_F_afro"", ""C_Man_casual_2_F_afro"", ""C_Man_casual_3_F_afro"", ""C_man_sport_1_F_afro"", ""C_man_sport_2_F_afro"", ""C_man_sport_3_F_afro"", ""C_Man_casual_4_F_afro"", ""C_Man_casual_5_F_afro"", ""C_Man_casual_6_F_afro"", ""C_man_polo_1_F_afro"", ""C_man_polo_2_F_afro"", ""C_man_polo_3_F_afro"", ""C_man_polo_4_F_afro"", ""C_man_polo_5_F_afro"", ""C_man_polo_6_F_afro"", ""C_man_shorts_1_F_afro"", ""C_man_p_fugitive_F_afro"", ""C_Man_casual_1_F_euro"", ""C_Man_casual_2_F_euro"", ""C_Man_casual_3_F_euro"", ""C_man_sport_1_F_euro"", ""C_man_sport_2_F_euro"", ""C_man_sport_3_F_euro"", ""C_Man_casual_4_F_euro"", ""C_Man_casual_5_F_euro"", ""C_Man_casual_6_F_euro"", ""C_man_polo_1_F_euro"", ""C_man_polo_2_F_euro"", ""C_man_polo_3_F_euro"", ""C_man_polo_4_F_euro"", ""C_man_polo_5_F_euro"", ""C_man_polo_6_F_euro"", ""C_man_shorts_1_F_euro"", ""C_man_p_fugitive_F_euro""]";
-force force grad_civs_lifecycle_cleanupCorpses = true;
-force force grad_civs_lifecycle_minCivOwnerFps = 30;
-force force grad_civs_lifecycle_minCivUpdateTime = 3;
-force force grad_civs_lifecycle_minServerFps = 25;
-force force grad_civs_lifecycle_smMultiplicator = 1;
-force force grad_civs_lifecycle_spawnOnlyWithPlayers = true;
-force force grad_civs_loadout_backpackProbability = 0.2;
-force force grad_civs_loadout_backpacks = "[""B_Messenger_Coyote_F"", ""B_Messenger_Gray_F"", ""B_Messenger_Black_F"", ""B_CivilianBackpack_01_Everyday_Black_F""]";
-force force grad_civs_loadout_clothes = "[]";
-force force grad_civs_loadout_faces = "[]";
-force force grad_civs_loadout_goggles = "["""", ""G_Squares"", """", ""G_Spectacles"", """", ""G_WirelessEarpiece_F""]";
-force force grad_civs_loadout_headgear = "[""H_Cap_red"", """", ""H_Cap_grn"", """", ""H_Bandanna_camo"", """", ""H_Bandanna_cbr"", """", ""H_Bandanna_surfer_blk"", """", ""H_Hat_brown"", """", ""H_Hat_tan"", """", ""H_StrawHat_dark"", """", ""H_WirelessEarpiece_F""]";
-force force grad_civs_main_enabled = true;
-force force grad_civs_mimikry_enabled = false;
-force force grad_civs_patrol_initialGroupSize = 2;
-force force grad_civs_patrol_maxCivsOnFoot = 10;
-force force grad_civs_patrol_spawnDistancesOnFoot = "[1000, 3000]";
-force force grad_civs_residents_chatTime = 20;
-force force grad_civs_residents_maxCivsResidents = 15;
-force force grad_civs_residents_meetNeighborCooldown = 180;
-force force grad_civs_residents_spawnDistancesResidents = "[500,  1000]";
-force force grad_civs_transit_maxVehiclesInTransit = 6;
-force force grad_civs_transit_vehicles = "[""C_Van_01_box_F"", ""C_Van_02_vehicle_F"", ""C_Van_02_transport_F"", ""C_Offroad_02_unarmed_F"", ""C_Truck_02_transport_F"", ""C_Truck_02_covered_F"", ""C_Quadbike_01_F"", ""C_Hatchback_01_F"", ""C_SUV_01_F"", ""C_Offroad_01_F"", ""C_Tractor_01_F"", ""C_Truck_02_fuel_F""]";
-force force grad_civs_voyage_maxCivsInVehicles = 4;
-force force grad_civs_voyage_maxTravelRadius = 1750;
-force force grad_civs_voyage_spawnDistancesInVehicles = "[1500, 3500]";
-
 // GRAD Trenches
 force grad_trenches_functions_allowBigEnvelope = true;
 force force grad_trenches_functions_allowCamouflage = true;
@@ -1351,7 +1307,7 @@ force force zen_editor_moveDisplayToEdge = true;
 force zen_editor_parachuteSounds = true;
 zen_editor_previews_enabled = true;
 force force zen_editor_randomizeCopyPaste = true;
-force force zen_editor_removeWatermark = false;
+force force zen_editor_removeWatermark = true;
 zen_editor_unitRadioMessages = 1;
 force force zen_placement_enabled = true;
 zen_remote_control_cameraExitPosition = 4;
