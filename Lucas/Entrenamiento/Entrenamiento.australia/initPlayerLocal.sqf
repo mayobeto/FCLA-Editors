@@ -21,7 +21,13 @@
 
 /* ---------------------------- UNIFORME FORMAL ---------------------------- */
 
-_isNotPromotionDay = if (isNil "FCLA_isPromotionDay") then {false;} else {FCLA_isPromotionDay;};
-if (!_isNotPromotionDay) exitWith {};
+_isPromotionDay = if (isNil "FCLA_isPromotionDay") then {false;} else {FCLA_isPromotionDay;};
+if (_isPromotionDay) then {[_this select 0] call FCLA_Common_equipFormalUniform;};
 
-[_this select 0] call FCLA_Common_equipFormalUniform;
+
+
+/* --------------------------- FORZAR ÓPTICA 3D ---------------------------- */
+
+profileNamespace setVariable ["RHS_preferedOptic", 1];
+saveProfileNamespace;
+[] call RHS_fnc_preferedOptic;

@@ -166,7 +166,7 @@ force ace_fire_enableFlare = true;
 force ace_fire_enableScreams = true;
 
 // ACE Fuerza G
-force force ace_gforces_coef = 0.5;
+force force ace_gforces_coef = 0.75;
 force force ace_gforces_enabledFor = 2;
 
 // ACE Gestos en mapa
@@ -1235,14 +1235,14 @@ force ace_medical_treatment_woundStitchTime = 5;
 force force RECOIL_AI_on = true;
 force force RECOIL_force_on = 150;
 force force RECOIL_handgun_on = true;
-force force RECOIL_incrase_on = 0.5;
+force force RECOIL_incrase_on = 0.8;
 force force RECOIL_loop_on = true;
 force force RECOIL_random_on = true;
 force force RECOIL_randomMax_on = 1.4;
 force force RECOIL_randomMid_on = 1.1;
 force force RECOIL_randomMin_on = -1;
 force force RECOIL_Smooth_on = true;
-force force SWAY_incrase_on = 1;
+force force SWAY_incrase_on = 0.1;
 
 // UH-60M
 force vtx_uh60_anvishud_defaultMode = -1;

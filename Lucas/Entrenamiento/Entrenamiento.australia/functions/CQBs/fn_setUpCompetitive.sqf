@@ -79,12 +79,14 @@ switch (selectRandom [1, 2, 3]) do {
     if (!_spawnHostages) exitWith {};
     {
       _hostage = _hostagesGroup createUnit [_x, _hostagesPosTwoA select _forEachIndex, [], 0, "CAN_COLLIDE"];
+      _hostage disableAI "RADIOPROTOCOL";
       [_hostage, true] call ACE_captives_fnc_setSurrendered;
       _hostage setDir (_hostagesDirTwoA select _forEachIndex);
     } forEach _hostagesClassnames;
 
     {
       _hostage = _hostagesGroup createUnit [_x, _hostagesPosTwoB select _forEachIndex, [], 0, "CAN_COLLIDE"];
+      _hostage disableAI "RADIOPROTOCOL";
       [_hostage, true] call ACE_captives_fnc_setSurrendered;
       _hostage setDir (_hostagesDirTwoB select _forEachIndex);
     } forEach _hostagesClassnames;
@@ -112,12 +114,14 @@ switch (selectRandom [1, 2, 3]) do {
     if (!_spawnHostages) exitWith {};
     {
       _hostage = _hostagesGroup createUnit [_x, _hostagesPosThreeA select _forEachIndex, [], 0, "CAN_COLLIDE"];
+      _hostage disableAI "RADIOPROTOCOL";
       [_hostage, true] call ACE_captives_fnc_setSurrendered;
       _hostage setDir (_hostagesDirThreeA select _forEachIndex);
     } forEach _hostagesClassnames;
 
     {
       _hostage = _hostagesGroup createUnit [_x, _hostagesPosThreeB select _forEachIndex, [], 0, "CAN_COLLIDE"];
+      _hostage disableAI "RADIOPROTOCOL";
       [_hostage, true] call ACE_captives_fnc_setSurrendered;
       _hostage setDir (_hostagesDirThreeB select _forEachIndex);
     } forEach _hostagesClassnames;
@@ -145,12 +149,14 @@ switch (selectRandom [1, 2, 3]) do {
     if (!_spawnHostages) exitWith {};
     {
       _hostage = _hostagesGroup createUnit [_x, _hostagesPosOneA select _forEachIndex, [], 0, "CAN_COLLIDE"];
+      _hostage disableAI "RADIOPROTOCOL";
       [_hostage, true] call ACE_captives_fnc_setSurrendered;
       _hostage setDir (_hostagesDirOneA select _forEachIndex);
     } forEach _hostagesClassnames;
 
     {
       _hostage = _hostagesGroup createUnit [_x, _hostagesPosOneB select _forEachIndex, [], 0, "CAN_COLLIDE"];
+      _hostage disableAI "RADIOPROTOCOL";
       [_hostage, true] call ACE_captives_fnc_setSurrendered;
       _hostage setDir (_hostagesDirOneB select _forEachIndex);
     } forEach _hostagesClassnames;

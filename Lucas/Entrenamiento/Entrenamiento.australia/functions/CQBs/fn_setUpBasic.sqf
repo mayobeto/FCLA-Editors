@@ -60,6 +60,7 @@ switch (selectRandom [1, 2, 3]) do {
     if (!_spawnHostages) exitWith {};
     {
       _hostage = _hostagesGroup createUnit [_x, _hostagesPosTwo select _forEachIndex, [], 0, "CAN_COLLIDE"];
+      _hostage disableAI "RADIOPROTOCOL";
       [_hostage, true] call ACE_captives_fnc_setSurrendered;
       _hostage setDir (_hostagesDirTwo select _forEachIndex);
     } forEach _hostagesClassnames;
@@ -78,6 +79,7 @@ switch (selectRandom [1, 2, 3]) do {
     if (!_spawnHostages) exitWith {};
     {
       _hostage = _hostagesGroup createUnit [_x, _hostagesPosThree select _forEachIndex, [], 0, "CAN_COLLIDE"];
+      _hostage disableAI "RADIOPROTOCOL";
       [_hostage, true] call ACE_captives_fnc_setSurrendered;
       _hostage setDir (_hostagesDirThree select _forEachIndex);
     } forEach _hostagesClassnames;
@@ -96,6 +98,7 @@ switch (selectRandom [1, 2, 3]) do {
     if (!_spawnHostages) exitWith {};
     {
       _hostage = _hostagesGroup createUnit [_x, _hostagesPosOne select _forEachIndex, [], 0, "CAN_COLLIDE"];
+      _hostage disableAI "RADIOPROTOCOL";
       [_hostage, true] call ACE_captives_fnc_setSurrendered;
       _hostage setDir (_hostagesDirOne select _forEachIndex);
     } forEach _hostagesClassnames;
