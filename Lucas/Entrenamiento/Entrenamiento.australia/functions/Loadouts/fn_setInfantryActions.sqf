@@ -709,6 +709,7 @@ _VANTOperatorAction = [_loadoutBox, "<t size='1.5' color='#00ccff'>Operador VANT
   _caller linkItem "ItemMap";
   _caller linkItem "Itemwatch";
   _caller linkItem "ItemCompass";
+  _caller linkItem "B_UavTerminal";
   _caller linkItem "tf_anprc152_1";
 
   _caller addItemToUniform "ACE_MapTools";

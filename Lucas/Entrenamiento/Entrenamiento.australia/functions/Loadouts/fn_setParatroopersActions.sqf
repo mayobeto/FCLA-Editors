@@ -66,13 +66,13 @@ _sergeantAction = [_loadoutBox, "<t size='1.5' color='#fbd40b'>Sargento</t>", {
   _caller addHandgunItem "rhsusf_mag_17Rnd_9x19_JHP";
   _caller addPrimaryWeaponItem "rhsusf_acc_grip2";
   _caller addPrimaryWeaponItem "rhsusf_acc_nt4_tan";
-  _caller addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC_3d";
   _caller addPrimaryWeaponItem "rhsusf_acc_anpeq15_light";
   _caller addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+  _caller addPrimaryWeaponItem (selectRandom ["rhsusf_acc_ACOG2_USMC_3d", "rhsusf_acc_ACOG3_USMC_3d"]);
 
   _caller addVest "V_PlateCarrier_FCLA_Green";
   _caller addHeadgear "H_HelmetSpecB_FCLA_Snake";
-  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam";
+  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam_Vest";
 
   _caller linkItem "ItemMap";
   _caller linkItem "Itemwatch";
@@ -123,13 +123,13 @@ _secondAction = [_loadoutBox, "<t size='1.5' color='#fbd40b'>Segundo</t>", {
   _caller addWeapon "rhs_weap_m4_grip2";
   _caller addPrimaryWeaponItem "rhsusf_acc_grip2";
   _caller addPrimaryWeaponItem "rhsusf_acc_nt4_tan";
-  _caller addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC_3d";
   _caller addPrimaryWeaponItem "rhsusf_acc_anpeq15_light";
   _caller addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+  _caller addPrimaryWeaponItem (selectRandom ["rhsusf_acc_ACOG2_USMC_3d", "rhsusf_acc_ACOG3_USMC_3d"]);
 
   _caller addVest "V_PlateCarrier_FCLA_Green";
   _caller addHeadgear "H_HelmetSpecB_FCLA_Snake";
-  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam";
+  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam_Vest";
 
   _caller linkItem "ItemMap";
   _caller linkItem "Itemwatch";
@@ -180,13 +180,13 @@ _riflemanAction = [_loadoutBox, "<t size='1.5' color='#ffff00'>Fusilero</t>", {
   _caller addWeapon "rhs_weap_m4_grip2";
   _caller addPrimaryWeaponItem "rhsusf_acc_grip2";
   _caller addPrimaryWeaponItem "rhsusf_acc_nt4_tan";
-  _caller addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC_3d";
   _caller addPrimaryWeaponItem "rhsusf_acc_anpeq15_light";
   _caller addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+  _caller addPrimaryWeaponItem (selectRandom ["rhsusf_acc_ACOG2_USMC_3d", "rhsusf_acc_ACOG3_USMC_3d"]);
 
   _caller addVest "V_PlateCarrier_FCLA_Green";
   _caller addHeadgear "H_HelmetSpecB_FCLA_Snake";
-  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam";
+  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam_Vest";
 
   _caller linkItem "ItemMap";
   _caller linkItem "Itemwatch";
@@ -238,15 +238,15 @@ _ATRiflemanAction = [_loadoutBox, "<t size='1.5' color='#00ff00'>Fusilero AT</t>
   _caller addWeapon "launch_MRAWS_green_F";
   _caller addPrimaryWeaponItem "rhsusf_acc_grip2";
   _caller addPrimaryWeaponItem "rhsusf_acc_nt4_tan";
-  _caller addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC_3d";
   _caller addPrimaryWeaponItem "rhsusf_acc_anpeq15_light";
   _caller addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+  _caller addPrimaryWeaponItem (selectRandom ["rhsusf_acc_ACOG2_USMC_3d", "rhsusf_acc_ACOG3_USMC_3d"]);
   _caller addSecondaryWeaponItem "MRAWS_HEAT_F";
 
   _caller addVest "V_PlateCarrier_FCLA_Green";
   _caller addHeadgear "H_HelmetSpecB_FCLA_Snake";
   _caller addBackpack "B_AssaultPack_FCLA_Green";
-  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam";
+  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam_Vest";
 
   _caller linkItem "ItemMap";
   _caller linkItem "Itemwatch";
@@ -301,14 +301,14 @@ _assistantATRiflemanAction = [_loadoutBox, "<t size='1.5' color='#00ff00'>Asist.
   _caller addWeapon "rhs_weap_m4_grip2";
   _caller addPrimaryWeaponItem "rhsusf_acc_grip2";
   _caller addPrimaryWeaponItem "rhsusf_acc_nt4_tan";
-  _caller addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC_3d";
   _caller addPrimaryWeaponItem "rhsusf_acc_anpeq15_light";
   _caller addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+  _caller addPrimaryWeaponItem (selectRandom ["rhsusf_acc_ACOG2_USMC_3d", "rhsusf_acc_ACOG3_USMC_3d"]);
 
   _caller addVest "V_PlateCarrier_FCLA_Green";
   _caller addBackpack "B_Kitbag_rgr";
   _caller addHeadgear "H_HelmetSpecB_FCLA_Snake";
-  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam";
+  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam_Vest";
 
   _caller linkItem "ItemMap";
   _caller linkItem "Itemwatch";
@@ -364,14 +364,14 @@ _lightMachineGunnerAction = [_loadoutBox, "<t size='1.5' color='#00ff00'>Ametral
 
   _caller addWeapon "Binocular";
   _caller addWeapon "rhs_weap_m249_light_L";
-  _caller addPrimaryWeaponItem "rhsusf_acc_elcan_3d";
+  _caller addPrimaryWeaponItem "rhsusf_acc_elcan_ard_3d";
   _caller addPrimaryWeaponItem "rhsusf_acc_saw_lw_bipod";
   _caller addPrimaryWeaponItem "rhsusf_200Rnd_556x45_box";
 
   _caller addVest "V_PlateCarrier_FCLA_Green";
   _caller addHeadgear "H_HelmetSpecB_FCLA_Snake";
   _caller addBackpack "B_AssaultPack_FCLA_Green";
-  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam";
+  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam_Vest";
 
   _caller linkItem "ItemMap";
   _caller linkItem "Itemwatch";
@@ -428,7 +428,7 @@ _heavyMachineGunnerAction = [_loadoutBox, "<t size='1.5' color='#00ff00'>Ametral
   _caller addVest "V_PlateCarrier_FCLA_Green";
   _caller addHeadgear "H_HelmetSpecB_FCLA_Snake";
   _caller addBackpack "B_AssaultPack_FCLA_Green";
-  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam";
+  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam_Vest";
 
   _caller linkItem "ItemMap";
   _caller linkItem "Itemwatch";
@@ -482,13 +482,13 @@ _grenadierRiflemanAction = [_loadoutBox, "<t size='1.5' color='#ffff00'>Fusilero
   _caller addPrimaryWeaponItem "rhsusf_acc_nt4_tan";
   _caller addPrimaryWeaponItem "1Rnd_HE_Grenade_shell";
   _caller addPrimaryWeaponItem "rhsusf_acc_anpeq15side";
-  _caller addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC_3d";
   _caller addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+  _caller addPrimaryWeaponItem (selectRandom ["rhsusf_acc_ACOG2_USMC_3d", "rhsusf_acc_ACOG3_USMC_3d"]);
 
   _caller addVest "V_PlateCarrier_FCLA_Green";
   _caller addHeadgear "H_HelmetSpecB_FCLA_Snake";
   _caller addBackpack "B_AssaultPack_FCLA_Green";
-  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam";
+  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam_Vest";
 
   _caller linkItem "ItemMap";
   _caller linkItem "Itemwatch";
@@ -550,14 +550,14 @@ _paramedicAction = [_loadoutBox, "<t size='1.5' color='#ff0000'>Paramédico</t>"
   _caller addWeapon "rhs_weap_m4_grip2";
   _caller addPrimaryWeaponItem "rhsusf_acc_grip2";
   _caller addPrimaryWeaponItem "rhsusf_acc_nt4_tan";
-  _caller addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC_3d";
   _caller addPrimaryWeaponItem "rhsusf_acc_anpeq15_light";
   _caller addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+  _caller addPrimaryWeaponItem (selectRandom ["rhsusf_acc_ACOG2_USMC_3d", "rhsusf_acc_ACOG3_USMC_3d"]);
 
   _caller addVest "V_PlateCarrier_FCLA_Green";
   _caller addBackpack "B_Kitbag_Medic_Green";
   _caller addHeadgear "H_HelmetSpecB_Medic_Snake";
-  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam";
+  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam_Vest";
 
   _caller linkItem "ItemMap";
   _caller linkItem "Itemwatch";
@@ -631,14 +631,14 @@ _combatMedicAction = [_loadoutBox, "<t size='1.5' color='#ff0000'>Médico de Com
   _caller addWeapon "rhs_weap_m4_grip2";
   _caller addPrimaryWeaponItem "rhsusf_acc_grip2";
   _caller addPrimaryWeaponItem "rhsusf_acc_nt4_tan";
-  _caller addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC_3d";
   _caller addPrimaryWeaponItem "rhsusf_acc_anpeq15_light";
   _caller addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+  _caller addPrimaryWeaponItem (selectRandom ["rhsusf_acc_ACOG2_USMC_3d", "rhsusf_acc_ACOG3_USMC_3d"]);
 
   _caller addVest "V_PlateCarrier_FCLA_Green";
   _caller addBackpack "B_Kitbag_Medic_Green";
   _caller addHeadgear "H_HelmetSpecB_Medic_Snake";
-  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam";
+  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam_Vest";
 
   _caller linkItem "ItemMap";
   _caller linkItem "Itemwatch";
@@ -710,15 +710,15 @@ _SelectiveShooter = [_loadoutBox, "<t size='1.5' color='#00ccff'>Tirador Selecto
 
   _caller addWeapon "Binocular";
   _caller addWeapon "rhs_weap_m14ebrri";
-  _caller addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC_3d";
   _caller addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
   _caller addPrimaryWeaponItem "rhsusf_acc_aac_762sd_silencer";
   _caller addPrimaryWeaponItem "rhsusf_20Rnd_762x51_m118_special_Mag";
+  _caller addPrimaryWeaponItem (selectRandom ["rhsusf_acc_ACOG2_USMC_3d", "rhsusf_acc_ACOG3_USMC_3d"]);
 
   _caller addVest "V_PlateCarrier_FCLA_Green";
   _caller addBackpack "B_AssaultPack_Invisible";
   _caller addHeadgear "H_HelmetSpecB_FCLA_Snake";
-  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam";
+  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam_Vest";
 
   _caller linkItem "ItemMap";
   _caller linkItem "Itemwatch";
@@ -771,18 +771,19 @@ _VANTOperatorAction = [_loadoutBox, "<t size='1.5' color='#00ccff'>Operador VANT
   _caller addWeapon "rhs_weap_m4_grip2";
   _caller addPrimaryWeaponItem "rhsusf_acc_grip2";
   _caller addPrimaryWeaponItem "rhsusf_acc_nt4_tan";
-  _caller addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC_3d";
   _caller addPrimaryWeaponItem "rhsusf_acc_anpeq15_light";
   _caller addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+  _caller addPrimaryWeaponItem (selectRandom ["rhsusf_acc_ACOG2_USMC_3d", "rhsusf_acc_ACOG3_USMC_3d"]);
 
   _caller addVest "V_PlateCarrier_FCLA_Green";
   _caller addBackpack "B_rhsusf_B_BACKPACK";
   _caller addHeadgear "H_HelmetSpecB_FCLA_Snake";
-  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam";
+  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam_Vest";
 
   _caller linkItem "ItemMap";
   _caller linkItem "Itemwatch";
   _caller linkItem "ItemCompass";
+  _caller linkItem "B_UavTerminal";
   _caller linkItem "tf_anprc152_1";
 
   _caller addItemToUniform "ACE_MapTools";
@@ -828,14 +829,14 @@ _radioOperatorAction = [_loadoutBox, "<t size='1.5' color='#00ccff'>Operador de 
   _caller addWeapon "rhs_weap_m4_grip2";
   _caller addPrimaryWeaponItem "rhsusf_acc_grip2";
   _caller addPrimaryWeaponItem "rhsusf_acc_nt4_tan";
-  _caller addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC_3d";
   _caller addPrimaryWeaponItem "rhsusf_acc_anpeq15_light";
   _caller addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+  _caller addPrimaryWeaponItem (selectRandom ["rhsusf_acc_ACOG2_USMC_3d", "rhsusf_acc_ACOG3_USMC_3d"]);
 
   _caller addVest "V_PlateCarrier_FCLA_Green";
   _caller addHeadgear "H_HelmetSpecB_FCLA_Snake";
   _caller addBackpack "B_FCLA_TFAR_Big_rt1523g_Green";
-  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam";
+  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam_Vest";
 
   _caller linkItem "ItemMap";
   _caller linkItem "Itemwatch";
