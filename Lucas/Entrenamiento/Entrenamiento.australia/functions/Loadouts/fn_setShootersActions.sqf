@@ -60,7 +60,6 @@ _sniperAction = [_loadoutBox, "<t size='1.5' color='#45D251'>Francotirador</t>",
 
   _caller addItemToVest "ACE_DAGR";
   _caller addItemToVest "ACE_ATragMX";
-  _caller addItemToVest "HandGrenade";
   _caller addItemToVest "ACE_RangeCard";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
@@ -77,13 +76,13 @@ _sniperAction = [_loadoutBox, "<t size='1.5' color='#45D251'>Francotirador</t>",
   for "_i" from 1 to 2 do {_caller addItemToVest "Chemlight_blue";};
   for "_i" from 1 to 2 do {_caller addItemToVest "Chemlight_green";};
   for "_i" from 1 to 2 do {_caller addItemToVest "FCLA_NVG_Battery";};
-  for "_i" from 1 to 3 do {_caller addItemToVest "rhsusf_5Rnd_762x51_AICS_m62_Mag";};
-  for "_i" from 1 to 3 do {_caller addItemToVest "rhsusf_5Rnd_762x51_AICS_m118_special_Mag";};
+  for "_i" from 1 to 6 do {_caller addItemToVest "rhsusf_5Rnd_762x51_AICS_m62_Mag";};
+  for "_i" from 1 to 4 do {_caller addItemToVest "rhsusf_5Rnd_762x51_AICS_m118_special_Mag";};
   for "_i" from 1 to 2 do {_caller addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";};
 
+  _caller addItemToBackpack "optic_NVS";
   _caller addItemToBackpack "U_B_GhillieSuit";
-  for "_i" from 1 to 3 do {_caller addItemToBackpack "rhsusf_5Rnd_762x51_AICS_m62_Mag";};
-  for "_i" from 1 to 3 do {_caller addItemToBackpack "rhsusf_5Rnd_762x51_AICS_m118_special_Mag";};
+  for "_i" from 1 to 2 do {_caller addItemToBackpack "rhsusf_5Rnd_762x51_AICS_m118_special_Mag";};
 
   _weaponItems = ["","rhsusf_acc_anpeq15side","rhsusf_acc_M8541_low_d","rhsusf_acc_harris_swivel"];
   _weaponMagazines = ["rhsusf_5Rnd_762x51_AICS_m118_special_Mag",""];
@@ -158,6 +157,7 @@ _observerAction = [_loadoutBox, "<t size='1.5' color='#3DBA48'>Observador</t>", 
   for "_i" from 1 to 2 do {_caller addItemToVest "FCLA_NVG_Battery";};
   for "_i" from 1 to 2 do {_caller addItemToVest "rhsusf_mag_17Rnd_9x19_JHP";};
 
+  _caller addItemToBackpack "optic_NVS";
   _caller addItemToBackpack "U_B_GhillieSuit";
   _caller addItemToBackpack "ACE_SpottingScope";
   _caller addItemToBackpack "rhsusf_acc_SR25S_d";
