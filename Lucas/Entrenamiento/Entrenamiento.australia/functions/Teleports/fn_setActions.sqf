@@ -38,7 +38,7 @@
       [false] call ACE_Common_fnc_disableUserInput;
       _this setVariable ["FCLA_inTeleport", nil, true];
     }, _caller, 6] call CBA_fnc_waitAndExecute;
-  }, [], 1.5, true, true, "", "!(isObjectHidden FCLA_Yard) && ((_this distance FCLA_Yard) > 5) && !(_this getVariable ['FCLA_inTeleport', false])", 2.5, false, "", ""];
+  }, [], 1.5, true, true, "", "((_this distance FCLA_Yard) > 5) && !(_this getVariable ['FCLA_inTeleport', false])", 2.5, false, "", ""];
 
 
   _x addAction ["<t size='1.35' color='#58D68D'>Blindados</t>", {
@@ -70,7 +70,7 @@
       [false] call ACE_Common_fnc_disableUserInput;
       _this setVariable ["FCLA_inTeleport", nil, true];
     }, _caller, 6] call CBA_fnc_waitAndExecute;
-  }, [], 1.5, true, true, "", "!(isObjectHidden FCLA_Armored) && ((_this distance FCLA_Armored) > 5) && !(_this getVariable ['FCLA_inTeleport', false])", 2.5, false, "", ""];
+  }, [], 1.5, true, true, "", "((_this distance FCLA_Armored) > 5) && !(_this getVariable ['FCLA_inTeleport', false])", 2.5, false, "", ""];
 
 
   _x addAction ["<t size='1.35' color='#58D6CB'>Helipuerto</t>", {
@@ -102,7 +102,7 @@
       [false] call ACE_Common_fnc_disableUserInput;
       _this setVariable ["FCLA_inTeleport", nil, true];
     }, _caller, 6] call CBA_fnc_waitAndExecute;
-  }, [], 1.5, true, true, "", "!(isObjectHidden FCLA_Helicopters) && ((_this distance FCLA_Helicopters) > 5) && !(_this getVariable ['FCLA_inTeleport', false])", 2.5, false, "", ""];
+  }, [], 1.5, true, true, "", "((_this distance FCLA_Helicopters) > 5) && !(_this getVariable ['FCLA_inTeleport', false])", 2.5, false, "", ""];
 
 
   _x addAction ["<t size='1.35' color='#58D6CB'>Aeródromo</t>", {
@@ -134,7 +134,7 @@
       [false] call ACE_Common_fnc_disableUserInput;
       _this setVariable ["FCLA_inTeleport", nil, true];
     }, _caller, 6] call CBA_fnc_waitAndExecute;
-  }, [], 1.5, true, true, "", "!(isObjectHidden FCLA_Aerodrome) && ((_this distance FCLA_Aerodrome) > 5) && !(_this getVariable ['FCLA_inTeleport', false])", 2.5, false, "", ""];
+  }, [], 1.5, true, true, "", "((_this distance FCLA_Aerodrome) > 5) && !(_this getVariable ['FCLA_inTeleport', false])", 2.5, false, "", ""];
 
 
   _x addAction ["<t size='1.35' color='#D69158'>CQB Competitivo</t>", {
@@ -166,7 +166,7 @@
       [false] call ACE_Common_fnc_disableUserInput;
       _this setVariable ["FCLA_inTeleport", nil, true];
     }, _caller, 6] call CBA_fnc_waitAndExecute;
-  }, [], 1.5, true, true, "", "!(isObjectHidden FCLA_Competitive_CQB) && ((_this distance FCLA_Competitive_CQB) > 5) && !(_this getVariable ['FCLA_inTeleport', false])", 2.5, false, "", ""];
+  }, [], 1.5, true, true, "", "((_this distance FCLA_Competitive_CQB) > 5) && !(_this getVariable ['FCLA_inTeleport', false]) && {if (isNil 'FCLA_Show_Competitive_CQB') then {true;} else {FCLA_Show_Competitive_CQB;}}", 2.5, false, "", ""];
 
 
   _x addAction ["<t size='1.35' color='#D69158'>Campo de Tiro / CQB</t>", {
@@ -198,7 +198,7 @@
       [false] call ACE_Common_fnc_disableUserInput;
       _this setVariable ["FCLA_inTeleport", nil, true];
     }, _caller, 6] call CBA_fnc_waitAndExecute;
-  }, [], 1.5, true, true, "", "!(isObjectHidden FCLA_Shooting_Range) && ((_this distance FCLA_Shooting_Range) > 5) && !(_this getVariable ['FCLA_inTeleport', false])", 2.5, false, "", ""];
+  }, [], 1.5, true, true, "", "((_this distance FCLA_Shooting_Range) > 5) && !(_this getVariable ['FCLA_inTeleport', false]) && {if (isNil 'FCLA_Show_Shooting_Range') then {true;} else {FCLA_Show_Shooting_Range;}}", 2.5, false, "", ""];
 
 
   _x addAction ["<t size='1.35' color='#D65858'>Centro Médico</t>", {
@@ -230,7 +230,7 @@
       [false] call ACE_Common_fnc_disableUserInput;
       _this setVariable ["FCLA_inTeleport", nil, true];
     }, _caller, 6] call CBA_fnc_waitAndExecute;
-  }, [], 1.5, true, true, "", "!(isObjectHidden FCLA_Medic_Station) && ((_this distance FCLA_Medic_Station) > 5) && !(_this getVariable ['FCLA_inTeleport', false])", 2.5, false, "", ""];
+  }, [], 1.5, true, true, "", "((_this distance FCLA_Medic_Station) > 5) && !(_this getVariable ['FCLA_inTeleport', false])", 2.5, false, "", ""];
 
 
   _x addAction ["<t size='1.35' color='#5886D6'>Puerto</t>", {
@@ -262,5 +262,5 @@
       [false] call ACE_Common_fnc_disableUserInput;
       _this setVariable ["FCLA_inTeleport", nil, true];
     }, _caller, 6] call CBA_fnc_waitAndExecute;
-  }, [], 1.5, true, true, "", "!(isObjectHidden FCLA_Dock) && ((_this distance FCLA_Dock) > 5) && !(_this getVariable ['FCLA_inTeleport', false])", 2.5, false, "", ""];
+  }, [], 1.5, true, true, "", "((_this distance FCLA_Dock) > 5) && !(_this getVariable ['FCLA_inTeleport', false])", 2.5, false, "", ""];
 } forEach _this;

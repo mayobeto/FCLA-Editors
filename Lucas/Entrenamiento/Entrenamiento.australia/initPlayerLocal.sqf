@@ -19,10 +19,18 @@
 
 
 
+/* ----------------------------- MÓDULOS ZEUS ------------------------------ */
+
+[] spawn FCLA_Training_fnc_deactivateZonesCurator;
+
+
+
 /* ---------------------------- UNIFORME FORMAL ---------------------------- */
 
+_groupName = toUpper (groupId (group (_this select 0)));
 _isPromotionDay = if (isNil "FCLA_isPromotionDay") then {false;} else {FCLA_isPromotionDay;};
-if (_isPromotionDay) then {[_this select 0] call FCLA_Common_equipFormalUniform;};
+_inCompatibleGroup = !(_groupName in ["ALTO MANDO", "CURSOS/RECLUTACIÓN"]);
+if ((_isPromotionDay) && (_inCompatibleGroup)) then {[_this select 0] call FCLA_Common_fnc_equipFormalUniform;};
 
 
 
