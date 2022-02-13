@@ -17,6 +17,7 @@ params ["_loadoutBox"];
 
 _formalUniformAction = [_loadoutBox, "<t size='1.5' color='#fbd40b'>Uniforme Formal</t>", {
   [_caller] spawn FCLA_Common_fnc_equipFormalUniform;
+  if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 }, [true, true, true], true, "if (isNil 'FCLA_isPromotionDay') then {false;} else {FCLA_isPromotionDay;};"] call FCLA_Common_fnc_createLoadout;
 
 
@@ -28,6 +29,7 @@ _sergeantAction = [_loadoutBox, "<t size='1.5' color='#fbd40b'>Sargento</t>", {
   removeHeadgear _caller;
   removeAllWeapons _caller;
   removeAllAssignedItems _caller;
+  if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 
   _caller addWeapon "Binocular";
   _caller addWeapon "rhs_weap_m4_grip2";
@@ -83,6 +85,7 @@ _secondAction = [_loadoutBox, "<t size='1.5' color='#fbd40b'>Segundo</t>", {
   removeHeadgear _caller;
   removeAllWeapons _caller;
   removeAllAssignedItems _caller;
+  if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 
   _caller addWeapon "Binocular";
   _caller addWeapon "rhs_weap_m4_grip2";
@@ -136,6 +139,7 @@ _riflemanAction = [_loadoutBox, "<t size='1.5' color='#ffff00'>Fusilero</t>", {
   removeHeadgear _caller;
   removeAllWeapons _caller;
   removeAllAssignedItems _caller;
+  if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 
   _caller addWeapon "Binocular";
   _caller addWeapon "rhs_weap_m4_grip2";
@@ -189,6 +193,7 @@ _ATRiflemanAction = [_loadoutBox, "<t size='1.5' color='#00ff00'>Fusilero AT</t>
   removeHeadgear _caller;
   removeAllWeapons _caller;
   removeAllAssignedItems _caller;
+  if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 
   _caller addWeapon "Binocular";
   _caller addWeapon "rhs_weap_m4_grip2";
@@ -249,6 +254,7 @@ _assistantATRiflemanAction = [_loadoutBox, "<t size='1.5' color='#00ff00'>Asist.
   removeHeadgear _caller;
   removeAllWeapons _caller;
   removeAllAssignedItems _caller;
+  if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 
   _caller addWeapon "Binocular";
   _caller addWeapon "rhs_weap_m4_grip2";
@@ -310,6 +316,7 @@ _lightMachineGunnerAction = [_loadoutBox, "<t size='1.5' color='#00ff00'>Ametral
   removeHeadgear _caller;
   removeAllWeapons _caller;
   removeAllAssignedItems _caller;
+  if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 
   _caller addWeapon "Binocular";
   _caller addWeapon "rhs_weap_m249_light_L";
@@ -364,6 +371,7 @@ _heavyMachineGunnerAction = [_loadoutBox, "<t size='1.5' color='#00ff00'>Ametral
   removeHeadgear _caller;
   removeAllWeapons _caller;
   removeAllAssignedItems _caller;
+  if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 
   _caller addWeapon "Binocular";
   _caller addWeapon "rhs_weap_m240B";
@@ -418,6 +426,7 @@ _grenadierRiflemanAction = [_loadoutBox, "<t size='1.5' color='#ffff00'>Fusilero
   removeHeadgear _caller;
   removeAllWeapons _caller;
   removeAllAssignedItems _caller;
+  if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 
   _caller addWeapon "Binocular";
   _caller addWeapon "rhs_weap_m4_m203S";
@@ -484,6 +493,7 @@ _paramedicAction = [_loadoutBox, "<t size='1.5' color='#ff0000'>Paramédico</t>"
   removeHeadgear _caller;
   removeAllWeapons _caller;
   removeAllAssignedItems _caller;
+  if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 
   _caller addWeapon "Binocular";
   _caller addWeapon "rhs_weap_m4_grip2";
@@ -561,6 +571,7 @@ _combatMedicAction = [_loadoutBox, "<t size='1.5' color='#ff0000'>Médico de Com
   removeHeadgear _caller;
   removeAllWeapons _caller;
   removeAllAssignedItems _caller;
+  if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 
   _caller addWeapon "Binocular";
   _caller addWeapon "rhs_weap_m4_grip2";
@@ -638,6 +649,7 @@ _SelectiveShooter = [_loadoutBox, "<t size='1.5' color='#00ccff'>Tirador Selecto
   removeHeadgear _caller;
   removeAllWeapons _caller;
   removeAllAssignedItems _caller;
+  if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 
   _caller addWeapon "Binocular";
   _caller addWeapon "rhs_weap_m14ebrri";
@@ -693,6 +705,7 @@ _VANTOperatorAction = [_loadoutBox, "<t size='1.5' color='#00ccff'>Operador VANT
   removeHeadgear _caller;
   removeAllWeapons _caller;
   removeAllAssignedItems _caller;
+  if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 
   _caller addWeapon "Binocular";
   _caller addWeapon "rhs_weap_m4_grip2";
@@ -720,7 +733,7 @@ _VANTOperatorAction = [_loadoutBox, "<t size='1.5' color='#00ccff'>Operador VANT
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_fieldDressing";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_elasticBandage";};
-  _caller addItemToVest "HandGrenade";
+  _caller addItemToVest "ACE_UAVBattery";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
   _caller addItemToVest "SmokeShellGreen";
@@ -747,6 +760,7 @@ _radioOperatorAction = [_loadoutBox, "<t size='1.5' color='#00ccff'>Operador de 
   removeHeadgear _caller;
   removeAllWeapons _caller;
   removeAllAssignedItems _caller;
+  if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 
   _caller addWeapon "Binocular";
   _caller addWeapon "rhs_weap_m4_grip2";

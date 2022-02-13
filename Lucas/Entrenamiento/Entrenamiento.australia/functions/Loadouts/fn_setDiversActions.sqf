@@ -17,6 +17,7 @@ params ["_loadoutBox"];
 
 _formalUniformAction = [_loadoutBox, "<t size='1.5' color='#fbd40b'>Uniforme Formal</t>", {
   [_caller] spawn FCLA_Common_fnc_equipFormalUniform;
+  if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 }, [true, true, true], true, "if (isNil 'FCLA_isPromotionDay') then {false;} else {FCLA_isPromotionDay;};"] call FCLA_Common_fnc_createLoadout;
 
 

@@ -17,6 +17,7 @@ params ["_loadoutBox"];
 
 _formalUniformAction = [_loadoutBox, "<t size='1.5' color='#fbd40b'>Uniforme Formal</t>", {
   [_caller] spawn FCLA_Common_fnc_equipFormalUniform;
+  if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 }, [true, true, true], true, "if (isNil 'FCLA_isPromotionDay') then {false;} else {FCLA_isPromotionDay;};"] call FCLA_Common_fnc_createLoadout;
 
 
@@ -28,6 +29,7 @@ _sniperAction = [_loadoutBox, "<t size='1.5' color='#45D251'>Francotirador</t>",
   removeHeadgear _caller;
   removeAllWeapons _caller;
   removeAllAssignedItems _caller;
+  if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 
   _caller addWeapon "ACE_Vector";
   _caller addWeapon "rhs_weap_m4a1_carryhandle_grip2";
@@ -106,6 +108,7 @@ _observerAction = [_loadoutBox, "<t size='1.5' color='#3DBA48'>Observador</t>", 
   removeHeadgear _caller;
   removeAllWeapons _caller;
   removeAllAssignedItems _caller;
+  if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 
   _caller addWeapon "ACE_Vector";
   _caller addWeapon "rhs_weap_sr25_d";
@@ -172,6 +175,7 @@ _VANTOperatorAction = [_loadoutBox, "<t size='1.5' color='#00ccff'>Operador VANT
   removeHeadgear _caller;
   removeAllWeapons _caller;
   removeAllAssignedItems _caller;
+  if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 
   _caller addWeapon "Binocular";
   _caller addWeapon "rhs_weap_m4a1_carryhandle_grip2";
@@ -203,7 +207,7 @@ _VANTOperatorAction = [_loadoutBox, "<t size='1.5' color='#00ccff'>Operador VANT
 
   _caller addItemToVest "ACE_M84";
   _caller addItemToVest "SmokeShell";
-  _caller addItemToVest "HandGrenade";
+  _caller addItemToVest "ACE_UAVBattery";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
   _caller addItemToVest "SmokeShellGreen";
