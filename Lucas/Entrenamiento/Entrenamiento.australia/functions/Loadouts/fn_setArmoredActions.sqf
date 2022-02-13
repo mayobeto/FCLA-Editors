@@ -190,6 +190,7 @@ _explosivesSpecialistAction = [_loadoutBox, "<t size='1.5' color='#fbd40b'>Espec
   removeAllAssignedItems _caller;
   if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 
+  _caller addWeapon "ACE_VMH3";
   _caller addWeapon "Binocular";
   _caller addWeapon "rhs_weap_m4a1_carryhandle_grip2";
   _caller addPrimaryWeaponItem "rhsusf_acc_grip2";
@@ -232,8 +233,12 @@ _explosivesSpecialistAction = [_loadoutBox, "<t size='1.5' color='#fbd40b'>Espec
   for "_i" from 1 to 2 do {_caller addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
   for "_i" from 1 to 3 do {_caller addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";};
 
+  _caller addItemToBackpack "V_EOD_FCLA";
   _caller addItemToBackpack "ACE_Clacker";
   _caller addItemToBackpack "ACE_DefusalKit";
+  _caller addItemToBackpack "ACE_SpraypaintRed";
+  _caller addItemToBackpack "ACE_SpraypaintBlack";
+  _caller addItemToBackpack "ACE_SpraypaintGreen";
   _caller addItemToBackpack "SatchelCharge_Remote_Mag";
   for "_i" from 1 to 2 do {_caller addItemToBackpack "DemoCharge_Remote_Mag";};
 }, [true, true, true], true, "if (isNil 'FCLA_isPromotionDay') then {true;} else {!FCLA_isPromotionDay;};"] call FCLA_Common_fnc_createLoadout;

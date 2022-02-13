@@ -839,8 +839,8 @@ _radioOperatorAction = [_loadoutBox, "<t size='1.5' color='#00ccff'>Operador de 
   removeAllAssignedItems _caller;
   if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 
-  _caller addWeapon "Binocular";
   _caller addWeapon "rhs_weap_m4_grip2";
+  _caller addWeapon "Laserdesignator_01_khk_F";
   _caller addPrimaryWeaponItem "rhsusf_acc_grip2";
   _caller addPrimaryWeaponItem "rhsusf_acc_nt4_tan";
   _caller addPrimaryWeaponItem "rhsusf_acc_anpeq15_light";
@@ -869,6 +869,7 @@ _radioOperatorAction = [_loadoutBox, "<t size='1.5' color='#00ccff'>Operador de 
   _caller addItemToVest "ACE_M84";
   _caller addItemToVest "SmokeShell";
   _caller addItemToVest "HandGrenade";
+  _caller addItemToVest "Laserbatteries";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
   _caller addItemToVest "SmokeShellGreen";
