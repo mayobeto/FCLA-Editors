@@ -57,11 +57,13 @@ _sergeantAction = [_loadoutBox, "<t size='1.5' color='#fbd40b'>Sargento</t>", {
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_fieldDressing";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_elasticBandage";};
+
   _caller addItemToVest "HandGrenade";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
   _caller addItemToVest "SmokeShellGreen";
   _caller addItemToVest "ACE_salineIV_250";
+  _caller addItemToVest "ACE_IR_Strobe_Item";
   _caller addItemToVest "acex_intelitems_notepad";
   _caller addItemToVest "FCLA_G_Blindfold_01_Black_F";
   for "_i" from 1 to 4 do {_caller addItemToVest "ACE_splint";};
@@ -111,11 +113,13 @@ _secondAction = [_loadoutBox, "<t size='1.5' color='#fbd40b'>Segundo</t>", {
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_fieldDressing";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_elasticBandage";};
+
   _caller addItemToVest "HandGrenade";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
   _caller addItemToVest "SmokeShellGreen";
   _caller addItemToVest "ACE_salineIV_250";
+  _caller addItemToVest "ACE_IR_Strobe_Item";
   _caller addItemToVest "FCLA_Hacking_Device";
   _caller addItemToVest "acex_intelitems_notepad";
   _caller addItemToVest "FCLA_G_Blindfold_01_Black_F";
@@ -165,6 +169,7 @@ _riflemanAction = [_loadoutBox, "<t size='1.5' color='#ffff00'>Fusilero</t>", {
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_fieldDressing";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_elasticBandage";};
+
   _caller addItemToVest "HandGrenade";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
@@ -222,6 +227,7 @@ _ATRiflemanAction = [_loadoutBox, "<t size='1.5' color='#00ff00'>Fusilero AT</t>
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_fieldDressing";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_elasticBandage";};
+
   _caller addItemToVest "HandGrenade";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
@@ -281,6 +287,7 @@ _assistantATRiflemanAction = [_loadoutBox, "<t size='1.5' color='#00ff00'>Asist.
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_fieldDressing";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_elasticBandage";};
+
   _caller addItemToVest "HandGrenade";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
@@ -342,6 +349,7 @@ _lightMachineGunnerAction = [_loadoutBox, "<t size='1.5' color='#00ff00'>Ametral
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_fieldDressing";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_elasticBandage";};
+
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
   _caller addItemToVest "SmokeShellGreen";
@@ -397,6 +405,7 @@ _heavyMachineGunnerAction = [_loadoutBox, "<t size='1.5' color='#00ff00'>Ametral
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_fieldDressing";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_elasticBandage";};
+
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
   _caller addItemToVest "SmokeShellGreen";
@@ -454,6 +463,7 @@ _grenadierRiflemanAction = [_loadoutBox, "<t size='1.5' color='#ffff00'>Fusilero
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_fieldDressing";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_elasticBandage";};
+
   _caller addItemToVest "HandGrenade";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
@@ -520,6 +530,7 @@ _paramedicAction = [_loadoutBox, "<t size='1.5' color='#ff0000'>Paramédico</t>"
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_fieldDressing";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_elasticBandage";};
+
   _caller addItemToVest "HandGrenade";
   _caller addItemToVest "kat_crossPanel";
   _caller addItemToVest "SmokeShellBlue";
@@ -598,6 +609,7 @@ _combatMedicAction = [_loadoutBox, "<t size='1.5' color='#ff0000'>Médico de Com
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_fieldDressing";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_elasticBandage";};
+
   _caller addItemToVest "HandGrenade";
   _caller addItemToVest "kat_crossPanel";
   _caller addItemToVest "SmokeShellBlue";
@@ -675,6 +687,7 @@ _SelectiveShooter = [_loadoutBox, "<t size='1.5' color='#00ccff'>Tirador Selecto
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_fieldDressing";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_elasticBandage";};
+
   _caller addItemToVest "HandGrenade";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
@@ -733,6 +746,7 @@ _VANTOperatorAction = [_loadoutBox, "<t size='1.5' color='#00ccff'>Operador VANT
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_fieldDressing";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_elasticBandage";};
+
   _caller addItemToVest "ACE_UAVBattery";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
@@ -787,6 +801,7 @@ _radioOperatorAction = [_loadoutBox, "<t size='1.5' color='#00ccff'>Operador de 
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_fieldDressing";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_elasticBandage";};
+
   _caller addItemToVest "HandGrenade";
   _caller addItemToVest "Laserbatteries";
   _caller addItemToVest "SmokeShellBlue";

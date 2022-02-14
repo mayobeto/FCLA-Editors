@@ -97,6 +97,7 @@ _sergeantAction = [_loadoutBox, "<t size='1.5' color='#fbd40b'>Sargento</t>", {
   _caller addItemToVest "NVGoggles_OPFOR";
   _caller addItemToVest "SmokeShellGreen";
   _caller addItemToVest "ACE_salineIV_250";
+  _caller addItemToVest "ACE_IR_Strobe_Item";
   _caller addItemToVest "FCLA_Camo_Net_Arid";
   _caller addItemToVest "acex_intelitems_notepad";
   _caller addItemToVest "FCLA_G_Blindfold_01_Black_F";
@@ -155,6 +156,7 @@ _secondAction = [_loadoutBox, "<t size='1.5' color='#fbd40b'>Segundo</t>", {
   _caller addItemToVest "NVGoggles_OPFOR";
   _caller addItemToVest "SmokeShellGreen";
   _caller addItemToVest "ACE_salineIV_250";
+  _caller addItemToVest "ACE_IR_Strobe_Item";
   _caller addItemToVest "FCLA_Camo_Net_Arid";
   _caller addItemToVest "FCLA_Hacking_Device";
   _caller addItemToVest "acex_intelitems_notepad";

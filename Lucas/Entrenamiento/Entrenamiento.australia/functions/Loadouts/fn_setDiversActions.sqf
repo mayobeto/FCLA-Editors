@@ -46,6 +46,7 @@ _leadDiverAction = [_loadoutBox, "<t size='1.5' color='#fbd40b'>Lider (BZ)</t>",
   _caller linkItem "tf_anprc152_1";
 
   _caller addItemToUniform "ACE_MapTools";
+  _caller addItemToUniform "ACE_IR_Strobe_Item";
   _caller addItemToUniform "ACE_Flashlight_XL50";
   _caller addItemToUniform "acex_intelitems_notepad";
   _caller addItemToUniform "FCLA_G_Blindfold_01_Black_F";
