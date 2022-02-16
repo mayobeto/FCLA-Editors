@@ -524,7 +524,7 @@ force force FCLA_Commanders_UIDs = "[
 '76561198153898683'
 ]";
 force force FCLA_Donations_Message = true;
-force force FCLA_Donations_Message_Delay = 45;
+force force FCLA_Donations_Message_Delay = 15;
 force force FCLA_Editors_UIDs = "[
 '76561198304995327',
 '76561198137876583',
