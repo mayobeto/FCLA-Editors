@@ -5,13 +5,21 @@
 
 _equipParachuteAction = [_this select 0, "<t size='1.2' color='#58D68D'>Equipar Paracaídas</t>", {
   if ((backpack _caller) == "") exitWith {_caller addbackpack "B_Advanced_Parachute";};
-  if (!(["bocr_main"] call ACE_Common_fnc_isModLoaded)) exitWith {
+  if (!(["BOCR_Main"] call ACE_Common_fnc_isModLoaded)) exitWith {
     _line = ["Sistema", "Desequipate la mochila que llevas puesta."];
     [objNull, [_line], "System", 2, [false, false, "All", -1]] call FCLA_Common_fnc_showSubtitles;
   };
-  [_caller] call bocr_main_fnc_actionOnChest;
+  [_caller] call BOCR_Main_fnc_actionOnChest;
   _caller addbackpack "B_Advanced_Parachute";
-}, [false, false, false], true, "true"] call FCLA_Common_fnc_createLoadout;
+}, [false, false, false], true, "(backpack _this) != 'B_Advanced_Parachute'"] call FCLA_Common_fnc_createLoadout;
+
+
+_unequipParachuteAction = [_loadoutBox, "<t size='1.2' color='#D65858'>Desequipar Paracaídas</t>", {
+  removeBackpack _caller;
+  if (!(["BOCR_Main"] call ACE_Common_fnc_isModLoaded)) exitWith {};
+  if (([_caller] call BOCR_main_fnc_chestPack) == "") exitWith {};
+  [_caller] call BOCR_Main_fnc_actionOnBack;
+}, [false, false, false], true, "(backpack _this) == 'B_Advanced_Parachute'"] call FCLA_Common_fnc_createLoadout;
 
 
 _sergeantAction = [_this select 0, "<t size='1.5' color='#fbd40b'>Sargento</t>", {
@@ -81,5 +89,7 @@ _radioOperatorAction = [_this select 0, "<t size='1.5' color='#00ccff'>Operador 
 (_this select 0) setUserActionText [_SelectiveShooter, "<t size='1.5' color='#00ccff'>Tirador Selecto</t>", "<t size='1.5' color='#00ccff'>Tirador Selecto</t><br/><br/><img size='3' image='\FCLA_Interactions\Insignias\data\CTS.paa'/>"];
 (_this select 0) setUserActionText [_VANTOperatorAction, "<t size='1.5' color='#00ccff'>Operador VANT</t>", "<t size='1.5' color='#00ccff'>Operador VANT</t><br/><br/><img size='3' image='\FCLA_Interactions\Insignias\data\OPVNT.paa'/>"];
 (_this select 0) setUserActionText [_combatMedicAction, "<t size='1.5' color='#ff0000'>Médico de Combate</t>", "<t size='1.5' color='#ff0000'>Médico de Combate</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CMC.paa'/>"];
+(_this select 0) setUserActionText [_equipParachuteAction, "<t size='1.2' color='#58D68D'>Equipar Paracaídas</t>", "<t size='1.2' color='#58D68D'>Equipar Paracaídas</t><br/><img size='2' image='a3\ui_f\data\IGUI\Cfg\Actions\take_ca.paa'/>"];
 (_this select 0) setUserActionText [_radioOperatorAction, "<t size='1.5' color='#00ccff'>Operador de Radio</t>", "<t size='1.5' color='#00ccff'>Operador de Radio</t><br/><br/><img size='3' image='\FCLA_Interactions\Insignias\data\COR.paa'/>"];
 (_this select 0) setUserActionText [_grenadierRiflemanAction, "<t size='1.5' color='#ffff00'>Fusilero Granadero</t>", "<t size='1.5' color='#ffff00'>Fusilero Granadero</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CFG.paa'/>"];
+(_this select 0) setUserActionText [_unequipParachuteAction, "<t size='1.2' color='#D65858'>Desequipar Paracaídas</t>", "<t size='1.2' color='#D65858'>Desequipar Paracaídas</t><br/><img size='2' image='a3\ui_f\data\IGUI\Cfg\Actions\take_ca.paa'/>"];

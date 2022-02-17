@@ -28,7 +28,7 @@ _equipParachuteAction = [_loadoutBox, "<t size='1.2' color='#58D68D'>Equipar Par
     _caller addGoggles "rhsusf_oakley_goggles_clr";
   };
 
-  if (!(["bocr_main"] call ACE_Common_fnc_isModLoaded)) exitWith {
+  if (!(["BOCR_Main"] call ACE_Common_fnc_isModLoaded)) exitWith {
     _line = ["Sistema", "Desequipate la mochila que llevas puesta."];
     [objNull, [_line], "System", 2, [false, false, "All", -1]] call FCLA_Common_fnc_showSubtitles;
   };
@@ -44,8 +44,8 @@ _unequipParachuteAction = [_loadoutBox, "<t size='1.2' color='#D65858'>Desequipa
   removeBackpack _caller;
   if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
 
-  if (["bocr_main"] call ACE_Common_fnc_isModLoaded) then {
-    if (([_caller] call bocr_main_fnc_chestpack) != "") then {
+  if (["BOCR_Main"] call ACE_Common_fnc_isModLoaded) then {
+    if (([_caller] call BOCR_Main_fnc_chestPack) != "") then {
       [_caller] call BOCR_Main_fnc_actionOnBack;
     };
   };

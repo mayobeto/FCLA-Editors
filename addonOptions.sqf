@@ -517,15 +517,15 @@ force emr_main_whitelistStr = "";
 
 // FCLA Desarrollo
 force force FCLA_Byron_UID = "76561198178496662";
-force force FCLA_Commanders_UIDs = "[
+FCLA_Commanders_UIDs = "[
 '76561198178496662',
 '76561198010584812',
 '76561197982853635',
 '76561198153898683'
 ]";
 force force FCLA_Donations_Message = true;
-force force FCLA_Donations_Message_Delay = 15;
-force force FCLA_Editors_UIDs = "[
+force force FCLA_Donations_Message_Delay = 45;
+FCLA_Editors_UIDs = "[
 '76561198304995327',
 '76561198137876583',
 '76561198260536786',
@@ -534,7 +534,7 @@ force force FCLA_Editors_UIDs = "[
 ]";
 force force FCLA_Ghostkiller_UID = "76561198304995327";
 force force FCLA_hozlucas28_UID = "76561198137876583";
-force force FCLA_Instructors_UIDs = "[
+FCLA_Instructors_UIDs = "[
 '76561198825814903',
 '76561198126066362',
 '76561198144014728',
@@ -573,7 +573,7 @@ force force FCLA_Kick_Door_Allowed = true;
 force force FCLA_Kick_Door_Success_Rate = 33;
 FCLA_Radio_Animation_Preference = "_vest";
 force force FCLA_Radio_Animations = true;
-force force FCLA_Radio_Animations_Headgears_Headsets = "[
+FCLA_Radio_Animations_Headgears_Headsets = "[
 'H_HelmetB_camo','H_HelmetB_light','H_HelmetB_light_sand','H_HelmetB_light_black',
 'H_HelmetB_light_desert','H_HelmetB_light_grass','H_HelmetB_light_snakeskin','H_HelmetSpecB',
 'H_HelmetSpecB_sand','H_HelmetSpecB_paint2','H_HelmetSpecB_paint1','H_HelmetSpecB_blk',
@@ -651,7 +651,7 @@ force force FCLA_Radio_Animations_Headgears_Headsets = "[
 'rhsusf_mich_helmet_marpatd_norotos_arc_headset','rhsusf_mich_helmet_marpatd_norotos_headset','rhsusf_mich_helmet_marpatwd_alt_headset',
 'rhsusf_mich_helmet_marpatwd_headset','rhsusf_mich_helmet_marpatwd_norotos_arc_headset','rhsusf_mich_helmet_marpatwd_norotos_headset'
 ]";
-force force FCLA_Radio_Animations_Vests = "[
+FCLA_Radio_Animations_Vests = "[
 'V_PlateCarrier2_blk','V_PlateCarrier2_rgr','V_PlateCarrierGL_blk','V_PlateCarrierGL_rgr','V_PlateCarrier1_blk',
 'V_PlateCarrier1_rgr','V_TacVestIR_blk','V_PlateCarrierGL_mtp','V_PlateCarrierSpec_mtp','V_PlateCarrierSpec_blk',
 'V_PlateCarrierSpec_rgr','V_PlateCarrier_Kerry','V_PlateCarrierL_CTRG','V_PlateCarrierH_CTRG','V_PlateCarrier2_tna_F',
@@ -1235,7 +1235,7 @@ force ace_medical_treatment_woundStitchTime = 5;
 force force RECOIL_AI_on = true;
 force force RECOIL_force_on = 150;
 force force RECOIL_handgun_on = true;
-force force RECOIL_incrase_on = 0.8;
+force force RECOIL_incrase_on = 0.5;
 force force RECOIL_loop_on = true;
 force force RECOIL_random_on = true;
 force force RECOIL_randomMax_on = 1.4;
