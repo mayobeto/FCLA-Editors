@@ -60,6 +60,7 @@ _sniperAction = [_loadoutBox, "<t size='1.5' color='#45D251'>Francotirador</t>",
 
   _caller addItemToVest "ACE_DAGR";
   _caller addItemToVest "ACE_ATragMX";
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "ACE_RangeCard";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
@@ -140,6 +141,7 @@ _observerAction = [_loadoutBox, "<t size='1.5' color='#3DBA48'>Observador</t>", 
   _caller addItemToVest "ACE_DAGR";
   _caller addItemToVest "ACE_ATragMX";
   _caller addItemToVest "HandGrenade";
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "ACE_RangeCard";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
@@ -207,6 +209,7 @@ _VANTOperatorAction = [_loadoutBox, "<t size='1.5' color='#00ccff'>Operador VANT
 
   _caller addItemToVest "ACE_M84";
   _caller addItemToVest "SmokeShell";
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "ACE_UAVBattery";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";

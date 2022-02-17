@@ -45,6 +45,7 @@ _leadDiverAction = [_loadoutBox, "<t size='1.5' color='#fbd40b'>Lider (BZ)</t>",
   _caller linkItem "ItemCompass";
   _caller linkItem "tf_anprc152_1";
 
+  _caller addItemToUniform "ACE_EarPlugs";
   _caller addItemToUniform "ACE_MapTools";
   _caller addItemToUniform "ACE_IR_Strobe_Item";
   _caller addItemToUniform "ACE_Flashlight_XL50";
@@ -88,6 +89,7 @@ _diverAction = [_loadoutBox, "<t size='1.5' color='#ffff00'>Fusilero (BZ)</t>", 
   _caller linkItem "ItemCompass";
   _caller linkItem "tf_anprc152_1";
 
+  _caller addItemToUniform "ACE_EarPlugs";
   _caller addItemToUniform "ACE_MapTools";
   _caller addItemToUniform "ACE_Flashlight_XL50";
   _caller addItemToUniform "acex_intelitems_notepad";
@@ -130,6 +132,7 @@ _paramedicDiverAction = [_loadoutBox, "<t size='1.5' color='#ff0000'>Paramédico
   _caller linkItem "ItemCompass";
   _caller linkItem "tf_anprc152_1";
 
+  _caller addItemToUniform "ACE_EarPlugs";
   _caller addItemToUniform "ACE_MapTools";
   _caller addItemToUniform "kat_crossPanel";
   _caller addItemToUniform "ACE_Flashlight_XL50";
@@ -194,6 +197,7 @@ _medicDiverAction = [_loadoutBox, "<t size='1.5' color='#ff0000'>Médico de Comb
   _caller linkItem "ItemCompass";
   _caller linkItem "tf_anprc152_1";
 
+  _caller addItemToUniform "ACE_EarPlugs";
   _caller addItemToUniform "ACE_MapTools";
   _caller addItemToUniform "kat_crossPanel";
   _caller addItemToUniform "ACE_Flashlight_XL50";
@@ -258,6 +262,7 @@ _explosivesSpecialistDiverAction = [_loadoutBox, "<t size='1.5' color='#fbd40b'>
   _caller linkItem "ItemCompass";
   _caller linkItem "tf_anprc152_1";
 
+  _caller addItemToUniform "ACE_EarPlugs";
   _caller addItemToUniform "ACE_MapTools";
   _caller addItemToUniform "ACE_Flashlight_XL50";
   _caller addItemToUniform "acex_intelitems_notepad";

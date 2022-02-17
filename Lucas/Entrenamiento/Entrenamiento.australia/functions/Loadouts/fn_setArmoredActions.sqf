@@ -55,6 +55,7 @@ _vehicleCommanderAction = [_loadoutBox, "<t size='1.5' color='#45D251'>Comandant
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_elasticBandage";};
 
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "SmokeShellGreen";
   _caller addItemToVest "ACE_salineIV_250";
@@ -103,6 +104,7 @@ _vehicleCrewAction = [_loadoutBox, "<t size='1.5' color='#3DBA48'>Tripulación d
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_elasticBandage";};
 
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "SmokeShellGreen";
   _caller addItemToVest "ACE_salineIV_250";
@@ -153,7 +155,9 @@ _engineerAction = [_loadoutBox, "<t size='1.5' color='#3DBA48'>Ingeniero</t>", {
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_fieldDressing";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_elasticBandage";};
+
   _caller addItemToVest "HandGrenade";
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
   _caller addItemToVest "SmokeShellGreen";
@@ -216,7 +220,9 @@ _explosivesSpecialistAction = [_loadoutBox, "<t size='1.5' color='#fbd40b'>Espec
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_fieldDressing";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_elasticBandage";};
+
   _caller addItemToVest "HandGrenade";
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
   _caller addItemToVest "SmokeShellGreen";
@@ -280,6 +286,8 @@ _VANTOperatorAction = [_loadoutBox, "<t size='1.5' color='#00ccff'>Operador VANT
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_fieldDressing";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 3 do {_caller addItemToUniform "ACE_elasticBandage";};
+
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "ACE_UAVBattery";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";

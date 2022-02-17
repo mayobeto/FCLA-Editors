@@ -93,6 +93,7 @@ _sergeantAction = [_loadoutBox, "<t size='1.5' color='#fbd40b'>Sargento</t>", {
   _caller addItemToVest "ACE_M84";
   _caller addItemToVest "SmokeShell";
   _caller addItemToVest "HandGrenade";
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
   _caller addItemToVest "SmokeShellGreen";
@@ -152,6 +153,7 @@ _secondAction = [_loadoutBox, "<t size='1.5' color='#fbd40b'>Segundo</t>", {
   _caller addItemToVest "ACE_M84";
   _caller addItemToVest "SmokeShell";
   _caller addItemToVest "HandGrenade";
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
   _caller addItemToVest "SmokeShellGreen";
@@ -211,6 +213,7 @@ _riflemanAction = [_loadoutBox, "<t size='1.5' color='#ffff00'>Fusilero</t>", {
   _caller addItemToVest "ACE_M84";
   _caller addItemToVest "SmokeShell";
   _caller addItemToVest "HandGrenade";
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
   _caller addItemToVest "SmokeShellGreen";
@@ -272,6 +275,7 @@ _ATRiflemanAction = [_loadoutBox, "<t size='1.5' color='#00ff00'>Fusilero AT</t>
   _caller addItemToVest "ACE_M84";
   _caller addItemToVest "SmokeShell";
   _caller addItemToVest "HandGrenade";
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
   _caller addItemToVest "SmokeShellGreen";
@@ -335,6 +339,7 @@ _assistantATRiflemanAction = [_loadoutBox, "<t size='1.5' color='#00ff00'>Asist.
   _caller addItemToVest "ACE_M84";
   _caller addItemToVest "SmokeShell";
   _caller addItemToVest "HandGrenade";
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
   _caller addItemToVest "SmokeShellGreen";
@@ -398,6 +403,7 @@ _lightMachineGunnerAction = [_loadoutBox, "<t size='1.5' color='#00ff00'>Ametral
 
   _caller addItemToVest "ACE_M84";
   _caller addItemToVest "SmokeShell";
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
   _caller addItemToVest "SmokeShellGreen";
@@ -456,6 +462,7 @@ _heavyMachineGunnerAction = [_loadoutBox, "<t size='1.5' color='#00ff00'>Ametral
 
   _caller addItemToVest "ACE_M84";
   _caller addItemToVest "SmokeShell";
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
   _caller addItemToVest "SmokeShellGreen";
@@ -518,6 +525,7 @@ _grenadierRiflemanAction = [_loadoutBox, "<t size='1.5' color='#ffff00'>Fusilero
   _caller addItemToVest "ACE_M84";
   _caller addItemToVest "SmokeShell";
   _caller addItemToVest "HandGrenade";
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
   _caller addItemToVest "SmokeShellGreen";
@@ -588,6 +596,7 @@ _paramedicAction = [_loadoutBox, "<t size='1.5' color='#ff0000'>Paramédico</t>"
   _caller addItemToVest "ACE_M84";
   _caller addItemToVest "SmokeShell";
   _caller addItemToVest "HandGrenade";
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "kat_crossPanel";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
@@ -670,6 +679,7 @@ _combatMedicAction = [_loadoutBox, "<t size='1.5' color='#ff0000'>Médico de Com
   _caller addItemToVest "ACE_M84";
   _caller addItemToVest "SmokeShell";
   _caller addItemToVest "HandGrenade";
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "kat_crossPanel";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
@@ -751,6 +761,7 @@ _SelectiveShooter = [_loadoutBox, "<t size='1.5' color='#00ccff'>Tirador Selecto
   _caller addItemToVest "ACE_M84";
   _caller addItemToVest "SmokeShell";
   _caller addItemToVest "HandGrenade";
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
   _caller addItemToVest "SmokeShellGreen";
@@ -812,6 +823,7 @@ _VANTOperatorAction = [_loadoutBox, "<t size='1.5' color='#00ccff'>Operador VANT
 
   _caller addItemToVest "ACE_M84";
   _caller addItemToVest "SmokeShell";
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "ACE_UAVBattery";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";
@@ -871,6 +883,7 @@ _radioOperatorAction = [_loadoutBox, "<t size='1.5' color='#00ccff'>Operador de 
   _caller addItemToVest "ACE_M84";
   _caller addItemToVest "SmokeShell";
   _caller addItemToVest "HandGrenade";
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "Laserbatteries";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "NVGoggles_OPFOR";

@@ -42,6 +42,7 @@ _jetPilotAction = [_loadoutBox, "<t size='1.5' color='#31F2D0'>Piloto de Caza</t
   _caller linkItem "ItemCompass";
   _caller linkItem "tf_anprc152_1";
 
+  _caller addItemToUniform "ACE_EarPlugs";
   _caller addItemToUniform "ACE_MapTools";
   _caller addItemToUniform "SmokeShellBlue";
   _caller addItemToUniform "SmokeShellPurple";
@@ -95,6 +96,7 @@ _transportPilotAction = [_loadoutBox, "<t size='1.5' color='#31F2D0'>Piloto de T
   for "_i" from 1 to 2 do {_caller addItemToUniform "ACE_elasticBandage";};
   for "_i" from 1 to 2 do {_caller addItemToUniform "ACE_packingBandage";};
 
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "ACE_salineIV_250";
   _caller addItemToVest "SmokeShellPurple";
@@ -141,6 +143,7 @@ _transportCrewAction = [_loadoutBox, "<t size='1.5' color='#3ADCBF'>Tripulación
   for "_i" from 1 to 2 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 2 do {_caller addItemToUniform "ACE_elasticBandage";};
 
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "SmokeShellPurple";
   _caller addItemToVest "ACE_salineIV_250";
@@ -187,6 +190,7 @@ _VANTOperatorAction = [_loadoutBox, "<t size='1.5' color='#00ccff'>Operador VANT
   for "_i" from 1 to 2 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 2 do {_caller addItemToUniform "ACE_elasticBandage";};
 
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "ACE_UAVBattery";
   _caller addItemToVest "SmokeShellPurple";

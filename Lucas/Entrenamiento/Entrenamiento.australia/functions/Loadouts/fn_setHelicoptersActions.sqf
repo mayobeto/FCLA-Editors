@@ -53,6 +53,7 @@ _attackHelicopterPilotAction = [_loadoutBox, "<t size='1.5' color='#31F2D0'>Pilo
   for "_i" from 1 to 2 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 2 do {_caller addItemToUniform "ACE_elasticBandage";};
 
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "SmokeShellGreen";
   _caller addItemToVest "ACE_salineIV_250";
@@ -98,6 +99,7 @@ _transportHelicopterPilotAction = [_loadoutBox, "<t size='1.5' color='#31F2D0'>P
   for "_i" from 1 to 2 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 2 do {_caller addItemToUniform "ACE_elasticBandage";};
 
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "SmokeShellGreen";
   _caller addItemToVest "NVGoggles_OPFOR";
@@ -146,6 +148,7 @@ _transportHelicopterCrewAction = [_loadoutBox, "<t size='1.5' color='#3ADCBF'>Tr
   for "_i" from 1 to 2 do {_caller addItemToUniform "ACE_packingBandage";};
   for "_i" from 1 to 2 do {_caller addItemToUniform "ACE_elasticBandage";};
 
+  _caller addItemToVest "ACE_EarPlugs";
   _caller addItemToVest "SmokeShellBlue";
   _caller addItemToVest "SmokeShellGreen";
   _caller addItemToVest "NVGoggles_OPFOR";
