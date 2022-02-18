@@ -4,18 +4,26 @@
 |********************************************************************************/
 
 _equipParachuteAction = [_this select 0, "<t size='1.2' color='#58D68D'>Equipar Paracaídas</t>", {
-  if ((backpack _caller) == "") exitWith {_caller addbackpack "B_Advanced_Parachute";};
+  if ((backpack _caller) == "") exitWith {
+    _caller linkItem "ACE_Altimeter";
+    _caller addbackpack "B_Advanced_Parachute";
+  };
+
   if (!(["BOCR_Main"] call ACE_Common_fnc_isModLoaded)) exitWith {
     _line = ["Sistema", "Desequipate la mochila que llevas puesta."];
     [objNull, [_line], "System", 2, [false, false, "All", -1]] call FCLA_Common_fnc_showSubtitles;
   };
+
   [_caller] call BOCR_Main_fnc_actionOnChest;
+  _caller linkItem "ACE_Altimeter";
   _caller addbackpack "B_Advanced_Parachute";
 }, [false, false, false], true, "(backpack _this) != 'B_Advanced_Parachute'"] call FCLA_Common_fnc_createLoadout;
 
 
 _unequipParachuteAction = [_loadoutBox, "<t size='1.2' color='#D65858'>Desequipar Paracaídas</t>", {
   removeBackpack _caller;
+  _caller linkItem "Itemwatch";
+
   if (!(["BOCR_Main"] call ACE_Common_fnc_isModLoaded)) exitWith {};
   if (([_caller] call BOCR_main_fnc_chestPack) == "") exitWith {};
   [_caller] call BOCR_Main_fnc_actionOnBack;

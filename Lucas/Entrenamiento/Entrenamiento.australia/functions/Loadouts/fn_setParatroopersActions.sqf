@@ -24,8 +24,9 @@ _formalUniformAction = [_loadoutBox, "<t size='1.5' color='#fbd40b'>Uniforme For
 _equipParachuteAction = [_loadoutBox, "<t size='1.2' color='#58D68D'>Equipar Paracaídas</t>", {
   if ((backpack _caller) == "") exitWith {
     removeGoggles _caller;
-    _caller addbackpack "B_Advanced_Parachute";
+    _caller linkItem "ACE_Altimeter";
     _caller addGoggles "rhsusf_oakley_goggles_clr";
+    _caller addbackpack "B_Advanced_Parachute";
   };
 
   if (!(["BOCR_Main"] call ACE_Common_fnc_isModLoaded)) exitWith {
@@ -35,20 +36,20 @@ _equipParachuteAction = [_loadoutBox, "<t size='1.2' color='#58D68D'>Equipar Par
 
   removeGoggles _caller;
   [_caller] call BOCR_Main_fnc_actionOnChest;
-  _caller addbackpack "B_Advanced_Parachute";
+  _caller linkItem "ACE_Altimeter";
   _caller addGoggles "rhsusf_oakley_goggles_clr";
+  _caller addbackpack "B_Advanced_Parachute";
 }, [false, false, false], true, "if (isNil 'FCLA_isPromotionDay') then {((backpack _this) != 'B_Advanced_Parachute') && (true);} else {((backpack _this) != 'B_Advanced_Parachute') && (!FCLA_isPromotionDay);};"] call FCLA_Common_fnc_createLoadout;
 
 
 _unequipParachuteAction = [_loadoutBox, "<t size='1.2' color='#D65858'>Desequipar Paracaídas</t>", {
   removeBackpack _caller;
+  _caller linkItem "Itemwatch";
   if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
-
-  if (["BOCR_Main"] call ACE_Common_fnc_isModLoaded) then {
-    if (([_caller] call BOCR_Main_fnc_chestPack) != "") then {
-      [_caller] call BOCR_Main_fnc_actionOnBack;
-    };
-  };
+  
+  if (!(["BOCR_Main"] call ACE_Common_fnc_isModLoaded)) exitWith {};
+  if (([_caller] call BOCR_main_fnc_chestPack) == "") exitWith {};
+  [_caller] call BOCR_Main_fnc_actionOnBack;
 }, [false, false, false], true, "if (isNil 'FCLA_isPromotionDay') then {((backpack _this) == 'B_Advanced_Parachute') && (true);} else {((backpack _this) == 'B_Advanced_Parachute') && (!FCLA_isPromotionDay);};"] call FCLA_Common_fnc_createLoadout;
 
 

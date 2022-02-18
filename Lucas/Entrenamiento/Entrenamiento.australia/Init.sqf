@@ -26,4 +26,4 @@
 
 /* -------------------------- TELETRANSPORTADORES -------------------------- */
 
-[FCLA_Yard, FCLA_Dock, FCLA_Armored, FCLA_Aerodrome, FCLA_Helicopters, FCLA_Shooting_Range, FCLA_Competitive_CQB] spawn FCLA_Training_fnc_setActionsTeleport;
+[FCLA_Yard, FCLA_Dock, FCLA_Armored, FCLA_Aerodrome, FCLA_Helicopters, FCLA_Medic_Station, FCLA_Shooting_Range, FCLA_Competitive_CQB] spawn FCLA_Training_fnc_setActionsTeleport;
