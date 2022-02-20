@@ -549,8 +549,6 @@ force FCLA_Mario_UID = "76561198260536786";
 force FCLA_Mission_Type = "Oficial";
 force FCLA_Naretick_UID = "76561198059595506";
 force FCLA_Sagara_UID = "76561198173170422";
-force FCLA_TS_Channel_Name = "Servidor Oficial";
-force FCLA_TS_Channel_Password = "12345";
 
 // FCLA Efectos
 force FCLA_Aim_Sounds = true;
