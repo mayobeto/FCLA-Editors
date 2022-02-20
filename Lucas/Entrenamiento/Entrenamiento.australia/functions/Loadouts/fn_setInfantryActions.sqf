@@ -675,7 +675,7 @@ _SelectiveShooter = [_loadoutBox, "<t size='1.5' color='#00ccff'>Tirador Selecto
 
   _caller addWeapon "Binocular";
   _caller addWeapon "rhs_weap_m14ebrri";
-  _caller addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC_3d";
+  _caller addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4";
   _caller addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
   _caller addPrimaryWeaponItem "rhsusf_20Rnd_762x51_m118_special_Mag";
 

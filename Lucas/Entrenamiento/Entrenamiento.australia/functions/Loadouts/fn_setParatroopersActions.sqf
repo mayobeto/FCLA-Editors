@@ -46,7 +46,7 @@ _unequipParachuteAction = [_loadoutBox, "<t size='1.2' color='#D65858'>Desequipa
   removeBackpack _caller;
   _caller linkItem "Itemwatch";
   if ((goggles _caller) == "rhsusf_oakley_goggles_clr") then {removeGoggles _caller;};
-  
+
   if (!(["BOCR_Main"] call ACE_Common_fnc_isModLoaded)) exitWith {};
   if (([_caller] call BOCR_main_fnc_chestPack) == "") exitWith {};
   [_caller] call BOCR_Main_fnc_actionOnBack;
@@ -735,10 +735,10 @@ _SelectiveShooter = [_loadoutBox, "<t size='1.5' color='#00ccff'>Tirador Selecto
 
   _caller addWeapon "Binocular";
   _caller addWeapon "rhs_weap_m14ebrri";
+  _caller addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4";
   _caller addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
   _caller addPrimaryWeaponItem "rhsusf_acc_aac_762sd_silencer";
   _caller addPrimaryWeaponItem "rhsusf_20Rnd_762x51_m118_special_Mag";
-  _caller addPrimaryWeaponItem (selectRandom ["rhsusf_acc_ACOG2_USMC_3d", "rhsusf_acc_ACOG3_USMC_3d"]);
 
   _caller addVest "V_PlateCarrier_FCLA_Green";
   _caller addBackpack "B_AssaultPack_Invisible";

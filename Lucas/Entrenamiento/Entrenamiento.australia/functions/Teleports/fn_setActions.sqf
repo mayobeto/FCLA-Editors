@@ -149,7 +149,7 @@
 
     [{
       params ["_caller", "_toObjectPos", "_toObjectDir"];
-      _caller setCaptive true;
+      //_caller setCaptive true;
       _caller allowDamage false;
       _caller setDir _toObjectDir;
       _caller setPosATL _toObjectPos;
@@ -160,7 +160,7 @@
 
     [{
       detach _this;
-      _this setCaptive false;
+      //_this setCaptive false;
       _this allowDamage true;
       [_this, []] call ACE_Common_fnc_unhideUnit;
       [false] call ACE_Common_fnc_disableUserInput;

@@ -10,22 +10,11 @@
 
 ["FCLA", "Modificar entrenamiento", {
   _guardsDefaultValue = if (isNil "FCLA_Show_Guards") then {0;} else {if (FCLA_Show_Guards) then {0;} else {1;};};
-  _ambientFlybyDefaultValue = if (isNil "ENH_AmbientFlyby_Enabled") then {0;} else {if (ENH_AmbientFlyby_Enabled) then {0;} else {1;};};
   _shootingRangeDefaultValue = if (isNil "FCLA_Show_Shooting_Range") then {0;} else {if (FCLA_Show_Shooting_Range) then {0;} else {1;};};
   _competitiveCQBDefaultValue = if (isNil "FCLA_Show_Competitive_CQB") then {0;} else {if (FCLA_Show_Competitive_CQB) then {0;} else {1;};};
 
   ["MAPA DE ENTRENAMIENTO",
 	 [
-    ["TOOLBOX", ["Sobre vuelos ambientales", "Al desactivar los sobre vuelos ambientales cesaran, es decir las pasadas de los aviones por la base Darwin se detendrán.\nUna vez desactivados estos no se podran reactivar, salvo que la misión sea reiniciada."],
-     [
-      _ambientFlybyDefaultValue,
-      1,
-      2,
-      ["Activado", "Desactivado"],
-      nil
-     ],
-     true
-    ],
     ["TOOLBOX", ["Guardias", "Permite mostrar/ocultar los guardias que se encuentran en la base Darwin."],
      [
       _guardsDefaultValue,
@@ -58,10 +47,9 @@
     ]
 	 ],
   {
-    (_this select 0) params ["_showAmbientFlyby", "_showGuards", "_showCompetitiveCQB", "_showShootingRange"];
+    (_this select 0) params ["_showGuards", "_showCompetitiveCQB", "_showShootingRange"];
     (_this select 1) params ["_position", "_attachedObject"];
     _showGuards = if (_showGuards == 0) then {true;} else {false;};
-    _showAmbientFlyby = if (_showAmbientFlyby == 0) then {true;} else {false;};
     _showShootingRange = if (_showShootingRange == 0) then {true;} else {false;};
     _showCompetitiveCQB = if (_showCompetitiveCQB == 0) then {true;} else {false;};
 
@@ -73,12 +61,6 @@
       [FCLA_Guard_1, []] call ACE_Common_fnc_hideUnit;
       [FCLA_Guard_2, []] call ACE_Common_fnc_hideUnit;
       [FCLA_Guard_3, []] call ACE_Common_fnc_hideUnit;
-    };
-
-    if (!_showAmbientFlyby) then {
-      deleteMarker "FCLA_Ambient_Flyby_End";
-      deleteMarker "FCLA_Ambient_Flyby_Start";
-      ["ENH_AmbientFlyby_Enabled", _showAmbientFlyby] call CBA_fnc_publicVariable;
     };
 
     if (_showShootingRange) then {
