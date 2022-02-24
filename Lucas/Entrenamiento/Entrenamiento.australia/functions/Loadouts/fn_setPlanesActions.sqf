@@ -34,7 +34,7 @@ _jetPilotAction = [_loadoutBox, "<t size='1.5' color='#31F2D0'>Piloto de Caza</t
   _caller addWeapon "rhsusf_weap_glock17g4";
   _caller addHandgunItem "rhsusf_mag_17Rnd_9x19_JHP";
 
-  _caller addHeadgear "JS_JC_FA18_PilotHelmet";
+  _caller addHeadgear "FIR_JHMCS";
   _caller forceAddUniform "U_B_PilotCoveralls";
 
   _caller linkItem "ItemMap";
