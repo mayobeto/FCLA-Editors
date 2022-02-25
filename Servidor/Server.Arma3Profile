@@ -1,12 +1,34 @@
 
 /********************************************************************************|
-|                            DIFUCULTAD PERSONALIZADA                            |
+|                      CONFIGURACIÓN DEL PERFIL (SERVIDOR)                       |
 |********************************************************************************/
 
+
+
+/* -------------------------------- GENERAL -------------------------------- */
+
+blood = 1;
+gamma = 1;
+version = 1;
+volumeCD = 5;
+volumeFX = 5;
+brightness = 1;
+singleVoice = 0;
+volumeSpeech = 5;
+activeKeys[] = {};
+
+
+
+/* ----------------------- DIFUCULTAD PERSONALIZADA ------------------------ */
+
 class DifficultyPresets {
+	class CustomAILevel {
+		skillAI = 0.7;
+		precisionAI = 0.6;
+	};
+
 	class CustomDifficulty {
     aiLevelPreset = 3;
-
 		class Options {
       vonID = 0;
       commands = 0;
@@ -30,10 +52,5 @@ class DifficultyPresets {
 			weaponCrosshair = 0;
 			thirdPersonView = 0;
 		};
-	};
-
-	class CustomAILevel {
-		skillAI = 0.7;
-		precisionAI = 0.6;
 	};
 };
