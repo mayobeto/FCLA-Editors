@@ -19,11 +19,13 @@ class CfgFunctions {
    class FCLA_Training_Functions {
      class cleanUpCQB {file = "functions\CQBs\fn_cleanUp.sqf";};
      class setUpBasicCQB {file = "functions\CQBs\fn_setUpBasic.sqf";};
+     class initShootingRange {file = "functions\Shooting_Range\fn_init.sqf";};
      class setBasicActionsCQB {file = "functions\CQBs\fn_setBasicActions.sqf";};
      class setActionsTeleport {file = "functions\Teleports\fn_setActions.sqf";};
      class showMessageTeleport {file = "functions\Teleports\fn_showMessage.sqf";};
      class setUpCompetitiveCQB {file = "functions\CQBs\fn_setUpCompetitive.sqf";};
      class deactivateZonesCurator {file = "functions\Curator\fn_deactivateZones.sqf";};
+     class setActionsShootingRange {file = "functions\Shooting_Range\fn_setActions.sqf";};
      class setCompetitiveActionsCQB {file = "functions\CQBs\fn_setCompetitiveActions.sqf";};
      class setDiversActionsLoadouts {file = "functions\Loadouts\fn_setDiversActions.sqf";};
      class setPlanesActionsLoadouts {file = "functions\Loadouts\fn_setPlanesActions.sqf";};
