@@ -24,6 +24,13 @@
 
 
 
+/* ---------------------------- CAMPOS DE TIRO ----------------------------- */
+
+[FCLA_Controller_Main_SR, [[31700.1, 25355.4, 0], 357.524, 48.444, 64, true, 75]] spawn FCLA_Training_fnc_initShootingRange;
+[FCLA_Controller_Secondary_SR, [[31878.2, 25020.2, 0], 8.979, 24.738, 64, true, 5]] spawn FCLA_Training_fnc_initShootingRange;
+
+
+
 /* -------------------------- TELETRANSPORTADORES -------------------------- */
 
 [FCLA_Yard, FCLA_Dock, FCLA_Armored, FCLA_Aerodrome, FCLA_Helicopters, FCLA_Medic_Station, FCLA_Shooting_Range, FCLA_Competitive_CQB] spawn FCLA_Training_fnc_setActionsTeleport;
