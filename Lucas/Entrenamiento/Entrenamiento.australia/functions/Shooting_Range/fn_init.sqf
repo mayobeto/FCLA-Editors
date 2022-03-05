@@ -19,7 +19,7 @@ _targetsInArea = _nearTargets select {_x inArea _area};
 {
   _x allowDamage false;
   _x animate ["Terc", 0];
-  if (_x isKindOf "Target_Swivel_01_base_F") then {_x setVariable ["BIS_poppingEnabled", false, true];};
+  if (_x isKindOf "TargetBase") then {_x setVariable ["nopop", true, true];} else {_x setVariable ["BIS_poppingEnabled", false, true];};
 
   _x addEventHandler ["HitPart", {
     (_this select 0) params ["_target", "_shooter", "_proyectile", "_position", "_velocity", "_selection", "_ammo", "_vestor", "_radius", "_surfaceType", "_isDirect"];
