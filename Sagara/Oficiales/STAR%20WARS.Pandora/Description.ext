@@ -9,3 +9,14 @@
 
 #define MISSION_NAME "DESEMBARCO" //Título del escenario.
 #include "\FCLA_Missions\includes\Description.hpp"
+
+class CfgSounds
+ {
+  sounds[] = {};
+  class 3Dsound
+  {
+   name = "3Dsound";
+   sound[] = {"\sounds\3Dsound.ogg", 300, 1};
+   titles[] = {0,""};
+  };
+ };
