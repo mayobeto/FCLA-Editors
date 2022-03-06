@@ -64,6 +64,7 @@ _SelectiveShooter = [_this select 0, "<t size='1.5' color='#fbd40b'>Sev(Tirador 
   player linkItem "SWOP_NVChip2";
   [player,"lsd_imp_clonePurgeHair_head","male12eng"] call BIS_fnc_setIdentity;
 }, [true, true, true], true, "true"] call FCLA_Common_fnc_createLoadout;
+
 _ATRiflemanAction = [_this select 0, "<t size='1.5' color='#fbd40b'>Scorch (AT)</t>", {
   _CALLER(!local player) exitWith {};
   removeAllWeapons player;
@@ -118,6 +119,7 @@ _ATRiflemanAction = [_this select 0, "<t size='1.5' color='#fbd40b'>Scorch (AT)<
   player linkItem "SWLB_comlink";
   [player,"lsd_imp_clonePurgeHair_head","male12eng"] call BIS_fnc_setIdentity;
 }, [true, true, true], true, "true"] call FCLA_Common_fnc_createLoadout;
+
 FE = [_this select 0, "<t size='1.5' color='#fbd40b'>Fixer (Escudos)</t>", {
   _CALLER (!local player) exitWith {};
   removeAllWeapons player;
@@ -170,6 +172,7 @@ FE = [_this select 0, "<t size='1.5' color='#fbd40b'>Fixer (Escudos)</t>", {
   player linkItem "SWLB_DeltaFixer_Antenna";
   [player,"lsd_imp_clonePurgeHair_head","male12eng"] call BIS_fnc_setIdentity;
 }, [true, true, true], true, "true"] call FCLA_Common_fnc_createLoadout;
+
 BD = [_this select 0, "<t size='1.5' color='#fbd40b'>Boss (Duales)</t>", {
   _CALLER(!local player) exitWith {};
   removeAllWeapons player;
