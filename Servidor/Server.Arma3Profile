@@ -1,6 +1,6 @@
 
 /********************************************************************************|
-|                      CONFIGURACIÓN DEL PERFIL (SERVIDOR)                       |
+|                       CONFIGURACIÓN DE PERFIL (SERVIDOR)                       |
 |********************************************************************************/
 
 
@@ -12,19 +12,28 @@ gamma = 1;
 version = 1;
 volumeCD = 5;
 volumeFX = 5;
+volumeVoN = 10;
 brightness = 1;
 singleVoice = 0;
+terrainGrid = 25;
 volumeSpeech = 5;
+viewDistance = 1000;
+vonRecThreshold = 0.03;
+shadowZDistance = 100;
+pipViewDistance = 500;
+sceneComplexity = 400000;
+volumeMapDucking = 1;
+preferredObjectViewDistance = 800;
 activeKeys[] = {};
 
 
 
-/* ----------------------- DIFUCULTAD PERSONALIZADA ------------------------ */
+/* ----------------------- DIFICULTAD PERSONALIZADA ------------------------ */
 
 class DifficultyPresets {
 	class CustomAILevel {
-		skillAI = 0.7;
-		precisionAI = 0.6;
+		skillAI = 0.5;
+		precisionAI = 0.5;
 	};
 
 	class CustomDifficulty {
