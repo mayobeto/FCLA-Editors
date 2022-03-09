@@ -300,7 +300,7 @@ _ATRiflemanAction = [_loadoutBox, "<t size='1.5' color='#00ff00'>Fusilero AT</t>
 }, [false, false, false], true, "if (isNil 'FCLA_isPromotionDay') then {true;} else {!FCLA_isPromotionDay;};"] call FCLA_Common_fnc_createLoadout;
 
 
-_assistantATRiflemanAction = [_loadoutBox, "<t size='1.5' color='#00ff00'>Asist. fusilero AT</t>", {
+_assistantATRiflemanAction = [_loadoutBox, "<t size='1.5' color='#00ff00'>Asist. Fusilero AT</t>", {
   removeVest _caller;
   removeUniform _caller;
   removeAllItems _caller;
@@ -931,7 +931,7 @@ _loadoutBox setUserActionText [_formalUniformAction, "<t size='1.5' color='#fbd4
 _loadoutBox setUserActionText [_radioOperatorAction, "<t size='1.5' color='#00ccff'>Operador de Radio</t>", "<t size='1.5' color='#00ccff'>Operador de Radio</t><br/><img size='3' image='\FCLA_Interactions\Insignias\data\COR.paa'/>"];
 _loadoutBox setUserActionText [_equipParachuteAction, "<t size='1.2' color='#58D68D'>Equipar Paracaídas</t>", "<t size='1.2' color='#58D68D'>Equipar Paracaídas</t><br/><img size='2' image='a3\ui_f\data\IGUI\Cfg\Actions\take_ca.paa'/>"];
 _loadoutBox setUserActionText [_grenadierRiflemanAction, "<t size='1.5' color='#ffff00'>Fusilero Granadero</t>", "<t size='1.5' color='#ffff00'>Fusilero Granadero</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CFG.paa'/>"];
-_loadoutBox setUserActionText [_assistantATRiflemanAction, "<t size='1.5' color='#00ff00'>Asist. fusilero AT</t>", "<t size='1.5' color='#00ff00'>Asist. fusilero AT</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CFA.paa'/>"];
+_loadoutBox setUserActionText [_assistantATRiflemanAction, "<t size='1.5' color='#00ff00'>Asist. Fusilero AT</t>", "<t size='1.5' color='#00ff00'>Asist. Fusilero AT</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CFA.paa'/>"];
 _loadoutBox setUserActionText [_lightMachineGunnerAction, "<t size='1.5' color='#00ff00'>Ametrallador Ligero</t>", "<t size='1.5' color='#00ff00'>Ametrallador Ligero</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CAL.paa'/>"];
 _loadoutBox setUserActionText [_heavyMachineGunnerAction, "<t size='1.5' color='#00ff00'>Ametrallador Pesado</t>", "<t size='1.5' color='#00ff00'>Ametrallador Pesado</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CAL.paa'/>"];
 _loadoutBox setUserActionText [_unequipParachuteAction, "<t size='1.2' color='#D65858'>Desequipar Paracaídas</t>", "<t size='1.2' color='#D65858'>Desequipar Paracaídas</t><br/><img size='2' image='a3\ui_f\data\IGUI\Cfg\Actions\take_ca.paa'/>"];
