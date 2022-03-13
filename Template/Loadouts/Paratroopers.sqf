@@ -20,7 +20,7 @@ _equipParachuteAction = [_this select 0, "<t size='1.2' color='#58D68D'>Equipar 
 }, [false, false, false], true, "(backpack _this) != 'B_Advanced_Parachute'"] call FCLA_Common_fnc_createLoadout;
 
 
-_unequipParachuteAction = [_loadoutBox, "<t size='1.2' color='#D65858'>Desequipar Paracaídas</t>", {
+_unequipParachuteAction = [_this select 0, "<t size='1.2' color='#D65858'>Desequipar Paracaídas</t>", {
   removeBackpack _caller;
   _caller linkItem "Itemwatch";
 
