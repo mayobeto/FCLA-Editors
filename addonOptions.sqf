@@ -114,8 +114,8 @@ force ace_quickmount_speed = 15;
 // ACE Espectador
 force ace_spectator_enableAI = false;
 force ace_spectator_maxFollowDistance = 5;
-force ace_spectator_restrictModes = 1;
-force ace_spectator_restrictVisions = 1;
+force ace_spectator_restrictModes = 0;
+force ace_spectator_restrictVisions = 0;
 
 // ACE Etiquetas de nombre
 force ace_nametags_ambientBrightnessAffectViewDist = 0.9;
@@ -517,7 +517,7 @@ force emr_main_whitelistStr = "";
 
 // FCLA Desarrollo
 force FCLA_Byron_UID = "76561198178496662";
-force FCLA_Commanders_UIDs = "[
+FCLA_Commanders_UIDs = "[
 '76561198178496662',
 '76561198010584812',
 '76561197982853635',
@@ -525,7 +525,7 @@ force FCLA_Commanders_UIDs = "[
 ]";
 force FCLA_Donations_Message = true;
 force FCLA_Donations_Message_Delay = 45;
-force FCLA_Editors_UIDs = "[
+FCLA_Editors_UIDs = "[
 '76561198304995327',
 '76561198137876583',
 '76561198260536786',
@@ -534,7 +534,7 @@ force FCLA_Editors_UIDs = "[
 ]";
 force FCLA_Ghostkiller_UID = "76561198304995327";
 force FCLA_hozlucas28_UID = "76561198137876583";
-force FCLA_Instructors_UIDs = "[
+FCLA_Instructors_UIDs = "[
 '76561198825814903',
 '76561198126066362',
 '76561198144014728',
@@ -571,7 +571,7 @@ force FCLA_Kick_Door_Allowed = true;
 force FCLA_Kick_Door_Success_Rate = 33;
 FCLA_Radio_Animation_Preference = "_vest";
 force FCLA_Radio_Animations = true;
-force FCLA_Radio_Animations_Headgears_Headsets = "[
+FCLA_Radio_Animations_Headgears_Headsets = "[
 'H_HelmetB_camo','H_HelmetB_light','H_HelmetB_light_sand','H_HelmetB_light_black',
 'H_HelmetB_light_desert','H_HelmetB_light_grass','H_HelmetB_light_snakeskin','H_HelmetSpecB',
 'H_HelmetSpecB_sand','H_HelmetSpecB_paint2','H_HelmetSpecB_paint1','H_HelmetSpecB_blk',
@@ -649,7 +649,7 @@ force FCLA_Radio_Animations_Headgears_Headsets = "[
 'rhsusf_mich_helmet_marpatd_norotos_arc_headset','rhsusf_mich_helmet_marpatd_norotos_headset','rhsusf_mich_helmet_marpatwd_alt_headset',
 'rhsusf_mich_helmet_marpatwd_headset','rhsusf_mich_helmet_marpatwd_norotos_arc_headset','rhsusf_mich_helmet_marpatwd_norotos_headset'
 ]";
-force FCLA_Radio_Animations_Vests = "[
+FCLA_Radio_Animations_Vests = "[
 'V_PlateCarrier2_blk','V_PlateCarrier2_rgr','V_PlateCarrierGL_blk','V_PlateCarrierGL_rgr','V_PlateCarrier1_blk',
 'V_PlateCarrier1_rgr','V_TacVestIR_blk','V_PlateCarrierGL_mtp','V_PlateCarrierSpec_mtp','V_PlateCarrierSpec_blk',
 'V_PlateCarrierSpec_rgr','V_PlateCarrier_Kerry','V_PlateCarrierL_CTRG','V_PlateCarrierH_CTRG','V_PlateCarrier2_tna_F',
@@ -1265,8 +1265,6 @@ force usaf_afterburner_setting_allow_ai = true;
 force USAF_allowNuke = false;
 force usaf_debug_setting_enabled_clients = false;
 force usaf_debug_setting_enabled_server = false;
-force usaf_f35a_allow_das_coverage = true;
-force usaf_f35a_allow_sar_imagery = true;
 force usaf_serviceMenu_setting_allowHangarRearm = false;
 force usaf_serviceMenu_setting_allowHangarRefuel = false;
 force usaf_serviceMenu_setting_allowHangarRepair = false;
@@ -1334,13 +1332,6 @@ force zen_faction_filter_1_BLU_GEN_F = true;
 force zen_faction_filter_1_BLU_T_F = true;
 force zen_faction_filter_1_BLU_W_F = true;
 force zen_faction_filter_1_fza_usaav = true;
-force zen_faction_filter_1_rhs_faction_socom = true;
-force zen_faction_filter_1_rhs_faction_usaf = true;
-force zen_faction_filter_1_rhs_faction_usarmy_d = true;
-force zen_faction_filter_1_rhs_faction_usarmy_wd = true;
-force zen_faction_filter_1_rhs_faction_usmc_d = true;
-force zen_faction_filter_1_rhs_faction_usmc_wd = true;
-force zen_faction_filter_1_rhs_faction_usn = true;
 force zen_faction_filter_1_USAF = true;
 force zen_faction_filter_2_IND_C_F = true;
 force zen_faction_filter_2_IND_E_F = true;
