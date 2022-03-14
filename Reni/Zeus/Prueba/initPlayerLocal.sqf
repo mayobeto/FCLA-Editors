@@ -11,7 +11,7 @@
 #define FALSE false
 
 #define OPFOR_LIVES 3 //Número de vidas para cada jugador del bando "Blufor".
-#define BLUFOR_LIVES 150 //Número de vidas para cada jugador del bando "Opfor".
+#define BLUFOR_LIVES 3 //Número de vidas para cada jugador del bando "Opfor".
 #define CIVILIAN_LIVES 3 //Número de vidas para cada jugador del bando "Civil".
 #define INDEPENDANT_LIVES 3 //Número de vidas para cada jugador del bando "Independiente".
 #define UNLIMITED_LIVES FALSE //Vidas ilimitadas.

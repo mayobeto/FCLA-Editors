@@ -1,34 +1,7 @@
 
 /********************************************************************************|
-|                            LOADOUTS - PARACAIDISTAS                            |
+|                             LOADOUTS - INFANTERÍA                              |
 |********************************************************************************/
-
-_equipParachuteAction = [_this select 0, "<t size='1.2' color='#58D68D'>Equipar Paracaídas</t>", {
-  if ((backpack _caller) == "") exitWith {
-    _caller linkItem "ACE_Altimeter";
-    _caller addbackpack "B_Advanced_Parachute";
-  };
-
-  if (!(["BOCR_Main"] call ACE_Common_fnc_isModLoaded)) exitWith {
-    _line = ["Sistema", "Desequipate la mochila que llevas puesta."];
-    [objNull, [_line], "System", 2, [false, false, "All", -1]] call FCLA_Common_fnc_showSubtitles;
-  };
-
-  [_caller] call BOCR_Main_fnc_actionOnChest;
-  _caller linkItem "ACE_Altimeter";
-  _caller addbackpack "B_Advanced_Parachute";
-}, [false, false, false], true, "(backpack _this) != 'B_Advanced_Parachute'"] call FCLA_Common_fnc_createLoadout;
-
-
-_unequipParachuteAction = [_this select 0, "<t size='1.2' color='#D65858'>Desequipar Paracaídas</t>", {
-  removeBackpack _caller;
-  _caller linkItem "Itemwatch";
-
-  if (!(["BOCR_Main"] call ACE_Common_fnc_isModLoaded)) exitWith {};
-  if (([_caller] call BOCR_main_fnc_chestPack) == "") exitWith {};
-  [_caller] call BOCR_Main_fnc_actionOnBack;
-}, [false, false, false], true, "(backpack _this) == 'B_Advanced_Parachute'"] call FCLA_Common_fnc_createLoadout;
-
 
 _sergeantAction = [_this select 0, "<t size='1.5' color='#fbd40b'>Sargento</t>", {
   removeAllWeapons _caller;
@@ -66,7 +39,7 @@ _sergeantAction = [_this select 0, "<t size='1.5' color='#fbd40b'>Sargento</t>",
   for "_i" from 1 to 2 do {_caller addItemToVest "ACE_morphine";};
   for "_i" from 1 to 4 do {_caller addItemToVest "ACE_epinephrine";};
   for "_i" from 1 to 2 do {_caller addItemToVest "ACE_bloodIV";};
-  for "_i" from 1 to 2 do {_caller addItemToVest "rhs_mag_M441_HE";};
+  _caller addItemToVest "rhs_mag_M441_HE";
   _caller addItemToBackpack "ACE_EarPlugs";
   for "_i" from 1 to 8 do {_caller addItemToBackpack "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
   for "_i" from 1 to 8 do {_caller addItemToBackpack "rhs_mag_M441_HE";};
@@ -82,7 +55,7 @@ _sergeantAction = [_this select 0, "<t size='1.5' color='#fbd40b'>Sargento</t>",
   _caller linkItem "ItemMap";
   _caller linkItem "ItemCompass";
   _caller linkItem "ItemWatch";
-  _caller linkItem "tf_anprc152";
+  _caller linkItem "tf_anprc152_1";
   _caller linkItem "NVGoggles";
 }, [true, true, true], true, "true"] call FCLA_Common_fnc_createLoadout;
 
@@ -93,17 +66,170 @@ _secondAction = [_this select 0, "<t size='1.5' color='#fbd40b'>Segundo</t>", {
 
 
 _riflemanAction = [_this select 0, "<t size='1.5' color='#ffff00'>Fusilero</t>", {
-  // === EQUIPAMIENTO DEL FUSILERO === //
+  removeAllWeapons _caller;
+  removeAllItems _caller;
+  removeAllAssignedItems _caller;
+  removeUniform _caller;
+  removeVest _caller;
+  removeBackpack _caller;
+  removeHeadgear _caller;
+  removeGoggles _caller;
+
+
+  _caller addWeapon "rhs_weap_m16a4_carryhandle";
+  _caller addPrimaryWeaponItem "rhsusf_acc_anpeq15A";
+  _caller addPrimaryWeaponItem "rhsusf_acc_ACOG3_USMC";
+  _caller addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+  _caller addWeapon "rhsusf_weap_glock17g4";
+  _caller addHandgunItem "rhsusf_mag_17Rnd_9x19_JHP";
+
+
+  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam";
+  _caller addVest "V_PlateCarrier2_FCLA_Green";
+  _caller addBackpack "B_AssaultPack_FCLA_Green";
+
+
+  _caller addWeapon "Binocular";
+
+
+  for "_i" from 1 to 3 do {_caller addItemToUniform "rhsusf_mag_17Rnd_9x19_JHP";};
+  for "_i" from 1 to 4 do {_caller addItemToVest "ACE_tourniquet";};
+  for "_i" from 1 to 15 do {_caller addItemToVest "ACE_fieldDressing";};
+  for "_i" from 1 to 15 do {_caller addItemToVest "ACE_elasticBandage";};
+  for "_i" from 1 to 15 do {_caller addItemToVest "ACE_packingBandage";};
+  for "_i" from 1 to 2 do {_caller addItemToVest "ACE_morphine";};
+  for "_i" from 1 to 4 do {_caller addItemToVest "ACE_epinephrine";};
+  for "_i" from 1 to 2 do {_caller addItemToVest "ACE_bloodIV";};
+  for "_i" from 1 to 3 do {_caller addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+  _caller addItemToBackpack "ACE_EarPlugs";
+  for "_i" from 1 to 2 do {_caller addItemToBackpack "SmokeShell";};
+  _caller addItemToBackpack "SmokeShellGreen";
+  _caller addItemToBackpack "SmokeShellRed";
+  _caller addItemToBackpack "MiniGrenade";
+  _caller addItemToBackpack "ACE_HandFlare_White";
+  for "_i" from 1 to 10 do {_caller addItemToBackpack "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+  _caller addHeadgear "H_HelmetSpecB_FCLA";
+  _caller addGoggles "rhsusf_shemagh2_gogg_tan";
+
+
+  _caller linkItem "ItemMap";
+  _caller linkItem "ItemCompass";
+  _caller linkItem "ItemWatch";
+  _caller linkItem "tf_anprc152_1";
+  _caller linkItem "NVGoggles";
 }, [false, false, false], true, "true"] call FCLA_Common_fnc_createLoadout;
 
 
 _ATRiflemanAction = [_this select 0, "<t size='1.5' color='#00ff00'>Fusilero AT</t>", {
-  // === EQUIPAMIENTO DEL FUSILERO AT === //
+  removeAllWeapons _caller;
+  removeAllItems _caller;
+  removeAllAssignedItems _caller;
+  removeUniform _caller;
+  removeVest _caller;
+  removeBackpack _caller;
+  removeHeadgear _caller;
+  removeGoggles _caller;
+
+
+  _caller addWeapon "rhs_weap_m16a4_carryhandle";
+  _caller addPrimaryWeaponItem "rhsusf_acc_anpeq15A";
+  _caller addPrimaryWeaponItem "rhsusf_acc_ACOG3_USMC";
+  _caller addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+  _caller addWeapon "rhs_weap_maaws";
+  _caller addSecondaryWeaponItem "rhs_optic_maaws";
+  _caller addSecondaryWeaponItem "rhs_mag_maaws_HEAT";
+  _caller addWeapon "rhsusf_weap_glock17g4";
+  _caller addHandgunItem "rhsusf_mag_17Rnd_9x19_JHP";
+
+
+  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam";
+  _caller addVest "V_PlateCarrier2_FCLA_Green";
+  _caller addBackpack "B_AssaultPack_FCLA_Green";
+
+
+  _caller addWeapon "Binocular";
+
+
+  for "_i" from 1 to 3 do {_caller addItemToUniform "rhsusf_mag_17Rnd_9x19_JHP";};
+  for "_i" from 1 to 4 do {_caller addItemToVest "ACE_tourniquet";};
+  for "_i" from 1 to 15 do {_caller addItemToVest "ACE_fieldDressing";};
+  for "_i" from 1 to 15 do {_caller addItemToVest "ACE_elasticBandage";};
+  for "_i" from 1 to 15 do {_caller addItemToVest "ACE_packingBandage";};
+  for "_i" from 1 to 2 do {_caller addItemToVest "ACE_morphine";};
+  for "_i" from 1 to 4 do {_caller addItemToVest "ACE_epinephrine";};
+  for "_i" from 1 to 2 do {_caller addItemToVest "ACE_bloodIV";};
+  for "_i" from 1 to 3 do {_caller addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+  _caller addItemToBackpack "ACE_EarPlugs";
+  for "_i" from 1 to 2 do {_caller addItemToBackpack "SmokeShell";};
+  _caller addItemToBackpack "SmokeShellGreen";
+  _caller addItemToBackpack "SmokeShellRed";
+  _caller addItemToBackpack "MiniGrenade";
+  _caller addItemToBackpack "ACE_HandFlare_White";
+  for "_i" from 1 to 5 do {_caller addItemToBackpack "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+  for "_i" from 1 to 2 do {_caller addItemToBackpack "MRAWS_HE_F";};
+  _caller addItemToBackpack "rhs_mag_20Rnd_556x45_M193_Stanag";
+  _caller addHeadgear "H_HelmetSpecB_FCLA";
+  _caller addGoggles "rhsusf_shemagh2_gogg_tan";
+
+
+  _caller linkItem "ItemMap";
+  _caller linkItem "ItemCompass";
+  _caller linkItem "ItemWatch";
+  _caller linkItem "tf_anprc152_1";
+  _caller linkItem "NVGoggles";
 }, [false, false, false], true, "true"] call FCLA_Common_fnc_createLoadout;
 
 
 _MachineGunnerAction = [_this select 0, "<t size='1.5' color='#00ff00'>Ametrallador</t>", {
-  // === EQUIPAMIENTO DEL AMETRALLADOR === //
+  removeAllWeapons _caller;
+  removeAllItems _caller;
+  removeAllAssignedItems _caller;
+  removeUniform _caller;
+  removeVest _caller;
+  removeBackpack _caller;
+  removeHeadgear _caller;
+  removeGoggles _caller;
+
+
+  _caller addWeapon "rhs_weap_m240B";
+  _caller addPrimaryWeaponItem "rhsusf_100Rnd_762x51";
+  _caller addWeapon "rhsusf_weap_glock17g4";
+  _caller addHandgunItem "rhsusf_mag_17Rnd_9x19_JHP";
+
+
+  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam";
+  _caller addVest "V_PlateCarrier2_FCLA_Green";
+  _caller addBackpack "B_AssaultPack_FCLA_Green";
+
+
+  _caller addWeapon "Binocular";
+
+
+  for "_i" from 1 to 3 do {_caller addItemToUniform "rhsusf_mag_17Rnd_9x19_JHP";};
+  for "_i" from 1 to 4 do {_caller addItemToVest "ACE_tourniquet";};
+  for "_i" from 1 to 15 do {_caller addItemToVest "ACE_fieldDressing";};
+  for "_i" from 1 to 15 do {_caller addItemToVest "ACE_elasticBandage";};
+  for "_i" from 1 to 15 do {_caller addItemToVest "ACE_packingBandage";};
+  for "_i" from 1 to 2 do {_caller addItemToVest "ACE_morphine";};
+  for "_i" from 1 to 4 do {_caller addItemToVest "ACE_epinephrine";};
+  for "_i" from 1 to 2 do {_caller addItemToVest "ACE_bloodIV";};
+  for "_i" from 1 to 2 do {_caller addItemToVest "rhsusf_100Rnd_762x51";};
+  _caller addItemToBackpack "ACE_EarPlugs";
+  for "_i" from 1 to 2 do {_caller addItemToBackpack "SmokeShell";};
+  _caller addItemToBackpack "SmokeShellGreen";
+  _caller addItemToBackpack "SmokeShellRed";
+  _caller addItemToBackpack "MiniGrenade";
+  _caller addItemToBackpack "ACE_HandFlare_White";
+  for "_i" from 1 to 4 do {_caller addItemToBackpack "rhsusf_100Rnd_762x51";};
+  _caller addHeadgear "H_HelmetSpecB_FCLA";
+  _caller addGoggles "rhsusf_shemagh2_gogg_tan";
+
+
+  _caller linkItem "ItemMap";
+  _caller linkItem "ItemCompass";
+  _caller linkItem "ItemWatch";
+  _caller linkItem "tf_anprc152_1";
+  _caller linkItem "NVGoggles";
 }, [false, false, false], true, "true"] call FCLA_Common_fnc_createLoadout;
 
 
@@ -149,7 +275,5 @@ _radioOperatorAction = [_this select 0, "<t size='1.5' color='#00ccff'>Operador 
 (_this select 0) setUserActionText [_SelectiveShooter, "<t size='1.5' color='#00ccff'>Tirador Selecto</t>", "<t size='1.5' color='#00ccff'>Tirador Selecto</t><br/><br/><img size='3' image='\FCLA_Interactions\Insignias\data\CTS.paa'/>"];
 (_this select 0) setUserActionText [_VANTOperatorAction, "<t size='1.5' color='#00ccff'>Operador VANT</t>", "<t size='1.5' color='#00ccff'>Operador VANT</t><br/><br/><img size='3' image='\FCLA_Interactions\Insignias\data\OPVNT.paa'/>"];
 (_this select 0) setUserActionText [_combatMedicAction, "<t size='1.5' color='#ff0000'>Médico de Combate</t>", "<t size='1.5' color='#ff0000'>Médico de Combate</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CMC.paa'/>"];
-(_this select 0) setUserActionText [_equipParachuteAction, "<t size='1.2' color='#58D68D'>Equipar Paracaídas</t>", "<t size='1.2' color='#58D68D'>Equipar Paracaídas</t><br/><img size='2' image='a3\ui_f\data\IGUI\Cfg\Actions\take_ca.paa'/>"];
 (_this select 0) setUserActionText [_radioOperatorAction, "<t size='1.5' color='#00ccff'>Operador de Radio</t>", "<t size='1.5' color='#00ccff'>Operador de Radio</t><br/><br/><img size='3' image='\FCLA_Interactions\Insignias\data\COR.paa'/>"];
 (_this select 0) setUserActionText [_grenadierRiflemanAction, "<t size='1.5' color='#ffff00'>Fusilero Granadero</t>", "<t size='1.5' color='#ffff00'>Fusilero Granadero</t><br/><img size='4' image='\FCLA_Interactions\Insignias\data\CFG.paa'/>"];
-(_this select 0) setUserActionText [_unequipParachuteAction, "<t size='1.2' color='#D65858'>Desequipar Paracaídas</t>", "<t size='1.2' color='#D65858'>Desequipar Paracaídas</t><br/><img size='2' image='a3\ui_f\data\IGUI\Cfg\Actions\take_ca.paa'/>"];

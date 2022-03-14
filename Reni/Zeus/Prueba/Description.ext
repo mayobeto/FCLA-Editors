@@ -7,5 +7,5 @@
 
 /* -------------------------------- NÚCLEO --------------------------------- */
 
-#define MISSION_NAME "Template Atlis" //Título del escenario.
+#define MISSION_NAME "MI TÍTULO" //Título del escenario.
 #include "\FCLA_Missions\includes\Description.hpp"
