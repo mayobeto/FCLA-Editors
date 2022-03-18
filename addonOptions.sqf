@@ -79,7 +79,7 @@ force ace_weather_updateInterval = 60;
 force ace_weather_windSimulation = true;
 
 // ACE ComÃºn
-force ace_common_allowFadeMusic = true;
+force ace_common_allowFadeMusic = false;
 force ace_common_checkPBOsAction = 2;
 force ace_common_checkPBOsCheckAll = true;
 force ace_common_checkPBOsWhitelist = "[]";

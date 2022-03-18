@@ -1,23 +1,7 @@
+N > Fase A: Pista principal 01 (Conquistador)
+C > LeadTrack01_F_EPA
+F > \A3\music_f_epa\Music\LeadTrack01_F_EPA.ogg
 
-
-[[
-				[FCLA_Introduction_Title, "<t align='center' size='1.75' font='PuristaBold'>%1</t><br/>"],
-				["(" + FCLA_Introduction_Subtitle + ")", "<t align='center' size='1' font='PuristaSemibold'>%1</t>"]
-			]] spawn BIS_fnc_typeText;
-
-[[
-  ["Región de Donbass", "align='center' size='1.75' font='PuristaBold'>%1<br/>"],
-  ["(24 de febrero de 2022)", "align='center' size='1.75' font='PuristaBold'>%1<br/>"],
-  ["[Escuadrón de relevo]", "align='center' size='1' font='PuristaSemibold'>%1"]
-]] spawn BIS_fnc_typeText2;
-
-
-[
-	["Hello there"],
-	safeZoneX, safeZoneH / 2,
-	true,
-	"<t font='PuristaBold'>%1</t>",
-	[],
-	{ false },
-	true
-] spawn BIS_fnc_typeText2;
+N > This Is War (Apex Remix)
+C > LeadTrack01_F_EXP
+F > \A3\music_f_exp\Music\LeadTrack01_F_EXP.ogg

@@ -9,3 +9,15 @@
 
 #define MISSION_NAME "LIBERTAD EUROPEA" //Título del escenario.
 #include "\FCLA_Missions\includes\Description.hpp"
+
+
+
+/* ------------------------------- FUNCIONES ------------------------------- */
+
+class CfgFunctions {
+ class FCLA_Zeus_Mission {
+   class FCLA_Zeus_Mission_Functions {
+     class showIntroText {file = "functions\local\fn_showIntroText.sqf";};
+   };
+ };
+};
