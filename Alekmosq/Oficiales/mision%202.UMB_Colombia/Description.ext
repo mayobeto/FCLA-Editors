@@ -1,49 +1,11 @@
-/*
 
-  ¿Para que sirve?
-  Es un archivo fundamental para que la mision funcione correctamente, ya que define parametros como el spawn, titulos, etc.
-
-  ¿Es fundamental?
-  Si completamente, siempre debe existir.
-
-  ¿Puedo modificarlo?
-  Si, te sugiero solo modificar lo que esta en mayusculas con un comentario indicando que es "Modificable" segun tu mision.
-
-  ¿Links utiles relacionados con este archivo?
-  https://community.bohemia.net/wiki/Description.ext
-
-*/
-
-
-/////////////// ↓ CONFIGURACION GENERAL ↓ ///////////////
-
-author = "NOMBRE DEL EDITOR"; // ← Autor (Modificable)
-loadScreen = "Textures\Portada.paa";  // ← Direccion de imagen de portada (Modificable)
-briefingName = "| ENTRENAMIENTO FCLA |"; // ← Nombre de la mision / campaña (Modificable)
-OnLoadName = "| ENTRENAMIENTO FCLA |"; // ← Nombre de la mision / campaña (Modificable)
-onLoadMission = ""; // ← Descripcion (que aparece abajo de la imagen)
+/********************************************************************************|
+|                             CONFIGURACIÓN GENERAL                              |
+|********************************************************************************/
 
 
 
-/////////////// ↓ CONFIGURACION RESPAWN ↓ ///////////////
+/* -------------------------------- NÚCLEO --------------------------------- */
 
- respawn=3;
- respawnDelay=30; // ← Delay para respawnear (Modificable)
- respawnOnStart=-1;
-
-
-
-/////////////// ↓ FINALIZAR ESCENARIO (PERSONALIZADO) ↓ ///////////////
-
- class CfgDebriefing
- {
-  	class End1
-  	{
-  		title = "Entrenamiento Finalizado"; // ← Titulo (Modificable)
-  		subtitle = "Comunidad FCLA"; // ← Subtitulo (Modificable)
-  		description = ""; // ← Descripcion (Modificable)
-  		pictureBackground = "";
-  		picture = "b_inf";
-  		pictureColor[] = {0.0, 0.3, 0.6, 1};
-  	};
- };
+#define MISSION_NAME "MI TÍTULO" //Título del escenario.
+#include "\FCLA_Missions\includes\Description.hpp"

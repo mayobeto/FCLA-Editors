@@ -31,7 +31,59 @@ _unequipParachuteAction = [_this select 0, "<t size='1.2' color='#D65858'>Desequ
 
 
 _sergeantAction = [_this select 0, "<t size='1.5' color='#fbd40b'>Sargento</t>", {
-  // === EQUIPAMIENTO DEL SARGENTO === //
+  removeAllWeapons _caller;
+  removeAllItems _caller;
+  removeAllAssignedItems _caller;
+  removeUniform _caller;
+  removeVest _caller;
+  removeBackpack _caller;
+  removeHeadgear _caller;
+  removeGoggles _caller;
+
+
+  _caller addWeapon "rhs_weap_m16a4_carryhandle_M203";
+  _caller addPrimaryWeaponItem "rhsusf_acc_anpeq15A";
+  _caller addPrimaryWeaponItem "rhsusf_acc_ACOG3_USMC";
+  _caller addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+  _caller addPrimaryWeaponItem "rhsusf_acc_grip_m203_blk";
+  _caller addWeapon "rhsusf_weap_glock17g4";
+  _caller addHandgunItem "rhsusf_mag_17Rnd_9x19_JHP";
+
+
+  _caller forceAddUniform "U_B_CombatUniform_FCLA_mcam";
+  _caller addVest "V_PlateCarrier2_FCLA_Green";
+  _caller addBackpack "B_AssaultPack_FCLA_Green";
+
+
+  _caller addWeapon "Binocular";
+
+
+  for "_i" from 1 to 3 do {_caller addItemToUniform "rhsusf_mag_17Rnd_9x19_JHP";};
+  for "_i" from 1 to 4 do {_caller addItemToVest "ACE_tourniquet";};
+  for "_i" from 1 to 15 do {_caller addItemToVest "ACE_fieldDressing";};
+  for "_i" from 1 to 15 do {_caller addItemToVest "ACE_elasticBandage";};
+  for "_i" from 1 to 15 do {_caller addItemToVest "ACE_packingBandage";};
+  for "_i" from 1 to 2 do {_caller addItemToVest "ACE_morphine";};
+  for "_i" from 1 to 4 do {_caller addItemToVest "ACE_epinephrine";};
+  for "_i" from 1 to 2 do {_caller addItemToVest "ACE_bloodIV";};
+  for "_i" from 1 to 2 do {_caller addItemToVest "rhs_mag_M441_HE";};
+  _caller addItemToBackpack "ACE_EarPlugs";
+  for "_i" from 1 to 8 do {_caller addItemToBackpack "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+  for "_i" from 1 to 8 do {_caller addItemToBackpack "rhs_mag_M441_HE";};
+  for "_i" from 1 to 2 do {_caller addItemToBackpack "SmokeShell";};
+  _caller addItemToBackpack "SmokeShellGreen";
+  _caller addItemToBackpack "SmokeShellRed";
+  _caller addItemToBackpack "MiniGrenade";
+  _caller addItemToBackpack "ACE_HandFlare_White";
+  _caller addHeadgear "H_HelmetSpecB_FCLA";
+  _caller addGoggles "rhsusf_shemagh2_gogg_tan";
+
+
+  _caller linkItem "ItemMap";
+  _caller linkItem "ItemCompass";
+  _caller linkItem "ItemWatch";
+  _caller linkItem "tf_anprc152";
+  _caller linkItem "NVGoggles";
 }, [true, true, true], true, "true"] call FCLA_Common_fnc_createLoadout;
 
 
