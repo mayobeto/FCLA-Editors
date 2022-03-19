@@ -1,7 +1,0 @@
-N > Fase A: Pista principal 01 (Conquistador)
-C > LeadTrack01_F_EPA
-F > \A3\music_f_epa\Music\LeadTrack01_F_EPA.ogg
-
-N > This Is War (Apex Remix)
-C > LeadTrack01_F_EXP
-F > \A3\music_f_exp\Music\LeadTrack01_F_EXP.ogg
