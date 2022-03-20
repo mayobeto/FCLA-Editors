@@ -1,0 +1,10 @@
+"Marker_0" setMarkerAlpha 1;
+"Marker_1" setMarkerAlpha 1;
+["Marker_0", getMarkerPos "Marker_0_Move_1", 5, 4] call BIS_fnc_moveMarker;
+["Marker_1", getMarkerPos "Marker_1_Move_1", 5, 4] call BIS_fnc_moveMarker;
+["Marker_0", 10, -1, 1, 45] spawn BIS_fnc_cancelMarker;
+["Marker_0", 3, 10] spawn BIS_fnc_blinkMarker;
+openMap [true, true];
+mapAnimAdd [2, 0.09, markerPos "briefing_start"];
+mapAnimCommit;
+openMap [false, false];
