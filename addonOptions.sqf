@@ -516,25 +516,32 @@ force emr_main_staminaCoefficient = 3;
 force emr_main_whitelistStr = "";
 
 // FCLA Desarrollo
+force FCLA_Alekmosq_UID = "76561198825814903";
 force FCLA_Byron_UID = "76561198178496662";
-FCLA_Commanders_UIDs = "[
+force FCLA_Commanders_UIDs = "[
 '76561198178496662',
 '76561198010584812',
 '76561197982853635',
 '76561198153898683'
 ]";
+force FCLA_Dalthon_UID = "76561198254519790";
 force FCLA_Donations_Message = true;
 force FCLA_Donations_Message_Delay = 45;
-FCLA_Editors_UIDs = "[
-'76561198304995327',
-'76561198137876583',
+force FCLA_Editors_UIDs = "[
+'76561198142799204',
+'76561199110542157',
+'76561198878959248',
 '76561198260536786',
+'76561198173170422',
+'76561198254519790',
 '76561198059595506',
-'76561198173170422'
+'76561198825814903',
+'76561198137876583',
+'76561198304995327'
 ]";
 force FCLA_Ghostkiller_UID = "76561198304995327";
 force FCLA_hozlucas28_UID = "76561198137876583";
-FCLA_Instructors_UIDs = "[
+force FCLA_Instructors_UIDs = "[
 '76561198825814903',
 '76561198126066362',
 '76561198144014728',
@@ -548,7 +555,10 @@ force FCLA_Lorflord_UID = "76561198153898683";
 force FCLA_Mario_UID = "76561198260536786";
 force FCLA_Mission_Type = "Oficial";
 force FCLA_Naretick_UID = "76561198059595506";
+force FCLA_Reni_UID = "76561198142799204";
 force FCLA_Sagara_UID = "76561198173170422";
+force FCLA_Sniki_UID = "76561199110542157";
+force FCLA_Tenji_UID = "76561198878959248";
 
 // FCLA Efectos
 force FCLA_Aim_Sounds = true;
@@ -571,7 +581,7 @@ force FCLA_Kick_Door_Allowed = true;
 force FCLA_Kick_Door_Success_Rate = 33;
 FCLA_Radio_Animation_Preference = "_vest";
 force FCLA_Radio_Animations = true;
-FCLA_Radio_Animations_Headgears_Headsets = "[
+force FCLA_Radio_Animations_Headgears_Headsets = "[
 'H_HelmetB_camo','H_HelmetB_light','H_HelmetB_light_sand','H_HelmetB_light_black',
 'H_HelmetB_light_desert','H_HelmetB_light_grass','H_HelmetB_light_snakeskin','H_HelmetSpecB',
 'H_HelmetSpecB_sand','H_HelmetSpecB_paint2','H_HelmetSpecB_paint1','H_HelmetSpecB_blk',
@@ -649,7 +659,7 @@ FCLA_Radio_Animations_Headgears_Headsets = "[
 'rhsusf_mich_helmet_marpatd_norotos_arc_headset','rhsusf_mich_helmet_marpatd_norotos_headset','rhsusf_mich_helmet_marpatwd_alt_headset',
 'rhsusf_mich_helmet_marpatwd_headset','rhsusf_mich_helmet_marpatwd_norotos_arc_headset','rhsusf_mich_helmet_marpatwd_norotos_headset'
 ]";
-FCLA_Radio_Animations_Vests = "[
+force FCLA_Radio_Animations_Vests = "[
 'V_PlateCarrier2_blk','V_PlateCarrier2_rgr','V_PlateCarrierGL_blk','V_PlateCarrierGL_rgr','V_PlateCarrier1_blk',
 'V_PlateCarrier1_rgr','V_TacVestIR_blk','V_PlateCarrierGL_mtp','V_PlateCarrierSpec_mtp','V_PlateCarrierSpec_blk',
 'V_PlateCarrierSpec_rgr','V_PlateCarrier_Kerry','V_PlateCarrierL_CTRG','V_PlateCarrierH_CTRG','V_PlateCarrier2_tna_F',
