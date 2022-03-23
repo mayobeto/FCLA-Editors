@@ -21,7 +21,7 @@
 
 /* ------------------------- LLAMADA DE FUNCIONES -------------------------- */
 
-_currentMissionStage = missionNamespace getVariable ["FCLA_Mission_Stage", 1];
+_currentMissionStage = missionNamespace getVariable ["Zeus_Mission_Stage", 1];
 
 
 call FCLA_Common_fnc_setRadioFrequencies;
