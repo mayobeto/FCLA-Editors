@@ -8,3 +8,8 @@ openMap [true, true];
 mapAnimAdd [2, 0.09, markerPos "briefing_start"];
 mapAnimCommit;
 openMap [false, false];
+
+[[0, 0]] call BIS_fnc_zoomLock;
+
+openMap true; // The function won't work if the map is not open
+[2.0, 0.05, getPos player] call BIS_fnc_mapAnimAdd;

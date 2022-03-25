@@ -21,7 +21,7 @@
 
 /* ----------------------------- MÓDULOS ZEUS ------------------------------ */
 
-[] spawn FCLA_Training_fnc_deactivateZonesCurator;
+[] call FCLA_Training_fnc_deactivateZonesCurator;
 
 
 
