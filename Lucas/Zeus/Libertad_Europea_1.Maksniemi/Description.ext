@@ -17,7 +17,9 @@
 class CfgFunctions {
  class FCLA_Zeus_Mission {
    class FCLA_Zeus_Mission_Functions {
-     class showIntroText {file = "functions\local\fn_showIntroText.sqf";};
+     class showIntro {file = "functions\interface\fn_showIntro.sqf";};
+     class setMarkers1 {file = "functions\markers\fn_setMarkers1.sqf";};
+     class captainVitalySentences {file = "functions\interactions\fn_captainVitalySentences.sqf";};
    };
  };
 };
