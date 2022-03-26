@@ -105,7 +105,7 @@ switch (toUpper _selectedOption) do {
     ["FCLA_Show_Subtitles", [_target, [_line6], "Side", 12], allPlayers] call CBA_fnc_targetEvent;
 
     sleep 14;
-    _line7 = [name _target, "Mientras esperen tomen los suministros que necesiten de las cajas, ¡Me canse de ser su papi, largo de mi vista!"];
+    _line7 = [name _target, "Mientras esperan tomen los suministros que necesiten de las cajas, ¡Me canse de ser su papi, largo!"];
     ["FCLA_Show_Subtitles", [_target, [_line7], "Side", 12], allPlayers] call CBA_fnc_targetEvent;
 
     sleep 14;
