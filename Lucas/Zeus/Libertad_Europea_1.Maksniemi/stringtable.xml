@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="European_Freedom">
+    <Package name="Vitaly_Interactions">
+        <Key ID="STR_EF_Vitaly_Sentence_1">
+            <English>XXX</English>
+            <Spanish>XXX</Spanish>
+        </Key>
+    </Package>
+</Project>

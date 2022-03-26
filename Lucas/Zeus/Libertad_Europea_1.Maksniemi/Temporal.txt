@@ -1,15 +1,7 @@
-"Marker_0" setMarkerAlpha 1;
-"Marker_1" setMarkerAlpha 1;
-["Marker_0", getMarkerPos "Marker_0_Move_1", 5, 4] call BIS_fnc_moveMarker;
-["Marker_1", getMarkerPos "Marker_1_Move_1", 5, 4] call BIS_fnc_moveMarker;
-["Marker_0", 10, -1, 1, 45] spawn BIS_fnc_cancelMarker;
-["Marker_0", 3, 10] spawn BIS_fnc_blinkMarker;
-openMap [true, true];
-mapAnimAdd [2, 0.09, markerPos "briefing_start"];
-mapAnimCommit;
-openMap [false, false];
 
-[[0, 0]] call BIS_fnc_zoomLock;
-
-openMap true; // The function won't work if the map is not open
-[2.0, 0.05, getPos player] call BIS_fnc_mapAnimAdd;
+[ ] Revisar los datos de los archivos.
+[ ] Remplazar relevo por: 9° escuadrón.
+[ ] Extender la información del diagrama.
+[ ] Pasar textos al archivo stringtable.xml.
+[ ] Crear parámetro para que elegir vidas infinitas ó limitadas.
+[ ] Adaptar misión para que sea compatible con el modo un jugador.

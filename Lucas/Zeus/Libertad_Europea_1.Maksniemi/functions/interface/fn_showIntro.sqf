@@ -25,7 +25,7 @@ titleText ["", "BLACK IN", 5];
 			["", "<br/>"],
 			["(24 de febrero del 2022)", "align='center' size='1.75' font='PuristaBold'"],
 			["", "<br/>"],
-			["[Escuadrón de relevo]", "align='center' size='1' font='PuristaSemibold'"]
+			["[9° escuadrón]", "align='center' size='1' font='PuristaSemibold'"]
 		],
 		safeZoneX,
 		safeZoneH / 6,
