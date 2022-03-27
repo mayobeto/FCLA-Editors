@@ -27,7 +27,7 @@ _currentMissionStage = missionNamespace getVariable ["Zeus_Mission_Stage", 1];
 call FCLA_Common_fnc_setRadioFrequencies;
 if (_currentMissionStage <= 1) then {
   _player addItemToVest "ACE_EarPlugs";
-  call FCLA_Zeus_Mission_fnc_showIntro;
+  call European_Freedom_fnc_showIntro;
   [_player, false] call ACE_Hearing_fnc_putInEarplugs;
   ["Introduction", 0.1, true] call ACE_Common_fnc_setHearingCapability;
 } else {

@@ -84,8 +84,8 @@ switch (toUpper _selectedOption) do {
     ["FCLA_Show_Subtitles", [_caller, [_line1], "Side", 5], allPlayers] call CBA_fnc_targetEvent;
 
     sleep 7;
-    [] spawn FCLA_Zeus_Mission_fnc_setMarkers1;
-    _line2 = [name _target, "Bien eres del escuadrón de relevo, el escuadrón Sierra ubicado en '048 051' estableció una posición defensiva...."];
+    [] spawn European_Freedom_fnc_setMarkers1;
+    _line2 = [name _target, "Bien eres del 9° escuadrón, el escuadrón Sierra ubicado en '048 051' estableció una posición defensiva...."];
     ["FCLA_Show_Subtitles", [_target, [_line2], "Side", 12], allPlayers] call CBA_fnc_targetEvent;
 
     sleep 14;
@@ -105,7 +105,7 @@ switch (toUpper _selectedOption) do {
     ["FCLA_Show_Subtitles", [_target, [_line6], "Side", 12], allPlayers] call CBA_fnc_targetEvent;
 
     sleep 14;
-    _line7 = [name _target, "Mientras esperen tomen los suministros que necesiten de las cajas, ¡Me canse de ser su papi, largo de mi vista!"];
+    _line7 = [name _target, "Mientras esperan tomen los suministros que necesiten de las cajas, ¡Me canse de ser su papi, largo!"];
     ["FCLA_Show_Subtitles", [_target, [_line7], "Side", 12], allPlayers] call CBA_fnc_targetEvent;
 
     sleep 14;

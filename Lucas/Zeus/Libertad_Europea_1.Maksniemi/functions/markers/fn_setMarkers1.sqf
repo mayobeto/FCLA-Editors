@@ -17,7 +17,7 @@ sleep 5;
 
 sleep 2;
 ["Marker_11", getMarkerPos "Marker_11_Move_1", 5, 4] call BIS_fnc_moveMarker;
-["Marker_12", getMarkerPos "Marker_12_Move_1", 4.5, 4] call BIS_fnc_moveMarker;
+["Marker_12", getMarkerPos "Marker_12_Move_1", 4, 4] call BIS_fnc_moveMarker;
 
 sleep 6;
 ["Marker_12", 1] spawn BIS_fnc_hideMarker;
@@ -38,11 +38,11 @@ sleep 5;
 
 sleep 2;
 ["Marker_0", getMarkerPos "Marker_0_Move_1", 5, 4] call BIS_fnc_moveMarker;
-["Marker_1", getMarkerPos "Marker_1_Move_1", 4.5, 4] call BIS_fnc_moveMarker;
+["Marker_1", getMarkerPos "Marker_1_Move_1", 4, 4] call BIS_fnc_moveMarker;
 
 sleep 6;
 ["Marker_1", 3, 2] spawn BIS_fnc_blinkMarker;
 
-sleep 12;
+sleep 14;
 [[false, false]] remoteExec ["openMap", 0, false];
 [Module_Cover_Map_1, [], true] call BIS_fnc_moduleCoverMap;
