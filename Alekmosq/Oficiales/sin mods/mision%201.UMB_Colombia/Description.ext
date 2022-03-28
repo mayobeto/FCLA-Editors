@@ -17,7 +17,7 @@
 
 /////////////// ↓ CONFIGURACION GENERAL ↓ ///////////////
 
-author = "Alekmosq"; // ← Autor (Modificable)
+author = "Alekmosq y Sniki"; // ← Autor (Modificable)
 loadScreen = "Textures\Portada.paa";  // ← Direccion de imagen de portada (Modificable)
 briefingName = "Sangre, honor y gloria."; // ← Nombre de la mision / campaña (Modificable)
 OnLoadName = "Sangre, honor y gloria."; // ← Nombre de la mision / campaña (Modificable)

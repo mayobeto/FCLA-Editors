@@ -37,14 +37,13 @@ SITUACION ACTUAL DE LA MISION.
 // ↓ Fuerzas Involucradas
 player createDiaryRecord ["Diary", ["Fuerzas Involucradas","
 <font color='#58D68D' size='18' face='TahomaB'>Fuerzas Involucradas...</font><br></br><br></br>
-·<font color='#58D68D' size='12' face='TahomaB'>'NOMBRE DE LA FUERZA QUE ROLEA FCLA'</font>...<br></br>
-BREVE DESCRIPCION DE CUAL ES SU OFICIO DURANTE LA CAMPAÑA.<br></br><br></br>
-·<font color='#D65858' size='12' face='TahomaB'>'NOMBRE DE LA FUERZA HOSTIL A LA QUE SE ENFRENTA FCLA'</font>...<br></br>
-BREVE DESCRIPCION DE CUAL ES SU OFICIO DURANTE LA CAMPAÑA Y SI ES GUERRILLA SU HISTORIA.
+·<font color='#58D68D' size='12' face='TahomaB'>'EJERCITO NACIONAL DE COLOMBIA'</font>...<br></br>
+Protege y sirve como fuerza armada nacional de Colombia.<br></br><br></br>
+·<font color='#D65858' size='12' face='TahomaB'>'Elementos Guerrilleros y paramilitares FARC y ELN'</font>...<br></br>
 "], taskNull, "",false];
 
 // ↓ Contexto General
 player createDiaryRecord ["Diary", ["Contexto General","
 <font color='#58D6C7' size='18' face='TahomaB'>Contexto General...</font><br></br><br></br>
-CONTEXTO GENERAL DE LA CAMPAÑA.
+El batallón de FLCA fue llamado al territorio de la costa caribe colombiana, debido informe de alta actividad paramilitar en los cuales se encuentran grupos guerrilleros de las FARC y ELN las cuales están operando en la zona aterrorizando a la población, ocupando puertos como bases para poder transportar armas y drogas para poder financiar sus operaciones.
 "], taskNull, "",false];
