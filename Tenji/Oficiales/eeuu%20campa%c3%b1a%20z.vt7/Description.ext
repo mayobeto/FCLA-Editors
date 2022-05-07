@@ -1,0 +1,67 @@
+/*
+
+  ¿Para que sirve?
+  Es un archivo fundamental para que la mision funcione correctamente, ya que define parametros como el spawn, titulos, etc.
+
+  ¿Es fundamental?
+  Si completamente, siempre debe existir.
+
+  ¿Puedo modificarlo?
+  Si, te sugiero solo modificar lo que esta en mayusculas con un comentario indicando que es "Modificable" segun tu mision.
+
+  ¿Links utiles relacionados con este archivo?
+  https://community.bohemia.net/wiki/Description.ext
+
+*/
+
+
+/////////////// ↓ CONFIGURACION GENERAL ↓ ///////////////
+
+author = "Tenji"; // ← Autor (Modificable)
+loadScreen = "Textures\Portada.paa";  // ← Direccion de imagen de portada (Modificable)
+briefingName = "|El descubrimiento|"; // ← Nombre de la mision / campaña (Modificable)
+OnLoadName = "|El descubrimiento|"; // ← Nombre de la mision / campaña (Modificable)
+onLoadMission = "By Tenji"; // ← Descripcion (que aparece abajo de la imagen)
+
+
+
+/////////////// ↓ CONFIGURACION RESPAWN ↓ ///////////////
+
+ respawn=4;
+ respawnDelay=30; // ← Delay para respawnear (Modificable)
+ respawnOnStart=-1;
+
+
+/////////////// ↓ SONIDO DE INTRODUCCION FCLA/ AGREGAR SONIDOS PERSONALIZADOS ↓ ///////////////
+class CfgSounds
+{
+ sounds[] = {};
+ class soundname
+ {
+  name = "3Dsound";
+  sound[] = {"\sounds\3Dsound.ogg", 300, 1};
+  titles[] = {0,""};
+ };
+
+ class Introduccion
+ {
+ name = "Introduccion";
+ sound[] = {"\sounds\Introduction.ogg", 400, 1};
+ titles[] = {};
+ };
+}
+
+/////////////// ↓ FINALIZAR ESCENARIO (PERSONALIZADO) ↓ ///////////////
+
+ class CfgDebriefing
+ {
+  	class End1
+  	{
+  		title = "Misión Finalizada"; // ← Titulo (Modificable)
+  		subtitle = "Comunidad FCLA"; // ← Subtitulo (Modificable)
+  		description = "Las Fuerzas de FCLA no pudieron contra el enemigo procederemos a retirarnos y hacer una ofensiva"; // ← Descripcion (Modificable)
+  		pictureBackground = "";
+  		picture = "b_inf";
+  		pictureColor[] = {0.0, 0.3, 0.6, 1};
+  	};
+ };
