@@ -17,11 +17,11 @@
 
 /////////////// ↓ CONFIGURACION GENERAL ↓ ///////////////
 
-author = "NOMBRE DEL EDITOR"; // ← Autor (Modificable)
+author = "Alekmosq y Sniki"; // ← Autor (Modificable)
 loadScreen = "Textures\Portada.paa";  // ← Direccion de imagen de portada (Modificable)
-briefingName = "|Nombre de la mision|"; // ← Nombre de la mision / campaña (Modificable)
-OnLoadName = "|Nombre de la mision|"; // ← Nombre de la mision / campaña (Modificable)
-onLoadMission = ""; // ← Descripcion (que aparece abajo de la imagen)
+briefingName = "Sangre, honor y gloria."; // ← Nombre de la mision / campaña (Modificable)
+OnLoadName = "Sangre, honor y gloria."; // ← Nombre de la mision / campaña (Modificable)
+onLoadMission = "todo superviviente es indispensable"; // ← Descripcion (que aparece abajo de la imagen)
 
 
 

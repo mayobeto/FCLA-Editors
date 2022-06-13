@@ -19,9 +19,9 @@
 
 author = "Alekmosq y Sniki"; // ← Autor (Modificable)
 loadScreen = "Textures\Portada.paa";  // ← Direccion de imagen de portada (Modificable)
-briefingName = "Sangre, honor y gloria."; // ← Nombre de la mision / campaña (Modificable)
-OnLoadName = "Sangre, honor y gloria."; // ← Nombre de la mision / campaña (Modificable)
-onLoadMission = "Desmontar bases Paramilitares  y extraer Civiles capturados"; // ← Descripcion (que aparece abajo de la imagen)
+briefingName = "Entrenamiento"; // ← Nombre de la mision / campaña (Modificable)
+OnLoadName = "Entrenamiento"; // ← Nombre de la mision / campaña (Modificable)
+onLoadMission = "Entrenamiento"; // ← Descripcion (que aparece abajo de la imagen)
 
 
 

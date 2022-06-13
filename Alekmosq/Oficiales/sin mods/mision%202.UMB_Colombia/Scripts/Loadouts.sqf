@@ -110,7 +110,7 @@ Armamento_1 addAction ["<t size='1.5' color='#00C1FF'>AMETRALLADOR</t>", {
   player linkItem "ItemMap";
   player linkItem "ItemCompass";
   player linkItem "ItemWatch";
-  player linkItem "ItemRadio";
+  player linkItem "tf_anprc152";
   player linkItem "ItemGPS";
 }, [], 1, true, false, "", "", 5, false, ""];
 
@@ -224,6 +224,7 @@ Armamento_1 addAction ["<t size='1.5' color='#00C1FF'>ANTIEXPLOSIVOS</t>", {
   player addWeapon "ACE_VMH3";
   player forceAddUniform "bm4jun";
   player addVest "V_PlateCarrierIAGL_dgtl";
+  player addBackpack "BDF_Alice4_bag";
   player addWeapon "Binocular";
   for "_i" from 1 to 3 do {player addItemToUniform "ACE_splint";};
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_epinephrine";};
@@ -235,6 +236,7 @@ Armamento_1 addAction ["<t size='1.5' color='#00C1FF'>ANTIEXPLOSIVOS</t>", {
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
   for "_i" from 1 to 6 do {player addItemToUniform "ACE_packingBandage";};
+  player addItemToUniform "kat_Pulseoximeter";
   for "_i" from 1 to 6 do {player addItemToVest "col_galil_35rnd_M196_Tracer_Red_mag";};
   player addItemToVest "Chemlight_green";
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
@@ -242,6 +244,10 @@ Armamento_1 addAction ["<t size='1.5' color='#00C1FF'>ANTIEXPLOSIVOS</t>", {
   player addItemToVest "SmokeShellRed";
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellGreen";};
   for "_i" from 1 to 3 do {player addItemToVest "SmokeShell";};
+  for "_i" from 1 to 2 do {player addItemToBackpack "ACE_Clacker";};
+  for "_i" from 1 to 2 do {player addItemToBackpack "ACE_DefusalKit";};
+  for "_i" from 1 to 2 do {player addItemToBackpack "DemoCharge_Remote_Mag";};
+  for "_i" from 1 to 2 do {player addItemToBackpack "SatchelCharge_Remote_Mag";};
   player addHeadgear "BR_M88_N";
   player addGoggles "shemag_tacticalglass";
   player linkItem "ItemMap";
@@ -308,7 +314,7 @@ Armamento_1 addAction ["<t size='1.5' color='#00C1FF'>TIRADOR SELECTO</t>", {
   removeHeadgear player;
   removeGoggles player;
   player addWeapon "rhs_weap_m14_rail_wd";
-  player addPrimaryWeaponItem "ACE_optic_SOS_PIP";
+  player addPrimaryWeaponItem "rhsusf_acc_ACOG3";
   player addPrimaryWeaponItem "rhsusf_20Rnd_762x51_m80_Mag";
   player addPrimaryWeaponItem "rhsusf_acc_m14_bipod";
   player forceAddUniform "bm4jun";
@@ -325,6 +331,7 @@ Armamento_1 addAction ["<t size='1.5' color='#00C1FF'>TIRADOR SELECTO</t>", {
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
   for "_i" from 1 to 7 do {player addItemToUniform "ACE_packingBandage";};
+  player addItemToUniform "kat_Pulseoximeter";
   for "_i" from 1 to 6 do {player addItemToVest "rhsusf_20Rnd_762x51_m62_Mag";};
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellBlue";};
@@ -534,7 +541,8 @@ Armamento_1 addAction ["<t size='1.5' color='#00C1FF'>PARAMEDICO</t>", {
   for "_i" from 1 to 3 do {player addItemToUniform "ACE_splint";};
   for "_i" from 1 to 2 do {player addItemToUniform "ACE_epinephrine";};
   for "_i" from 1 to 5 do {player addItemToVest "FirstAidKit";};
-  for "_i" from 1 to 7 do {player addItemToVest "col_galil_35rnd_Mk318_SOST_mag";};
+  for "_i" from 1 to 10 do {player addItemToVest "kat_IV_16";};
+  for "_i" from 1 to 4 do {player addItemToVest "col_galil_35rnd_Mk318_SOST_mag";};
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellYellow";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellBlue";};
@@ -603,6 +611,7 @@ Armamento_1 addAction ["<t size='1.5' color='#00C1FF'>MEDICO</t>", {
   player addItemToVest "kat_Pulseoximeter";
   for "_i" from 1 to 4 do {player addItemToVest "ACE_epinephrine";};
   for "_i" from 1 to 4 do {player addItemToVest "ACE_morphine";};
+  for "_i" from 1 to 15 do {player addItemToVest "kat_IV_16";};
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellYellow";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellBlue";};
@@ -610,7 +619,7 @@ Armamento_1 addAction ["<t size='1.5' color='#00C1FF'>MEDICO</t>", {
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellGreen";};
   for "_i" from 1 to 3 do {player addItemToVest "SmokeShell";};
   player addItemToVest "Chemlight_green";
-  for "_i" from 1 to 7 do {player addItemToVest "col_galil_35rnd_Mk318_SOST_mag";};
+  for "_i" from 1 to 5 do {player addItemToVest "col_galil_35rnd_Mk318_SOST_mag";};
   player addItemToBackpack "kat_guedel";
   for "_i" from 1 to 6 do {player addItemToBackpack "ACE_epinephrine";};
   for "_i" from 1 to 6 do {player addItemToBackpack "ACE_splint";};
@@ -634,6 +643,8 @@ Armamento_1 addAction ["<t size='1.5' color='#00C1FF'>MEDICO</t>", {
   player linkItem "tf_anprc152";
   player linkItem "ItemGPS";
 }, [], 1, true, false, "", "", 5, false, ""];
+
+//condor
 
 Armamento_2 addAction ["<t size='1.5' color='#00C1FF'>FUSILERO</t>", {
   if (!local player) exitWith {};
@@ -849,6 +860,7 @@ Armamento_2 addAction ["<t size='1.5' color='#00C1FF'>ANTIEXPLOSIVOS</t>", {
   player addWeapon "ACE_VMH3";
   player forceAddUniform "bm4jun";
   player addVest "V_PlateCarrierIAGL_dgtl";
+  player addBackpack "BDF_Alice2_bag";
   player addWeapon "Binocular";
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_epinephrine";};
   for "_i" from 1 to 3 do {player addItemToUniform "ACE_splint";};
@@ -860,6 +872,7 @@ Armamento_2 addAction ["<t size='1.5' color='#00C1FF'>ANTIEXPLOSIVOS</t>", {
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
   for "_i" from 1 to 7 do {player addItemToUniform "ACE_packingBandage";};
+  player addItemToUniform "kat_Pulseoximeter";
   for "_i" from 1 to 6 do {player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellBlue";};
@@ -867,6 +880,10 @@ Armamento_2 addAction ["<t size='1.5' color='#00C1FF'>ANTIEXPLOSIVOS</t>", {
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellGreen";};
   for "_i" from 1 to 3 do {player addItemToVest "SmokeShell";};
   player addItemToVest "Chemlight_green";
+  player addItemToBackpack "ACE_DefusalKit";
+  for "_i" from 1 to 2 do {player addItemToBackpack "ACE_Clacker";};
+  for "_i" from 1 to 2 do {player addItemToBackpack "DemoCharge_Remote_Mag";};
+  for "_i" from 1 to 2 do {player addItemToBackpack "SatchelCharge_Remote_Mag";};
   player addHeadgear "BR_M88_N";
   player addGoggles "shemag_tacticalglass";
   player linkItem "ItemMap";
@@ -936,7 +953,7 @@ Armamento_2 addAction ["<t size='1.5' color='#00C1FF'>TIRADOR SELECTO</t>", {
   removeHeadgear player;
   removeGoggles player;
   player addWeapon "rhs_weap_m14_rail_wd";
-  player addPrimaryWeaponItem "ACE_optic_SOS_PIP";
+  player addPrimaryWeaponItem "rhsusf_acc_ACOG3";
   player addPrimaryWeaponItem "rhsusf_20Rnd_762x51_m80_Mag";
   player addPrimaryWeaponItem "rhsusf_acc_m14_bipod";
   player forceAddUniform "bm4jun";
@@ -953,6 +970,7 @@ Armamento_2 addAction ["<t size='1.5' color='#00C1FF'>TIRADOR SELECTO</t>", {
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
   for "_i" from 1 to 7 do {player addItemToUniform "ACE_packingBandage";};
+  player addItemToUniform "kat_Pulseoximeter";
   for "_i" from 1 to 6 do {player addItemToVest "rhsusf_20Rnd_762x51_m62_Mag";};
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellBlue";};
@@ -1056,6 +1074,7 @@ Armamento_2 addAction ["<t size='1.5' color='#00C1FF'>PARAMEDICO</t>", {
   for "_i" from 1 to 3 do {player addItemToUniform "ACE_splint";};
   for "_i" from 1 to 2 do {player addItemToUniform "ACE_epinephrine";};
   for "_i" from 1 to 5 do {player addItemToVest "FirstAidKit";};
+  for "_i" from 1 to 10 do {player addItemToVest "kat_IV_16";};
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellYellow";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellBlue";};
@@ -1063,7 +1082,7 @@ Armamento_2 addAction ["<t size='1.5' color='#00C1FF'>PARAMEDICO</t>", {
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellGreen";};
   for "_i" from 1 to 3 do {player addItemToVest "SmokeShell";};
   player addItemToVest "Chemlight_green";
-  for "_i" from 1 to 7 do {player addItemToVest "30Rnd_556x45_Stanag";};
+  for "_i" from 1 to 4 do {player addItemToVest "30Rnd_556x45_Stanag";};
   player addItemToBackpack "kat_guedel";
   for "_i" from 1 to 8 do {player addItemToBackpack "ACE_epinephrine";};
   for "_i" from 1 to 10 do {player addItemToBackpack "ACE_splint";};
@@ -1125,6 +1144,7 @@ Armamento_2 addAction ["<t size='1.5' color='#00C1FF'>MEDICO</t>", {
   for "_i" from 1 to 7 do {player addItemToVest "ACE_packingBandage";};
   for "_i" from 1 to 4 do {player addItemToVest "ACE_morphine";};
   for "_i" from 1 to 4 do {player addItemToVest "ACE_epinephrine";};
+  for "_i" from 1 to 15 do {player addItemToVest "kat_IV_16";};
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellYellow";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellBlue";};
@@ -1132,7 +1152,7 @@ Armamento_2 addAction ["<t size='1.5' color='#00C1FF'>MEDICO</t>", {
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellGreen";};
   for "_i" from 1 to 3 do {player addItemToVest "SmokeShell";};
   player addItemToVest "Chemlight_green";
-  for "_i" from 1 to 7 do {player addItemToVest "30Rnd_556x45_Stanag";};
+  for "_i" from 1 to 5 do {player addItemToVest "30Rnd_556x45_Stanag";};
   player addItemToBackpack "kat_guedel";
   for "_i" from 1 to 6 do {player addItemToBackpack "ACE_epinephrine";};
   for "_i" from 1 to 6 do {player addItemToBackpack "ACE_splint";};
@@ -1184,6 +1204,7 @@ Armamento_3 addAction ["<t size='1.5' color='#00C1FF'>PILOTO CAPITAN</t>", {
   for "_i" from 1 to 3 do {player addItemToUniform "ACE_splint";};
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_epinephrine";};
   player addItemToUniform "kat_Pulseoximeter";
+  player addItemToVest "ACE_EarPlugs";
   for "_i" from 1 to 6 do {player addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";};
   player addItemToVest "Chemlight_green";
   player addItemToBackpack "ToolKit";
@@ -1220,7 +1241,9 @@ Armamento_3 addAction ["<t size='1.5' color='#00C1FF'>PILOTO</t>", {
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
   for "_i" from 1 to 3 do {player addItemToUniform "ACE_splint";};
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_epinephrine";};
+  player addItemToUniform "kat_Pulseoximeter";
   player addItemToVest "ToolKit";
+  player addItemToVest "ACE_EarPlugs";
   for "_i" from 1 to 6 do {player addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";};
   player addItemToVest "Chemlight_green";
   player addHeadgear "COL_HeliCrew_Helmet_W";
@@ -1259,9 +1282,12 @@ Armamento_4 addAction ["<t size='1.5' color='#00C1FF'>CAPITAN TANQUE</t>", {
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
   for "_i" from 1 to 3 do {player addItemToUniform "ACE_splint";};
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_epinephrine";};
+  player addItemToVest "ACE_EarPlugs";
   for "_i" from 1 to 6 do {player addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";};
   player addItemToVest "Chemlight_green";
   player addItemToBackpack "ToolKit";
+  player addItemToBackpack "kat_Pulseoximeter";
+  player addItemToBackpack "ACE_artilleryTable";
   player addHeadgear "COL_Crew_Helmet_W";
   player linkItem "ItemMap";
   player linkItem "ItemCompass";
@@ -1295,7 +1321,10 @@ Armamento_4 addAction ["<t size='1.5' color='#00C1FF'>TANQUISTA</t>", {
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
   for "_i" from 1 to 3 do {player addItemToUniform "ACE_splint";};
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_epinephrine";};
+  player addItemToUniform "kat_Pulseoximeter";
   player addItemToVest "ToolKit";
+  player addItemToVest "ACE_EarPlugs";
+  player addItemToVest "ACE_artilleryTable";
   for "_i" from 1 to 6 do {player addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";};
   player addItemToVest "Chemlight_green";
   player addHeadgear "COL_Crew_Helmet_W";
@@ -1318,17 +1347,16 @@ Armamento_5 addAction ["<t size='1.5' color='#00C1FF'>FRANCOTIRADOR</t>", {
   removeBackpack player;
   removeHeadgear player;
   removeGoggles player;
-  player addWeapon "rhs_weap_m24sws_wd";
-  player addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4_wd";
-  player addPrimaryWeaponItem "rhsusf_5Rnd_762x51_m118_special_Mag";
+  player addWeapon "rhs_weap_m40a5_wd";
+  player addPrimaryWeaponItem "optic_LRPS";
+  player addPrimaryWeaponItem "rhsusf_5Rnd_762x51_AICS_m118_special_Mag";
   player addPrimaryWeaponItem "rhsusf_acc_harris_swivel";
-  player addWeapon "rhsusf_weap_m9";
-  player addHandgunItem "rhsusf_mag_15Rnd_9x19_JHP";
+  player addWeapon "hgun_Pistol_heavy_01_F";
+  player addHandgunItem "11Rnd_45ACP_Mag";
   player forceAddUniform "bm4jun";
   player addVest "Cha_BM4_A_V_L";
   player addBackpack "col_Alice_bag";
-  player addWeapon "Rangefinder";
-  player addItemToUniform "FirstAidKit";
+  player addWeapon "ACE_Vector";
   player addItemToUniform "rhsusf_ANPVS_14";
   for "_i" from 1 to 3 do {player addItemToUniform "ACE_splint";};
   for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
@@ -1339,7 +1367,6 @@ Armamento_5 addAction ["<t size='1.5' color='#00C1FF'>FRANCOTIRADOR</t>", {
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
   for "_i" from 1 to 7 do {player addItemToUniform "ACE_packingBandage";};
-  player addItemToUniform "rhsusf_mag_15Rnd_9x19_JHP";
   for "_i" from 1 to 2 do {player addItemToVest "FirstAidKit";};
   player addItemToVest "ACE_MapTools";
   player addItemToVest "ACE_ATragMX";
@@ -1348,18 +1375,21 @@ Armamento_5 addAction ["<t size='1.5' color='#00C1FF'>FRANCOTIRADOR</t>", {
   player addItemToVest "ACE_IR_Strobe_Item";
   player addItemToVest "ACE_Flashlight_XL50";
   player addItemToVest "ACE_RangeCard";
+  player addItemToVest "ACE_microDAGR";
+  for "_i" from 1 to 2 do {player addItemToVest "kat_IV_16";};
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellBlue";};
-  for "_i" from 1 to 10 do {player addItemToVest "rhsusf_5Rnd_762x51_m62_Mag";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellRed";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellGreen";};
   for "_i" from 1 to 3 do {player addItemToVest "SmokeShell";};
   player addItemToVest "ACE_Chemlight_HiGreen";
-  for "_i" from 1 to 2 do {player addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
+  for "_i" from 1 to 4 do {player addItemToVest "11Rnd_45ACP_Mag";};
+  for "_i" from 1 to 10 do {player addItemToVest "rhsusf_5Rnd_762x51_m62_Mag";};
   for "_i" from 1 to 2 do {player addItemToBackpack "FirstAidKit";};
   player addItemToBackpack "ACE_Tripod";
   player addItemToBackpack "ACE_SpottingScope";
-  for "_i" from 1 to 2 do {player addItemToBackpack "DemoCharge_Remote_Mag";};
+  player addItemToBackpack "kat_Pulseoximeter";
+  for "_i" from 1 to 5 do {player addItemToBackpack "rhsusf_5Rnd_762x51_m62_Mag";};
   player addHeadgear "colombia_col_casco_lwh_e";
   player addGoggles "shemag_head_2";
   player linkItem "ItemMap";
@@ -1381,12 +1411,12 @@ Armamento_5 addAction ["<t size='1.5' color='#00C1FF'>TIRADOR SELECTO</t>", {
   removeHeadgear player;
   removeGoggles player;
   player addWeapon "rhs_weap_m14_rail_wd";
-  player addPrimaryWeaponItem "ACE_optic_SOS_PIP";
+  player addPrimaryWeaponItem "rhsusf_acc_ACOG3";
   player addPrimaryWeaponItem "rhsusf_20Rnd_762x51_m80_Mag";
   player addPrimaryWeaponItem "rhsusf_acc_m14_bipod";
   player forceAddUniform "bm4jun";
   player addVest "Cha_BM4_A_V_L";
-  player addBackpack "BDF_Alice_radio";
+  player addBackpack "col_Alice_bag";
   player addWeapon "Binocular";
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_epinephrine";};
   for "_i" from 1 to 3 do {player addItemToUniform "ACE_splint";};
@@ -1398,6 +1428,7 @@ Armamento_5 addAction ["<t size='1.5' color='#00C1FF'>TIRADOR SELECTO</t>", {
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
   for "_i" from 1 to 7 do {player addItemToUniform "ACE_packingBandage";};
+  player addItemToUniform "kat_Pulseoximeter";
   for "_i" from 1 to 6 do {player addItemToVest "rhsusf_20Rnd_762x51_m62_Mag";};
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellBlue";};
@@ -1405,14 +1436,12 @@ Armamento_5 addAction ["<t size='1.5' color='#00C1FF'>TIRADOR SELECTO</t>", {
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellGreen";};
   for "_i" from 1 to 3 do {player addItemToVest "SmokeShell";};
   player addItemToVest "Chemlight_green";
-  player addItemToBackpack "ACE_ATragMX";
-  player addItemToBackpack "ACE_Tripod";
-  player addItemToBackpack "ACE_Kestrel4500";
-  player addItemToBackpack "ACE_IR_Strobe_Item";
-  player addItemToBackpack "ACE_Flashlight_XL50";
-  player addItemToBackpack "ACE_RangeCard";
-  player addItemToBackpack "ACE_SpottingScope";
-  player addItemToBackpack "ACE_MapTools";
+  for "_i" from 1 to 4 do {player addItemToBackpack "rhsusf_20Rnd_762x51_m62_Mag";};
+  for "_i" from 1 to 2 do {player addItemToBackpack "SmokeShellBlue";};
+  for "_i" from 1 to 2 do {player addItemToBackpack "SmokeShellRed";};
+  for "_i" from 1 to 2 do {player addItemToBackpack "SmokeShellGreen";};
+  for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
+  player addItemToBackpack "HandGrenade";
   player addHeadgear "colombia_col_casco_lwh_e";
   player addGoggles "col_scarf2";
   player linkItem "ItemMap";
@@ -1422,6 +1451,72 @@ Armamento_5 addAction ["<t size='1.5' color='#00C1FF'>TIRADOR SELECTO</t>", {
   player linkItem "ItemGPS";
 }, [], 1, true, false, "", "", 5, false, ""];
 
+Armamento_5 addAction ["<t size='1.5' color='#00C1FF'>OBSERVADOR</t>", {
+  if (!local player) exitWith {};
+  removeAllWeapons player;
+  removeAllItems player;
+  removeAllAssignedItems player;
+  removeUniform player;
+  removeVest player;
+  removeBackpack player;
+  removeHeadgear player;
+  removeGoggles player;
+  player addWeapon "rhs_weap_sr25_wd";
+  player addPrimaryWeaponItem "optic_DMS_ghex_F";
+  player addPrimaryWeaponItem "rhsusf_20Rnd_762x51_SR25_m118_special_Mag";
+  player addPrimaryWeaponItem "rhs_acc_harris_swivel";
+  player forceAddUniform "bm4jun";
+  player addVest "Cha_BM4_A_V_L";
+  player addBackpack "BDF_Alice_radio";
+  player addWeapon "Rangefinder";
+  for "_i" from 1 to 5 do {player addItemToUniform "ACE_epinephrine";};
+  for "_i" from 1 to 3 do {player addItemToUniform "ACE_splint";};
+  for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
+  player addItemToUniform "ACE_salineIV_500";
+  player addItemToUniform "ACE_EarPlugs";
+  for "_i" from 1 to 7 do {player addItemToUniform "ACE_fieldDressing";};
+  for "_i" from 1 to 4 do {player addItemToUniform "ACE_tourniquet";};
+  for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
+  for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
+  for "_i" from 1 to 7 do {player addItemToUniform "ACE_packingBandage";};
+  player addItemToUniform "kat_Pulseoximeter";
+  for "_i" from 1 to 2 do {player addItemToUniform "kat_IV_16";};
+  player addItemToVest "ACE_ATragMX";
+  player addItemToVest "ACE_DAGR";
+  player addItemToVest "ACE_microDAGR";
+  player addItemToVest "ACE_MapTools";
+  player addItemToVest "ACE_Kestrel4500";
+  player addItemToVest "ACE_Flashlight_XL50";
+  player addItemToVest "ACE_IR_Strobe_Item";
+  player addItemToVest "ACE_RangeCard";
+  for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
+  for "_i" from 1 to 2 do {player addItemToVest "SmokeShellBlue";};
+  for "_i" from 1 to 2 do {player addItemToVest "SmokeShellRed";};
+  for "_i" from 1 to 2 do {player addItemToVest "SmokeShellGreen";};
+  for "_i" from 1 to 3 do {player addItemToVest "SmokeShell";};
+  player addItemToVest "Chemlight_green";
+  for "_i" from 1 to 5 do {player addItemToVest "rhsusf_20Rnd_762x51_SR25_m62_Mag";};
+  player addItemToBackpack "ACE_SpottingScope";
+  for "_i" from 1 to 2 do {player addItemToBackpack "ACE_tourniquet";};
+  for "_i" from 1 to 3 do {player addItemToBackpack "ACE_fieldDressing";};
+  for "_i" from 1 to 3 do {player addItemToBackpack "ACE_elasticBandage";};
+  for "_i" from 1 to 3 do {player addItemToBackpack "ACE_quikclot";};
+  for "_i" from 1 to 3 do {player addItemToBackpack "ACE_packingBandage";};
+  for "_i" from 1 to 2 do {player addItemToBackpack "SmokeShellBlue";};
+  for "_i" from 1 to 2 do {player addItemToBackpack "SmokeShellRed";};
+  for "_i" from 1 to 2 do {player addItemToBackpack "SmokeShellGreen";};
+  for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
+  player addItemToBackpack "HandGrenade";
+  for "_i" from 1 to 3 do {player addItemToBackpack "rhsusf_20Rnd_762x51_SR25_m62_Mag";};
+  player addHeadgear "colombia_col_casco_lwh_e";
+  player addGoggles "col_scarf2";
+  player linkItem "ItemMap";
+  player linkItem "ItemCompass";
+  player linkItem "ItemWatch";
+  player linkItem "tf_anprc152";
+  player linkItem "ItemGPS";
+  player linkItem "COL_Predator_D";
+}, [], 1, true, false, "", "", 5, false, ""];
 //inti takana
 
 Armamento_6 addAction ["<t size='1.5' color='#00C1FF'>FUSILERO</t>", {
@@ -1505,7 +1600,7 @@ Armamento_6 addAction ["<t size='1.5' color='#00C1FF'>AMETRALLADOR</t>", {
   player linkItem "ItemMap";
   player linkItem "ItemCompass";
   player linkItem "ItemWatch";
-  player linkItem "ItemRadio";
+  player linkItem "tf_anprc152";
   player linkItem "ItemGPS";
 }, [], 1, true, false, "", "", 5, false, ""];
 
@@ -1619,6 +1714,7 @@ Armamento_6 addAction ["<t size='1.5' color='#00C1FF'>ANTIEXPLOSIVOS</t>", {
   player addWeapon "ACE_VMH3";
   player forceAddUniform "bm4jun";
   player addVest "V_PlateCarrierIAGL_dgtl";
+  player addBackpack "BDF_Alice4_bag";
   player addWeapon "Binocular";
   for "_i" from 1 to 3 do {player addItemToUniform "ACE_splint";};
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_epinephrine";};
@@ -1630,6 +1726,7 @@ Armamento_6 addAction ["<t size='1.5' color='#00C1FF'>ANTIEXPLOSIVOS</t>", {
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
   for "_i" from 1 to 6 do {player addItemToUniform "ACE_packingBandage";};
+  player addItemToUniform "kat_Pulseoximeter";
   for "_i" from 1 to 6 do {player addItemToVest "col_galil_35rnd_M196_Tracer_Red_mag";};
   player addItemToVest "Chemlight_green";
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
@@ -1637,6 +1734,10 @@ Armamento_6 addAction ["<t size='1.5' color='#00C1FF'>ANTIEXPLOSIVOS</t>", {
   player addItemToVest "SmokeShellRed";
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellGreen";};
   for "_i" from 1 to 3 do {player addItemToVest "SmokeShell";};
+  for "_i" from 1 to 2 do {player addItemToBackpack "ACE_Clacker";};
+  for "_i" from 1 to 2 do {player addItemToBackpack "ACE_DefusalKit";};
+  for "_i" from 1 to 2 do {player addItemToBackpack "DemoCharge_Remote_Mag";};
+  for "_i" from 1 to 2 do {player addItemToBackpack "SatchelCharge_Remote_Mag";};
   player addHeadgear "BR_M88_N";
   player addGoggles "shemag_tacticalglass";
   player linkItem "ItemMap";
@@ -1703,7 +1804,7 @@ Armamento_6 addAction ["<t size='1.5' color='#00C1FF'>TIRADOR SELECTO</t>", {
   removeHeadgear player;
   removeGoggles player;
   player addWeapon "rhs_weap_m14_rail_wd";
-  player addPrimaryWeaponItem "ACE_optic_SOS_PIP";
+  player addPrimaryWeaponItem "rhsusf_acc_ACOG3";
   player addPrimaryWeaponItem "rhsusf_20Rnd_762x51_m80_Mag";
   player addPrimaryWeaponItem "rhsusf_acc_m14_bipod";
   player forceAddUniform "bm4jun";
@@ -1720,6 +1821,7 @@ Armamento_6 addAction ["<t size='1.5' color='#00C1FF'>TIRADOR SELECTO</t>", {
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
   for "_i" from 1 to 7 do {player addItemToUniform "ACE_packingBandage";};
+  player addItemToUniform "kat_Pulseoximeter";
   for "_i" from 1 to 6 do {player addItemToVest "rhsusf_20Rnd_762x51_m62_Mag";};
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellBlue";};
@@ -1882,7 +1984,8 @@ Armamento_6 addAction ["<t size='1.5' color='#00C1FF'>PARAMEDICO</t>", {
   for "_i" from 1 to 3 do {player addItemToUniform "ACE_splint";};
   for "_i" from 1 to 2 do {player addItemToUniform "ACE_epinephrine";};
   for "_i" from 1 to 5 do {player addItemToVest "FirstAidKit";};
-  for "_i" from 1 to 7 do {player addItemToVest "col_galil_35rnd_Mk318_SOST_mag";};
+  for "_i" from 1 to 10 do {player addItemToVest "kat_IV_16";};
+  for "_i" from 1 to 4 do {player addItemToVest "col_galil_35rnd_Mk318_SOST_mag";};
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellYellow";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellBlue";};
@@ -1951,6 +2054,7 @@ Armamento_6 addAction ["<t size='1.5' color='#00C1FF'>MEDICO</t>", {
   player addItemToVest "kat_Pulseoximeter";
   for "_i" from 1 to 4 do {player addItemToVest "ACE_epinephrine";};
   for "_i" from 1 to 4 do {player addItemToVest "ACE_morphine";};
+  for "_i" from 1 to 15 do {player addItemToVest "kat_IV_16";};
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellYellow";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellBlue";};
@@ -1958,7 +2062,7 @@ Armamento_6 addAction ["<t size='1.5' color='#00C1FF'>MEDICO</t>", {
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShellGreen";};
   for "_i" from 1 to 3 do {player addItemToVest "SmokeShell";};
   player addItemToVest "Chemlight_green";
-  for "_i" from 1 to 7 do {player addItemToVest "col_galil_35rnd_Mk318_SOST_mag";};
+  for "_i" from 1 to 5 do {player addItemToVest "col_galil_35rnd_Mk318_SOST_mag";};
   player addItemToBackpack "kat_guedel";
   for "_i" from 1 to 6 do {player addItemToBackpack "ACE_epinephrine";};
   for "_i" from 1 to 6 do {player addItemToBackpack "ACE_splint";};
