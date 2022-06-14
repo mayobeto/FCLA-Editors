@@ -264,7 +264,7 @@ force ace_cargo_loadTimeCoefficient = 3;
 force ace_cargo_openAfterUnload = 3;
 force ace_cargo_paradropTimeCoefficent = 2.5;
 force ace_rearm_distance = 20;
-force ace_rearm_level = 2;
+force ace_rearm_level = 1;
 force ace_rearm_supply = 0;
 force ace_refuel_hoseLength = 12;
 force ace_refuel_rate = 1;
@@ -320,11 +320,6 @@ force ace_interact_menu_shadowSetting = 2;
 force ace_interact_menu_textSize = 2;
 force ace_interact_menu_useListMenu = false;
 force ace_interact_menu_useListMenuSelf = false;
-
-// ACE Pharmacy
-force kat_pharma_medLvl_Reorientation = 0;
-force kat_pharma_Reorientation_Enable = true;
-force kat_pharma_Reorientation_Slap = true;
 
 // ACE Pilones
 force ace_pylons_enabledForZeus = true;
@@ -468,6 +463,10 @@ force ace_trenches_bigEnvelopeRemoveDuration = 20;
 force ace_trenches_smallEnvelopeDigDuration = 25;
 force ace_trenches_smallEnvelopeRemoveDuration = 15;
 
+// Backpack On Chest
+force bocr_main_disabled = false;
+force bocr_main_walk = true;
+
 // Community Base Addons
 cba_diagnostic_ConsoleIndentType = -1;
 force cba_disposable_dropUsedLauncher = 2;
@@ -490,7 +489,7 @@ force kat_airway_medLvl_Accuvac = 2;
 force kat_airway_medLvl_Guedeltubus = 0;
 force kat_airway_medLvl_Larynxtubus = 2;
 force kat_airway_Overstretch_time = 3;
-force kat_airway_probability_headturning = 50;
+force kat_airway_probability_headturning = 76.142;
 force kat_airway_probability_obstruction = 15;
 force kat_airway_probability_occluded = 12.7697;
 force kat_airway_string_exit = "";
@@ -511,7 +510,7 @@ force kat_breathing_SpO2_dieValue = 65;
 force kat_breathing_SpO2_MultiplyNegative = 1;
 force kat_breathing_SpO2_MultiplyPositive = 1;
 force kat_breathing_SpO2_perfusion = true;
-force kat_breathing_SpO2_unconscious = 75;
+force kat_breathing_SpO2_unconscious = 70.1618;
 force kat_breathing_Stable_spo2 = 85;
 force kat_breathing_tensionhemothorax_hardcore = false;
 
@@ -549,8 +548,11 @@ force kat_pharma_IVdropEnable = true;
 force kat_pharma_IVestablish = 7;
 force kat_pharma_IVmedic = 0;
 force kat_pharma_IVreuse = false;
+force kat_pharma_medLvl_Reorientation = 0;
 force kat_pharma_naloxoneActive = false;
 force kat_pharma_PushTime = 7;
+force kat_pharma_Reorientation_Enable = true;
+force kat_pharma_Reorientation_Slap = true;
 force kat_pharma_RequireInsIV = true;
 force kat_pharma_txaActive = true;
 
@@ -644,6 +646,29 @@ force ace_medical_treatment_treatmentTimeTourniquet = 7;
 force ace_medical_treatment_woundReopenChance = 1;
 force ace_medical_treatment_woundStitchTime = 5;
 
+// UH-60M
+force vtx_ace_viv_loadDistance = 15;
+force vtx_ace_viv_timeFactor = 1;
+force vtx_uh60_anvishud_defaultMode = -1;
+force vtx_uh60_anvishud_settingBrightness = 0.6;
+force vtx_uh60_anvishud_settingColor = [0.082,0.608,0.039];
+force vtx_uh60_flir_setting_AimSlewBlockMouse = true;
+force vtx_uh60_flir_setting_AimSlewSpeed = 1;
+force vtx_uh60_flir_setting_AimXFactor = 1;
+force vtx_uh60_flir_setting_animateTurret = true;
+force vtx_uh60_flir_setting_KeySlewSpeed = 1;
+force vtx_uh60_flir_setting_KeyXFactor = 1;
+force vtx_uh60_flir_setting_syncDelay = 0.015;
+vtx_uh60_hoist_setting_useAttachScript = true;
+vtx_uh60_sfmPlus_showDamageHints = true;
+vtx_uh60_sfmPlusStabilatorEnabled = 1;
+force vtx_uh60_ui_showDebugMessages = false;
+force vtx_uh60m_enabled_waypts = false;
+force vtx_uh60m_simpleCollective = false;
+force vtx_uh60m_simpleStartup = false;
+force vtx_uh60m_trackIR_interaction_cursor = false;
+force vtx_uh60m_trackIR_interaction_cursorSensitivity = 2.5;
+
 // Zeus Enhanced
 force zen_camera_adaptiveSpeed = true;
 force zen_camera_defaultSpeedCoef = 1;
@@ -686,12 +711,29 @@ force zen_faction_filter_0_OPF_G_F = true;
 force zen_faction_filter_0_OPF_GEN_F = true;
 force zen_faction_filter_0_OPF_R_F = true;
 force zen_faction_filter_0_OPF_T_F = true;
+zen_faction_filter_0_rhs_faction_msv = true;
+zen_faction_filter_0_rhs_faction_rva = true;
+zen_faction_filter_0_rhs_faction_tv = true;
+zen_faction_filter_0_rhs_faction_vdv = true;
+zen_faction_filter_0_rhs_faction_vmf = true;
+zen_faction_filter_0_rhs_faction_vmf_groups = true;
+zen_faction_filter_0_rhs_faction_vpvo = true;
+zen_faction_filter_0_rhs_faction_vv = true;
+zen_faction_filter_0_rhs_faction_vvs = true;
+zen_faction_filter_0_rhs_faction_vvs_c = true;
 force zen_faction_filter_1_BLU_CTRG_F = true;
 force zen_faction_filter_1_BLU_F = true;
 force zen_faction_filter_1_BLU_G_F = true;
 force zen_faction_filter_1_BLU_GEN_F = true;
 force zen_faction_filter_1_BLU_T_F = true;
 force zen_faction_filter_1_BLU_W_F = true;
+zen_faction_filter_1_rhs_faction_socom = true;
+zen_faction_filter_1_rhs_faction_usaf = true;
+zen_faction_filter_1_rhs_faction_usarmy_d = true;
+zen_faction_filter_1_rhs_faction_usarmy_wd = true;
+zen_faction_filter_1_rhs_faction_usmc_d = true;
+zen_faction_filter_1_rhs_faction_usmc_wd = true;
+zen_faction_filter_1_rhs_faction_usn = true;
 force zen_faction_filter_2_IND_C_F = true;
 force zen_faction_filter_2_IND_E_F = true;
 force zen_faction_filter_2_IND_F = true;
@@ -699,4 +741,5 @@ force zen_faction_filter_2_IND_G_F = true;
 force zen_faction_filter_2_IND_L_F = true;
 force zen_faction_filter_3_CIV_F = true;
 force zen_faction_filter_3_CIV_IDAP_F = true;
+force zen_faction_filter_3_EdCat_Things = true;
 force zen_faction_filter_3_IND_L_F = true;
