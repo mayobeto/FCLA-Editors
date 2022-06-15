@@ -41,8 +41,8 @@
    ] spawn bis_fnc_dynamicText;
     sleep 10;
 
-    [[["NOMBRE DE MI CAMPAÑA", "<t align = 'center' shadow = '1' size = '1.5' font='PuristaBold'>%1</t><br/>"], // ← Titulo emergente (Modificable)
-    ["NUMERO DE MISION", "<t align = 'center' shadow = '1' size = '1' font='PuristaBold'>%1"]]] spawn BIS_fnc_typeText; // ← Subtitulo emergente (Modificable)
+    [[["Batalla de Takur Ghar", "<t align = 'center' shadow = '1' size = '1.5' font='PuristaBold'>%1</t><br/>"], // ← Titulo emergente (Modificable)
+    ["Afghanistan, 4 de Marzo 2002", "<t align = 'center' shadow = '1' size = '1' font='PuristaBold'>%1"]]] spawn BIS_fnc_typeText; // ← Subtitulo emergente (Modificable)
 
    sleep 8;
    titleFadeOut 5;
