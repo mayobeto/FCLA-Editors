@@ -41,5 +41,5 @@ player createDiaryRecord ["Diary", ["Fuerzas Involucradas","
 ·<font color='#58D68D' size='12' face='TahomaB'>'DELTA FORCE'</font>...<br></br>
 Las tareas principales para las que está preparada la Delta Force son el contraterrorismo, la contrainsurgencia y las operaciones de intervención a nivel nacional. Son un grupo capaz de asumir muchas misiones, como rescates de rehenes, redadas y eliminación de fuerzas secretas enemigas.<br></br><br></br>
 ·<font color='#D65858' size='12' face='TahomaB'>'AL QAEDA'</font>...<br></br>
-es una organización terrorista, paramilitar y yihadista. La organización emplea prácticas y atentados terroristas y se plantea como un movimiento de resistencia alrededor del mundo, mientras que es comúnmente señalada como una red de terrorismo internacional.
+Es una organización terrorista, paramilitar y yihadista. La organización emplea prácticas y atentados terroristas y se plantea como un movimiento de resistencia alrededor del mundo, mientras que es comúnmente señalada como una red de terrorismo internacional.
 "], taskNull, "",false];
