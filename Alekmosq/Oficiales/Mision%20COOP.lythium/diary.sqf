@@ -31,20 +31,15 @@
 // ↓ Situación Actual
 player createDiaryRecord ["Diary", ["Situación Actual","
 <font color='#58D6C7' size='18' face='TahomaB'>Situación Actual...</font><br></br><br></br>
-SITUACION ACTUAL DE LA MISION.
+El 4 de marzo de 2002 un enfrentamiento bélico entre las fuerzas estadounidenses (SEALS y Rangers) y las fuerzas de Al Qaeda que ocurrió en la cumbre de una montaña afgana situada en el pico de la montaña Takur Ghar. La batalla se desarrolló sobre la cumbre de dicha montaña luego que dos helicópteros Chinook fueran impactados por fuego de RPG y ametralladoras de talibanes luego de dejar equipos SEALs para rescatar a un SEAL el Sargento Neil Roberts, además de eliminar los nidos de ametralladoras enemigas para tomar dicho pico y posición amenazante.
+Dicho ataque fue apoyado por la fuerza DELTA FORCE que se encontraban en la zona en la Base militar Bagram, se informa por medio de inteligencia que los insurgentes que se encuentran en la montaña de Takur Ghar están pidiendo apoyo de los alrededores exactamente del valle de Gardez y el valle de Amir. Su objetivo es limpiar las zonas marcadas y ayudar a limpiar la montaña de Takur Ghar y rescatar a los soldados sobrevivientes.
 "], taskNull, "",false];
 
 // ↓ Fuerzas Involucradas
 player createDiaryRecord ["Diary", ["Fuerzas Involucradas","
 <font color='#58D68D' size='18' face='TahomaB'>Fuerzas Involucradas...</font><br></br><br></br>
-·<font color='#58D68D' size='12' face='TahomaB'>'NOMBRE DE LA FUERZA QUE ROLEA FCLA'</font>...<br></br>
-BREVE DESCRIPCION DE CUAL ES SU OFICIO DURANTE LA CAMPAÑA.<br></br><br></br>
-·<font color='#D65858' size='12' face='TahomaB'>'NOMBRE DE LA FUERZA HOSTIL A LA QUE SE ENFRENTA FCLA'</font>...<br></br>
-BREVE DESCRIPCION DE CUAL ES SU OFICIO DURANTE LA CAMPAÑA Y SI ES GUERRILLA SU HISTORIA.
-"], taskNull, "",false];
-
-// ↓ Contexto General
-player createDiaryRecord ["Diary", ["Contexto General","
-<font color='#58D6C7' size='18' face='TahomaB'>Contexto General...</font><br></br><br></br>
-CONTEXTO GENERAL DE LA CAMPAÑA.
+·<font color='#58D68D' size='12' face='TahomaB'>'DELTA FORCE'</font>...<br></br>
+Las tareas principales para las que está preparada la Delta Force son el contraterrorismo, la contrainsurgencia y las operaciones de intervención a nivel nacional. Son un grupo capaz de asumir muchas misiones, como rescates de rehenes, redadas y eliminación de fuerzas secretas enemigas.<br></br><br></br>
+·<font color='#D65858' size='12' face='TahomaB'>'AL QAEDA'</font>...<br></br>
+es una organización terrorista, paramilitar y yihadista. La organización emplea prácticas y atentados terroristas y se plantea como un movimiento de resistencia alrededor del mundo, mientras que es comúnmente señalada como una red de terrorismo internacional.
 "], taskNull, "",false];
