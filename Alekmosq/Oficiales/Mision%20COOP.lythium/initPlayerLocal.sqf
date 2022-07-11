@@ -20,7 +20,7 @@
 
 ////////// ↓ CANTIDAD DE VIDAS ↓ //////////
 
- [player, 3] call BIS_fnc_respawnTickets; // ← Modifica el numero segun la cantidad de vidas que quieras para tu mision (siempre +1)
+ [player, 1] call BIS_fnc_respawnTickets; // ← Modifica el numero segun la cantidad de vidas que quieras para tu mision (siempre +1)
 
 
 //////////////////// ↓ MENSAJE DE DONACIONES ↓ ////////////////////
