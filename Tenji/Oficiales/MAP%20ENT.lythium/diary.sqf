@@ -29,22 +29,24 @@
 
 
 // ↓ Situación Actual
-player createDiaryRecord ["Diary", ["Situación Actual:Estamos en islas europeas deteniendo el expancionismo ruso contamos con que va a ser una batalla dura y se cree que hay mucha fauna hostil en la zona","
+player createDiaryRecord ["Diary", ["Situación Actual","
 <font color='#58D6C7' size='18' face='TahomaB'>Situación Actual...</font><br></br><br></br>
 SITUACION ACTUAL DE LA MISION.
 "], taskNull, "",false];
 
 // ↓ Fuerzas Involucradas
-player createDiaryRecord ["Diary", ["Fuerzas Involucradas:EEUU-RUSIA","
+player createDiaryRecord ["Diary", ["Fuerzas Involucradas","
 <font color='#58D68D' size='18' face='TahomaB'>Fuerzas Involucradas...</font><br></br><br></br>
 ·<font color='#58D68D' size='12' face='TahomaB'>'NOMBRE DE LA FUERZA QUE ROLEA FCLA'</font>...<br></br>
-Nosotros somos la decima division de caballeria nominada como FCLA y la division airbone nosotros somos los que detendremos a el comunismo.<br></br><br></br>
-·<font color='#D65858' size='12' face='TahomaB'>'Enemigos Rusos'</font>...<br></br>
-Ellos son fuerzas militares rusas bajo el mando del lider supremo Putin.
+BREVE DESCRIPCION DE CUAL ES SU OFICIO DURANTE LA CAMPAÑA.<br></br><br></br>
+·<font color='#D65858' size='12' face='TahomaB'>'NOMBRE DE LA FUERZA HOSTIL A LA QUE SE ENFRENTA FCLA'</font>...<br></br>
+BREVE DESCRIPCION DE CUAL ES SU OFICIO DURANTE LA CAMPAÑA Y SI ES GUERRILLA SU HISTORIA.
 "], taskNull, "",false];
 
 // ↓ Contexto General
 player createDiaryRecord ["Diary", ["Contexto General","
 <font color='#58D6C7' size='18' face='TahomaB'>Contexto General...</font><br></br><br></br>
-Rusia intenta expandirse bajo los ideales comunistas y nosotros debemos impedir que tomen territorio de la otan.
+Después de un año de guerra entre Rusia y Ucrania, Rusia cree que puede tomar todo el continente y empieza a invadir países subdesarrollados, el 1 de marzo de 2029 toma los países de Irán, Irak, Polonia, gran parte de China y Japón.
+
+Lo pasado llevo a Estados Unidos a investigarlos más de cerca y descubrir que al parecer  lograron crear soldados inmortales, por lo que efectuaran un avance por Afganistán para detener su avance y obligarlos a rodear todo el continente y así hacer una maniobra gancho en Europa..
 "], taskNull, "",false];

@@ -19,15 +19,15 @@
 
 author = "Tenji"; // ← Autor (Modificable)
 loadScreen = "Textures\Portada.paa";  // ← Direccion de imagen de portada (Modificable)
-briefingName = "|El descubrimiento|"; // ← Nombre de la mision / campaña (Modificable)
-OnLoadName = "|El descubrimiento|"; // ← Nombre de la mision / campaña (Modificable)
-onLoadMission = "By Tenji"; // ← Descripcion (que aparece abajo de la imagen)
+briefingName = "|Storm Crow|"; // ← Nombre de la mision / campaña (Modificable)
+OnLoadName = "|Entrenamiento|"; // ← Nombre de la mision / campaña (Modificable)
+onLoadMission = ""; // ← Descripcion (que aparece abajo de la imagen)
 
 
 
 /////////////// ↓ CONFIGURACION RESPAWN ↓ ///////////////
 
- respawn=4;
+ respawn=100;
  respawnDelay=30; // ← Delay para respawnear (Modificable)
  respawnOnStart=-1;
 
@@ -59,7 +59,7 @@ class CfgSounds
   	{
   		title = "Misión Finalizada"; // ← Titulo (Modificable)
   		subtitle = "Comunidad FCLA"; // ← Subtitulo (Modificable)
-  		description = "Las Fuerzas de FCLA no pudieron contra el enemigo procederemos a retirarnos y a planear una nueva ofensiva"; // ← Descripcion (Modificable)
+  		description = ""; // ← Descripcion (Modificable)
   		pictureBackground = "";
   		picture = "b_inf";
   		pictureColor[] = {0.0, 0.3, 0.6, 1};

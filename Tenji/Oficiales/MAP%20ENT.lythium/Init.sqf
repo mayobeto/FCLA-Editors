@@ -41,8 +41,8 @@
    ] spawn bis_fnc_dynamicText;
     sleep 10;
 
-    [[["WW3", "<t align = 'center' shadow = '1' size = '1.5' font='PuristaBold'>%1</t><br/>"], // ← Titulo emergente (Modificable)
-    ["1", "<t align = 'center' shadow = '1' size = '1' font='PuristaBold'>%1"]]] spawn BIS_fnc_typeText; // ← Subtitulo emergente (Modificable)
+    [[["STORM CROW", "<t align = 'center' shadow = '1' size = '1.5' font='PuristaBold'>%1</t><br/>"], // ← Titulo emergente (Modificable)
+    ["$#&%", "<t align = 'center' shadow = '1' size = '1' font='PuristaBold'>%1"]]] spawn BIS_fnc_typeText; // ← Subtitulo emergente (Modificable)
 
    sleep 8;
    titleFadeOut 5;
