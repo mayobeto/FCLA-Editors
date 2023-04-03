@@ -1,0 +1,39 @@
+//////////////////// Panfletos (publicidad articulos de FCLA) ////////////////////
+
+_Dron1 = createVehicle ["B_UAV_06_F", [15065,17122,0], [], 0, "FLY"]; //Dron 1 (art. 1)
+createVehicleCrew _Dron1;
+_pos = getPos _Dron1;
+_Dron1 setPos [_pos select 0, _pos select 1, (_pos select 2) - 42];
+_Dron1 SetDir 45;
+_Dron1 flyInHeight 8;
+_Dron1 addMagazine "1Rnd_Leaflets_Custom_08_F";
+_Dron1 addWeapon "Bomb_Leaflets";
+_Dron1 setVehicleVarName "Dron_P1";
+Dron_P1 = _Dron1;
+_Grupo1 = group Dron_P1;
+_Grupo1 setBehaviour "CARELESS";
+_Grupo1 setCombatMode "BLUE";
+_Grupo1 setSpeedMode "LIMITED";
+_wp1 = _Grupo1 addWaypoint [[15224.7,17333.7,0.00144196], 0];
+_wp1 setWaypointStatements ["true", "Dron_P1 fire 'Bomb_Leaflets';"];
+_wp2 = _Grupo1 addWaypoint [[15246,17355,6.01], 0];
+_wp2 setWaypointStatements ["true", "deletevehicle Dron_P1;"];
+
+_Dron2 = createVehicle ["B_UAV_06_F", [15065,17172,0], [], 0, "FLY"]; //Dron 2 (art. 2)
+createVehicleCrew _Dron2;
+_pos = getPos _Dron2;
+_Dron2 setPos [_pos select 0, _pos select 1, (_pos select 2) - 42];
+_Dron2 SetDir 45;
+_Dron2 flyInHeight 8;
+_Dron2 addMagazine "1Rnd_Leaflets_Custom_09_F";
+_Dron2 addWeapon "Bomb_Leaflets";
+_Dron2 setVehicleVarName "Dron_P2";
+Dron_P2 = _Dron2;
+_Grupo2 = group Dron_P2;
+_Grupo2 setBehaviour "CARELESS";
+_Grupo2 setCombatMode "BLUE";
+_Grupo2 setSpeedMode "LIMITED";
+_wp3 = _Grupo2 addWaypoint [[15224.7,17333.7,0.00144196], 0];
+_wp3 setWaypointStatements ["true", "Dron_P2 fire 'Bomb_Leaflets';"];
+_wp4 = _Grupo2 addWaypoint [[15246,17355,6.01], 0];
+_wp4 setWaypointStatements ["true", "deletevehicle Dron_P2;"];

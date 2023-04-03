@@ -1,0 +1,35 @@
+if (selectRandom[true,false,false]) then {drop [["\A3\data_f\cl_basic",1,0,1],"","Billboard",1,25,_this,[0,0,1],3,10,8,0,[50,100,200],[[.1,.1,.1,0],[.1,.1,.1,0.1],[.1,.1,.1,0]],[1000],0,0,"","",_this]};
+// explozie, lumina
+_ro =selectRandom [1,0];
+_ve =selectRandom [1,0];
+_bl =selectRandom [1,0];
+_li = "#lightpoint" createVehiclelocal [_this#0,_this#1,_this#2+5];
+_li setLightBrightness 300;
+_li setLightAttenuation [10,50,50,2000,50,2000]; 
+_li setLightUseFlare true;
+_li setLightFlareSize 20;
+_li setLightFlareMaxDistance 2000;
+_li setLightAmbient[_ro,_ve,_bl];
+_li setLightColor[_ro,_ve,_bl];
+
+_sparks_fire = "#particlesource" createVehicleLocal [_this#0,_this#1,_this#2];
+_sparks_fire setParticleCircle [0,[0,0,0]];
+_sparks_fire setParticleRandom [1,[0,0,0],[40,40,50],0,0,[0,0,0,0],0,0];
+_sparks_fire setParticleParams [["\A3\data_f\kouleSvetlo",1,0,1],"","Billboard",.1,0.5,[0,0,0],[0,0,10],0,20,8,0,[4],[[_ro,_ve,_bl,1]],[1],0,0,"Scripts\Fuegos_Artificiales\trail_fireworks_sec.sqf","Scripts\Fuegos_Artificiales\blow_fireworks_fin.sqf",[_this#0,_this#1,_this#2]];
+_sparks_fire setDropInterval 0.001;
+[_sparks_fire] spawn {_de_sters = _this#0; sleep 0.2; deleteVehicle _de_sters};
+sleep 0.3;
+playSound3D [blow_sound_fireworks,"",false,[_this#0,_this#1,_this#2],10,1,4000];
+_li setLightBrightness 0.5;
+_li setLightFlareSize 2;
+_li setLightAttenuation [50,0,0,0,20,2000];
+sleep 0.3;
+_li setLightBrightness 1;
+_li setLightFlareSize 0;
+_li setLightAttenuation [50,0,0,0,20,2000];
+sleep 0.3;
+_li setLightBrightness 0.5;
+_li setLightFlareSize 0;
+_li setLightAttenuation [50,0,0,0,20,2000];
+sleep 0.5;
+deleteVehicle _li;

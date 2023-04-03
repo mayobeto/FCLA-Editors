@@ -1,0 +1,17 @@
+_li = "#lightpoint" createVehiclelocal [_this#0,_this#1,_this#2+5];
+_li setLightBrightness 10;
+_li setLightAttenuation [10,50,50,2000,15,20]; 
+_li setLightUseFlare true;
+_li setLightFlareSize 1;
+_li setLightFlareMaxDistance 2000;
+_li setLightAmbient[1,1,1];
+_li setLightColor[1,1,1];
+drop [["\A3\data_f\ParticleEffects\Universal\UnderWaterSmoke",4,0,16,1],"","Billboard",1,0.5+random 0.5,_this,[0,0,10],15,15,8,1,[1,10,1,10],[[1,1,0,1],[1,1,1,0],[1,1,0,1],[1,1,1,0]],[1,0,0,0],0,0,"","",_this];
+sleep 0.2;
+_li setLightBrightness 1;
+sleep 0.2;
+_li setLightBrightness 5;
+sleep 0.2;
+_li setLightBrightness 1;
+sleep 0.2;
+deletevehicle _li;
